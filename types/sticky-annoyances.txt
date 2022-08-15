@@ -1,5 +1,5 @@
 ! Title: WavyGecko’s uBlock filters – Sticky annoyances
-! Description: Blocks annoying sticky elements (e.g., popups, overlays, sticky videos, toasts). Excludes sticky cookie notices.
+! Description: Blocks annoying sticky elements (e.g., pop-ups, overlays, sticky videos, toasts). Excludes sticky cookie notices.
 ! Expires: 4 days
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! Forums: https://github.com/wavygecko/ubo-filters/issues
