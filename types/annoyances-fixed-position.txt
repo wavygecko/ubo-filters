@@ -74,6 +74,9 @@ aberdeennews.com,alamogordonews.com,amarillo.com,amestrib.com,app.com,argusleade
 ! The Marshall Project
 ||themarshallproject.org/notifications/v*/toast$xhr,1p
 
+! Nautilus
+nautil.us##.subscibe-bar
+
 ! The New York Times
 nytimes.com##.magnoliaDock
 
@@ -83,8 +86,17 @@ nybooks.com##.toast-cta
 ! ProPublica
 ||assets.propublica.org/static/prod/v*/js/deploy/syndicated-newsletter-v*.js$script,1p
 
+! Thomson Reuters Foundation Long Reads
+longreads.trust.org##.pa-footer
+
 ! Scientific American
 scientificamerican.com##.spw
+
+! Scroll.in
+scroll.in##.floating-contribute-block
+
+! Stat
+statnews.com##.recirculation-bar
 
 ! Vanity Fair
 archive.vanityfair.com##body.page_shared:style(overflow: visible !important;)
