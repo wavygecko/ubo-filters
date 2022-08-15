@@ -38,6 +38,9 @@ theatlantic.com##+js(cookie-remover, articleViews)
 theatlantic.com###paywall
 theatlantic.com##.c-nudge__container
 
+! Behance
+behance.net##[class*="Search-contentBlocker-"]
+
 ! Bloomberg
 ! https://www.bloomberg.com/features/2021-hushpuppi-gucci-influencer/
 ! needs refinement? targeted approach rather than blocking all localStorage?
