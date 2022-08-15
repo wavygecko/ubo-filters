@@ -1,0 +1,15 @@
+! Title: WavyGecko’s uBlock filters – Ads
+! Description: Blocks ads and ad containers missed by the default uBlock filter lists.
+! Expires: 4 days
+! Homepage: https://github.com/wavygecko/ubo-filters
+! Forums: https://github.com/wavygecko/ubo-filters/issues
+
+! The Chronicle of Higher Education
+chronicle.com##.Page-above
+
+! The Guardian
+theguardian.com##gu-island[name="TopRightAdSlot"]
+
+! Scientific American
+scientificamerican.com##.home-banner
+scientificamerican.com###promo-header
