@@ -1,0 +1,10 @@
+! Title: WavyGecko’s uBlock filters – Behavioral annoyances
+! Description: Blocks annoying behavioral changes (e.g., right-click protection).
+! Expires: 4 days
+! Homepage: https://github.com/wavygecko/ubo-filters
+! Forums: https://github.com/wavygecko/ubo-filters/issues
+
+! Behance
+behance.net##[class*="ImageElement-blockPointerEvents-"]:style(pointer-events: auto !important;)
+behance.net##[class*="Module-blockGridPointerEvents-"] .grid__item-image:style(pointer-events: auto !important;)
+behance.net###lightbox-wrap img:style(pointer-events: auto !important;)
