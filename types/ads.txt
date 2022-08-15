@@ -4,6 +4,9 @@
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! Forums: https://github.com/wavygecko/ubo-filters/issues
 
+! Album of the Year
+albumoftheyear.org##[style="padding: 30px 0 60px 0; text-align: center;"]:has(> .adHeading)
+
 ! The Chronicle of Higher Education
 chronicle.com##.Page-above
 
