@@ -5,6 +5,8 @@
 ! Forums: https://github.com/wavygecko/ubo-filters/issues
 
 ! Heading text generator: https://textkool.com/en/ascii-art-generator?hl=default&vl=default&font=Standard&text=Ads
+! Domain lookup tool: https://securitytrails.com/domain/
+! Link extraction script: Array.from(document.querySelectorAll('.link')).map(el => el.getAttribute('href'))
 
 
 !   ____       _            
@@ -241,6 +243,10 @@ bostonreview.net##.elementor-element-16134f5
 ! The California Sunday Magazine
 story.californiasunday.com##.story-actions
 
+! Condé Nast (https://www.condenast.com/brands-and-markets/brands)
+ad-italia.it,ad-magazin.de,admagazine.com,admagazine.fr,admagazine.ru,allure.com,architecturaldigest.com,architecturaldigest.in,bonappetit.com,cntraveler.com,cntraveller.com,cntraveller.in,glamour.com,glamour.de,glamour.es,glamour.mx,glamour.ru,glamourmagazine.co.uk,gq-magazin.de,gq-magazine.co.uk,gq.com,gq.com.mx,gq.com.tw,gq.ru,gqindia.com,gqitalia.it,gqjapan.jp,gqmagazine.fr,houseandgarden.co.uk,lacucinaitaliana.it,newyorker.com,pitchfork.com,revistaad.es,revistagq.com,revistavanityfair.es,self.com,tatler.com,tatler.ru,teenvogue.com,them.us,traveler.es,vanityfair.com,vanityfair.fr,vanityfair.it,vogue.co.jp,vogue.co.uk,vogue.com,vogue.com.tw,vogue.de,vogue.es,vogue.fr,vogue.in,vogue.it,vogue.mx,vogue.ru,voguebusiness.com,wired.co.uk,wired.com,wired.it,wired.jp##.ticker-view, [class^="LinkBannerWrapper"], [class^=StickyBoxWrapper]
+voguebusiness.com##.newsletter-slice
+
 ! Damn Interesting
 damninteresting.com##.plea
 
@@ -285,6 +291,7 @@ longreads.trust.org##.pa-footer
 scientificamerican.com##.spw
 
 ! Scroll.in
+scroll.in##.scrollstrap-container
 scroll.in##.floating-contribute-block
 
 ! Stat
@@ -295,4 +302,12 @@ archive.vanityfair.com##body.page_shared:style(overflow: visible !important;)
 archive.vanityfair.com##body.page_shared .bnd_subscribe
 archive.vanityfair.com##.shared_footer_cta_basic
 archive.vanityfair.com##.shared_footer_cta_primary:remove()
+
+
+!  _   _                      _           _ 
+! | | | |_ __  ___  ___  _ __| |_ ___  __| |
+! | | | | '_ \/ __|/ _ \| '__| __/ _ \/ _` |
+! | |_| | | | \__ \ (_) | |  | ||  __/ (_| |
+!  \___/|_| |_|___/\___/|_|   \__\___|\__,_|
+!
 
