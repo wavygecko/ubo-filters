@@ -1,5 +1,5 @@
-! Title: WavyGecko’s uBlock filters – Fixed-position annoyances (Gannet)
-! Description: Blocks annoying fixed-position elements on Gannet websites (https://www.gannett.com/brands/). Excludes cookie notices.
+! Title: WavyGecko’s uBlock filters – Annoyances (Gannet)
+! Description: Blocks annoying elements on Gannet websites (https://www.gannett.com/brands/). Excludes cookie notices.
 ! Expires: 4 days
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! Forums: https://github.com/wavygecko/ubo-filters/issues

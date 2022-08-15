@@ -1,9 +1,0 @@
-! Title: WavyGecko’s uBlock filters – Static annoyances
-! Description: Blocks annoying static elements (e.g., promo banners, inline newsletters). Excludes cookie notices.
-! Expires: 4 days
-! Homepage: https://github.com/wavygecko/ubo-filters
-! Forums: https://github.com/wavygecko/ubo-filters/issues
-
-! Boston Review
-bostonreview.net##.elementor-element-1b2cb65
-bostonreview.net##.elementor-element-16134f5
