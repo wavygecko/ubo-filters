@@ -5,7 +5,7 @@
 ! Forums: https://github.com/wavygecko/ubo-filters/issues
 
 !#include types/ads.txt
-!#include types/behavioral-annoyances.txt
-!#include types/fixed-position-annoyances.txt
+!#include types/annoyances-behavioral.txt
+!#include types/annoyances-fixed-position.txt
+!#include types/annoyances-static.txt
 !#include types/gates.txt
-!#include types/static-annoyances.txt
