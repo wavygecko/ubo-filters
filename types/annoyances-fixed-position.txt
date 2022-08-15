@@ -55,6 +55,13 @@ deadline.com##.toaster
 ! Eater
 eater.com###toaster
 
+! Emergence Magazine
+emergencemagazine.org##.newsletter-overlay
+emergencemagazine.org##.newsletter-popup
+emergencemagazine.org##.newsletter-dropin
+emergencemagazine.org##.c-social-dropin
+emergencemagazine.org##.c-audio-bar:not(.has-played)
+
 ! The Guardian
 theguardian.com###sp_message_container_690155
 theguardian.com##.site-message--banner
