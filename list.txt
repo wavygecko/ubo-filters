@@ -6,6 +6,6 @@
 
 !#include types/ads.txt
 !#include types/behavioral-annoyances.txt
+!#include types/fixed-position-annoyances.txt
 !#include types/gates.txt
 !#include types/static-annoyances.txt
-!#include types/sticky-annoyances.txt
