@@ -22,7 +22,7 @@
 ! Generic !
 !---------!
 
-! BLOX CMS (e.g., dothaneagle.com, hmbreview.com)
+! Blox CMS (e.g., dothaneagle.com, hmbreview.com)
 /tncms/subscription.js$script
 /tncms/api/access.js$script
 
@@ -57,8 +57,8 @@ behance.net##[class*="Search-contentBlocker-"]
 
 ! Bloomberg
 ! https://www.bloomberg.com/features/2021-hushpuppi-gucci-influencer/
-! needs refinement? targeted approach rather than blocking all localStorage?
 ||assets.bwbx.io/s3/javelin/public/javelin/js/foundation/transporter/foundation_transporter-*.js$script,domain=bloomberg.com
+! Is a more targeted approach possible without blocking all localStorage?
 bloomberg.com##+js(aopr, localStorage)
 bloomberg.com###fortress-preblocked-container-root
 
@@ -173,6 +173,10 @@ baltimoresun.com,capitalgazette.com,chicagotribune.com,courant.com,dailypress.co
 ! Album of the Year
 albumoftheyear.org##div:has(> .adHeading)
 
+! Bloomberg
+bloomberg.com##.dvz-v0-ad-top
+bloomberg.com##.css--ad
+
 ! The Chronicle of Higher Education
 chronicle.com##.Page-above
 
@@ -208,6 +212,18 @@ scientificamerican.com###promo-header
 
 ! The American Prospect
 ||api3.crux.kn^$script,domain=prospect.org
+
+
+!   ____            _    _           
+!  / ___|___   ___ | | _(_) ___  ___ 
+! | |   / _ \ / _ \| |/ / |/ _ \/ __|
+! | |__| (_) | (_) |   <| |  __/\__ \
+!  \____\___/ \___/|_|\_\_|\___||___/
+!                                    
+
+! Quanta Magazine
+quantamagazine.org##+js(rc, cookie-not-accepted, #app)
+quantamagazine.org##.disclosure-notification
 
 
 !     _                                                      
@@ -310,6 +326,9 @@ crimereads.com,lithub.com###post_more_wrapper
 ! The Marshall Project
 ||themarshallproject.org/notifications/v*/toast$xhr,1p
 
+! McClatchy (https://www.mcclatchy.com/our-impact/markets#map)
+bellinghamherald.com,bnd.com,bradenton.com,centredaily.com,charlotteobserver.com,elnuevoherald.com,flkeysnews.com,fresnobee.com,heraldonline.com,heraldsun.com,idahostatesman.com,islandpacket.com,kansas.com,kansascity.com,kentucky.com,ledger-enquirer.com,macon.com,mcclatchydc.com,mercedsunstar.com,miamiherald.com,modbee.com,myrtlebeachonline.com,newsobserver.com,sacbee.com,sanluisobispo.com,star-telegram.com,sunherald.com,thenewstribune.com,theolympian.com,thestate.com,tri-cityherald.com###latest-news-nativo-slot, #newsletter-signUpWidget, .zone
+
 ! Mother Jones
 motherjones.com##.mj-adblock-widget
 
@@ -351,8 +370,4 @@ thewalrus.ca##.spu-box
 ! | |_| | | | \__ \ (_) | |  | ||  __/ (_| |
 !  \___/|_| |_|___/\___/|_|   \__\___|\__,_|
 !
-
-! Quanta Magazine
-! This only works if EasyList Cookie List is enabled; otherwise it breaks the layout. Is there a way to check for this?
-quantamagazine.org##+js(rc, cookie-not-accepted, #app)
 
