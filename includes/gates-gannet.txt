@@ -1,5 +1,5 @@
 ! Title: WavyGecko’s uBlock filters – Gates (Gannet)
-! Description: Prevents paywalls on Gannet websites (https://www.gannett.com/brands/).
+! Description: Prevents paywalls (where possible) on Gannet websites (https://www.gannett.com/brands/).
 ! Expires: 4 days
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! Forums: https://github.com/wavygecko/ubo-filters/issues
