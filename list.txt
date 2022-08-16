@@ -2,7 +2,7 @@
 ! Description: Blocks ads, gates, and annoyances. Best used in addition to the default uBlock filters and EasyList Cookie List.
 ! Expires: 4 days
 ! Homepage: https://github.com/wavygecko/ubo-filters
-! Forums: https://github.com/wavygecko/ubo-filters/issues
+! Licence: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
 
 ! Heading text generator: https://textkool.com/en/ascii-art-generator?hl=default&vl=default&font=Standard&text=Ads
 ! Domain lookup tool: https://securitytrails.com/domain/wired.com/dns
