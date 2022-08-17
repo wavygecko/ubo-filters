@@ -9,14 +9,22 @@
 ! Link extraction script: Array.from(document.querySelectorAll('.link')).map(el => el.getAttribute('href'))
 
 
+!  ___            _           _           
+! |_ _|_ __   ___| |_   _  __| | ___  ___ 
+!  | || '_ \ / __| | | | |/ _` |/ _ \/ __|
+!  | || | | | (__| | |_| | (_| |  __/\__ \
+! |___|_| |_|\___|_|\__,_|\__,_|\___||___/
+!                                         
+
+!#include includes/gannet.txt
+
+
 !   ____       _            
 !  / ___| __ _| |_ ___  ___ 
 ! | |  _ / _` | __/ _ \/ __|
 ! | |_| | (_| | ||  __/\__ \
 !  \____|\__,_|\__\___||___/
 !                           
-
-!#include includes/gates-gannet.txt
 
 !---------!
 ! Generic !
@@ -237,8 +245,6 @@ quantamagazine.org##.disclosure-notification
 !  / ___ \| | | | | | | (_) | |_| | (_| | | | | (_|  __/\__ \
 ! /_/   \_\_| |_|_| |_|\___/ \__, |\__,_|_| |_|\___\___||___/
 !                            |___/                           
-
-!#include includes/annoyances-gannet.txt
 
 !---------!
 ! Generic !
