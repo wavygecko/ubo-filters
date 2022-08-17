@@ -24,23 +24,22 @@
 ! | |  _ / _` | __/ _ \/ __|
 ! | |_| | (_| | ||  __/\__ \
 !  \____|\__,_|\__\___||___/
-!                           
+!
 
 !---------!
 ! Generic !
 !---------!
 
-! Blox CMS (e.g., dothaneagle.com, hmbreview.com)
-/tncms/subscription.js$script
-/tncms/api/access.js$script
+! Pelcro (e.g., edweek.org, frieze.com)
+||js.pelcro.com/sdk/main.min.js$script
+
+! Piano (e.g., economist.com, sportico.com)
+/api/tinypass.min.js$script
 
 ! Pico (e.g., cyclingtips.com, defector.com)
 ||api.pico.tools/client/query/*$xhr
 ||api.pico.tools/popup/null/*$xhr
 gadget.pico.tools##+js(json-prune, locked)
-
-! Tinypass (e.g., economist.com, sportico.com)
-||cdn.tinypass.com/api/tinypass.min.js$script
 
 !----------!
 ! Specific !
@@ -50,7 +49,7 @@ gadget.pico.tools##+js(json-prune, locked)
 magazine.atavist.com##+js(aopr, paywalledArticlesRead)
 
 ! The Athletic
-theathletic.com##body:style(overflow: visible !important; position: static !important;)
+theathletic.com##body.noscroll:style(overflow: visible !important; position: static !important;)
 theathletic.com###darken-overlay
 theathletic.com###slideup-paywall
 theathletic.com##.article-content-container ~ div:empty
@@ -86,9 +85,6 @@ chronicle.com##[data-content-summary]
 foreignpolicy.com##.content-gated:style(display: block !important;)
 foreignpolicy.com##.content-ungated
 
-! Frieze
-||js.pelcro.com/sdk/main.min.js$script,domain=frieze.com
-
 ! The Guardian
 ||assets.guim.co.uk/assets/SignInGateSelector-importable.*.js$script,domain=theguardian.com
 
@@ -98,8 +94,8 @@ harpers.org##+js(cookie-remover, hr_session)
 ! High Country News
 hcn.org##+js(ra, content, meta[name="UID"])
 
-! The Intercept
-||o.prod.theintercept.com/api/tinypass.min.js$script,1p
+! Lee Enterprises (https://lee.net/markets/)
+allpoliticsnow.com,atlanticcityweekly.com,auburnpub.com,azdailysun.com,beatricedailysun.com,big10central.com,billingsgazette.com,bismarcktribune.com,breakingone.com,buffalonews.com,casperjournal.com,chippewa.com,clarindaherald.com,columbustelegram.com,cumberlink.com,dailyjournalonline.com,dailyprogress.com,dbrnews.com,democratherald.com,dothaneagle.com,easytravel101.com,elkodaily.com,feastandfield.net,fredericksburg.com,fremonttribune.com,gazettetimes.com,globegazette.com,godanriver.com,greensboro.com,helenair.com,herald-review.com,heraldcourier.com,hickoryrecord.com,huskerextra.com,independenttribune.com,jg-tc.com,journalnow.com,journalstar.com,journaltimes.com,kearneyhub.com,kenoshanews.com,lacrossetribune.com,lakegenevanews.net,lebanon-express.com,lexch.com,loganwoodbine.com,madison.com,magicvalley.com,martinsvillebulletin.com,mcdowellnews.com,missoulian.com,mooresvilletribune.com,morganton.com,mtstandard.com,muscatinejournal.com,myaggienation.com,napavalleyregister.com,newsadvance.com,newsvirginian.com,nonpareilonline.com,nptelegraph.com,nwitimes.com,oanow.com,omaha.com,pantagraph.com,poststar.com,pressofatlanticcity.com,prostoknow.com,qconline.com,qctimes.com,qctoday.com,rapidcityjournal.com,ravallirepublic.com,richmond.com,roanoke.com,safeliving101.com,scnow.com,siouxcityjournal.com,smithmountainlake.com,starexponent.com,starherald.com,statesville.com,stlpinchhits.com,stltoday.com,swvatoday.com,tastyrecipes101.com,tdn.com,theeagle.com,thefranklinnewspost.com,theindependent.com,thesouthern.com,thetandd.com,timegoggles.com,trib.com,tucson.com,tulsaworld.com,valleynewstoday.com,wacotrib.com,wahoo-ashland-waverly.com,wcfcourier.com,whiskers101.com,winonadailynews.com,wiscnews.com,yorknewstimes.com##+js(aopr, TNCMS.Access.checkAccess)
 
 ! McClatchy (https://www.mcclatchy.com/our-impact/markets#map)
 bellinghamherald.com,bnd.com,bradenton.com,centredaily.com,charlotteobserver.com,elnuevoherald.com,flkeysnews.com,fresnobee.com,heraldonline.com,heraldsun.com,idahostatesman.com,islandpacket.com,kansas.com,kansascity.com,kentucky.com,ledger-enquirer.com,macon.com,mcclatchydc.com,mercedsunstar.com,miamiherald.com,modbee.com,myrtlebeachonline.com,newsobserver.com,sacbee.com,sanluisobispo.com,star-telegram.com,sunherald.com,thenewstribune.com,theolympian.com,thestate.com,tri-cityherald.com##+js(cookie-remover, sessionz)
@@ -149,7 +145,7 @@ scientificamerican.com##+js(cookie-remover, spw_l)
 
 ! Time
 ||time.com/dist/meter-wall-client-js.*.js$script,1p
-time.com##body:style(overflow-y: visible !important; position: static !important;)
+time.com##body:style(position: static !important;)
 
 ! Tribune Publishing (https://careers.tribpub.com/portfolio/#-0)
 ||zephr.*/zephr/feature-decisions$xhr,domain=baltimoresun.com|capitalgazette.com|chicagotribune.com|courant.com|dailypress.com|mcall.com|nydailynews.com|orlandosentinel.com|pilotonline.com|sun-sentinel.com
@@ -165,13 +161,14 @@ baltimoresun.com,capitalgazette.com,chicagotribune.com,courant.com,dailypress.co
 !   / _ \ / _` / __|
 !  / ___ \ (_| \__ \
 ! /_/   \_\__,_|___/
-!                   
+!
 
 !---------!
 ! Generic !
 !---------!
 
-! Placeholder for generic filters
+! Lee Enterprises (https://lee.net/markets/)
+##.lee-track-ilad
 
 !----------!
 ! Specific !
@@ -180,12 +177,15 @@ baltimoresun.com,capitalgazette.com,chicagotribune.com,courant.com,dailypress.co
 ! Album of the Year
 albumoftheyear.org##div:has(> .adHeading)
 
+! Cycling Tips
+cyclingtips.com###takeover
+
+! Maclean’s
+macleans.ca###leaderboard
+
 ! Bloomberg
 bloomberg.com##.dvz-v0-ad-top
 bloomberg.com##.css--ad
-
-! The Chronicle of Higher Education
-chronicle.com##.Page-above
 
 ! Current Affairs
 currentaffairs.org##.wp-block-image:has(> a[href$="/subscribe"])
@@ -237,6 +237,15 @@ scientificamerican.com###promo-header
 ! Quanta Magazine
 quantamagazine.org##+js(rc, cookie-not-accepted, #app)
 quantamagazine.org##.disclosure-notification
+
+
+!  ____                             
+! |  _ \ ___  _ __  _   _ _ __  ___ 
+! | |_) / _ \| '_ \| | | | '_ \/ __|
+! |  __/ (_) | |_) | |_| | |_) \__ \
+! |_|   \___/| .__/ \__,_| .__/|___/
+!            |_|         |_|
+
 
 
 !     _                                                      
