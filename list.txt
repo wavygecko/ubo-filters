@@ -1,6 +1,6 @@
 ! Title: WavyGecko’s uBlock filters
 ! Description: Blocks gates, ads, trackers, cookie notices, popups, and other annoyances.
-               Use with EasyList Cookie and AdGuard Popups lists, in addition to the default uBlock filters.
+!              Use with EasyList Cookie and AdGuard Popups lists, in addition to the default uBlock filters.
 ! Expires: 4 days
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! Licence: https://raw.githubusercontent.com/wavygecko/ubo-filters/main/LICENSE
