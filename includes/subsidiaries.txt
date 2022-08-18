@@ -1,3 +1,7 @@
+!~~~~~~~~~~~~~~!
+! Subsidiaries !
+!~~~~~~~~~~~~~~!
+
 ! Condé Nast (https://www.condenast.com/brands-and-markets/brands)
 ! Paywalls
 ||journey.*/build-*.js$script,domain=allure.com|architecturaldigest.com|bonappetit.com|cntraveler.com|gq.com|newyorker.com|pitchfork.com|vanityfair.com|vogue.co.uk|vogue.com|voguebusiness.com|wired.com
