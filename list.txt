@@ -1,5 +1,6 @@
 ! Title: WavyGecko’s uBlock filters
-! Description: Blocks gates, ads, popups, and annoyances. Use with EasyList Cookie and AdGuard Popups lists, in addition to the default uBlock filters.
+! Description: Blocks gates, ads, trackers, cookie notices, popups, and other annoyances.
+               Use with EasyList Cookie and AdGuard Popups lists, in addition to the default uBlock filters.
 ! Expires: 4 days
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! Licence: https://raw.githubusercontent.com/wavygecko/ubo-filters/main/LICENSE
@@ -164,12 +165,12 @@ rollingstone.com##.gcwp-carousel
 scientificamerican.com##.home-banner
 scientificamerican.com###promo-header
 
-!  ____       _                       
-! |  _ \ _ __(_)_   ____ _  ___ _   _ 
-! | |_) | '__| \ \ / / _` |/ __| | | |
-! |  __/| |  | |\ V / (_| | (__| |_| |
-! |_|   |_|  |_| \_/ \__,_|\___|\__, |
-!                               |___/ 
+!  _____               _                 
+! |_   _| __ __ _  ___| | _____ _ __ ___ 
+!   | || '__/ _` |/ __| |/ / _ \ '__/ __|
+!   | || | | (_| | (__|   <  __/ |  \__ \
+!   |_||_|  \__,_|\___|_|\_\___|_|  |___/
+!                                        
 
 ! The American Prospect
 ||api3.crux.kn^$script,domain=prospect.org
