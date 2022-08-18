@@ -5,4 +5,5 @@
 !#include subsidiaries/nine-entertainment.txt
 !#include subsidiaries/outside.txt
 !#include subsidiaries/schwartz-media.txt
+!#include subsidiaries/sjc-media.txt
 !#include subsidiaries/tribune-publishing.txt
