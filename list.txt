@@ -11,37 +11,37 @@
 !~~~~~~~~~!
 
 ! MailChimp (e.g., bostonreview.net)
-! ├── Popups
+! ─── Popups
 ||downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js$script
 
 ! MailOptin (e.g., apex-magazine.com)
-! ├── Popups
+! ─── Popups
 /wp-content/plugins/mailoptin/*$script
 
 ! Newspack Popups (e.g., magazine.atavist.com)
-! ├── Popups
+! ─── Popups
 /wp-content/plugins/newspack-popups/*$script
 
 ! Pelcro (e.g., edweek.org, frieze.com)
-! ├── Paywalls
+! ─── Paywalls
 ||js.pelcro.com/sdk/main.min.js$script
 
 ! Pendo (e.g., lareviewofbooks.org)
-! ├── Popups
+! ─── Popups
 ||data.pendo.io/data/guide.js/*$script
 
 ! Piano (e.g., economist.com, sportico.com)
-! ├── Paywalls
+! ─── Paywalls
 /api/tinypass.min.js$script
 
 ! Pico (e.g., cyclingtips.com, defector.com)
-! ├── Paywalls
+! ─── Paywalls
 ||api.pico.tools/client/query/*$xhr
 ||api.pico.tools/popup/null/*$xhr
 gadget.pico.tools##+js(json-prune, locked)
 
 ! Squarespace (e.g., bittersoutherner.com)
-! ├── Popups
+! ─── Popups
 ||assets.squarespace.com/universal/scripts-compressed/popup-overlay-*-min.*.js$script
 
 !~~~~~~~~~~!
@@ -49,160 +49,160 @@ gadget.pico.tools##+js(json-prune, locked)
 !~~~~~~~~~~!
 
 ! Aeon
-! ├── Popups
+! ─── Popups
 ||aeon.co/_next/static/chunks/NewsletterPopup.*.js$script,1p
-! ├── Annoyances
+! ─── Annoyances
 ||aeon.co/_next/static/chunks/SupportBannerHeader.*.js$script,1p
 
 ! Album of the Year
-! ├── Ads
+! ─── Ads
 albumoftheyear.org##div:has(> .adHeading)
 
 ! The American Prospect
-! ├── Trackers
+! ─── Trackers
 ||api3.crux.kn^$script,domain=prospect.org
 
 ! The Atavist Magazine
-! ├── Paywalls
+! ─── Paywalls
 magazine.atavist.com##+js(aopr, paywalledArticlesRead)
 
 ! The Athletic
-! ├── Paywalls
+! ─── Paywalls
 theathletic.com##body.noscroll:style(overflow: visible !important; position: static !important;)
 theathletic.com###darken-overlay
 theathletic.com###slideup-paywall
 theathletic.com##.article-content-container ~ div:empty
 
 ! The Atlantic
-! ├── Paywalls
+! ─── Paywalls
 theatlantic.com##+js(cookie-remover, articleViews)
 theatlantic.com###paywall
 theatlantic.com##.c-nudge__container
-! ├── Annoyances
+! ─── Annoyances
 theatlantic.com###nonMeteredNudge
 theatlantic.com###sponsoredNonMeteredNudge
 theatlantic.com##.c-non-metered-nudge
 
 ! Behance
-! ├── Annoyances
+! ─── Annoyances
 behance.net##[class*="Search-contentBlocker-"]
 behance.net##[class*="ImageElement-blockPointerEvents-"]:style(pointer-events: auto !important;)
 behance.net##[class*="Module-blockGridPointerEvents-"] .grid__item-image:style(pointer-events: auto !important;)
 behance.net###lightbox-wrap img:style(pointer-events: auto !important;)
 
 ! Believer Magazine
-! ├── Popups
+! ─── Popups
 thebeliever.net##.subscriber-popup-container
 
 ! Bleacher Report
-! ├── Popups
+! ─── Popups
 bleacherreport.com##.newsletterSubsModule.flyIn
 
 ! Bloomberg
-! ├── Paywalls (Is a more targeted approach possible without blocking all localStorage?)
+! ─── Paywalls (Is a more targeted approach possible without blocking all localStorage?)
 ||assets.bwbx.io/s3/javelin/public/javelin/js/foundation/transporter/foundation_transporter-*.js$script,domain=bloomberg.com
 bloomberg.com##+js(aopr, localStorage)
 bloomberg.com###fortress-preblocked-container-root
-! ├── Ads
+! ─── Ads
 bloomberg.com##.dvz-v0-ad-top
 bloomberg.com##.css--ad
 
 ! The Boston Globe
-! ├── Paywalls
+! ─── Paywalls
 ||meter.bostonglobe.com/js/meter.js$script,1p
-! ├── Annoyances
+! ─── Annoyances
 bostonreview.net##.elementor-element-1b2cb65
 bostonreview.net##.elementor-element-16134f5
 
 ! The California Sunday Magazine
-! ├── Annoyances
+! ─── Annoyances
 story.californiasunday.com##.story-actions
 
 ! The Chronicle of Higher Education
-! ├── Paywalls
+! ─── Paywalls
 chronicle.com##+js(ra, data-content-body, .contentBody)
 chronicle.com##[data-content-summary]
 
 ! Current Affairs
-! ├── Ads
+! ─── Ads
 currentaffairs.org##.wp-block-image:has(> a[href$="/subscribe"])
 
 ! Damn Interesting
-! ├── Popups
+! ─── Popups
 damninteresting.com##.plea
 
 ! Deadline
-! ├── Popups
+! ─── Popups
 deadline.com##+js(aopr, scrollSubscriber)
 deadline.com##.toaster
 
 ! The Drift
-! ├── Paywalls
+! ─── Paywalls
 ||thedriftmag.com/wp-content/plugins/drift-paywall-plugin/public/js/drift-paywall-plugin-public.js$script,1p
 
 ! Eater
-! ├── Popups
+! ─── Popups
 eater.com###toaster
 
 ! The Economist
-! ├── Ads
+! ─── Ads
 economist.com##[class*="adComponent_advert__"]
 
 ! Emergence Magazine
-! ├── Popups
+! ─── Popups
 emergencemagazine.org##.newsletter-overlay
 emergencemagazine.org##.newsletter-popup
-! ├── Annoyances
+! ─── Annoyances
 emergencemagazine.org##.newsletter-dropin
 emergencemagazine.org##.c-social-dropin
 emergencemagazine.org##.c-audio-bar:not(.has-played)
 
 ! Forbes
-! ├── Ads
+! ─── Ads
 forbes.com##fbs-ad
 forbes.com##.rule-embed + fbs-ad + .rule-embed
 
 ! Foreign Policy
-! ├── Paywalls
+! ─── Paywalls
 foreignpolicy.com##.content-gated:style(display: block !important;)
 foreignpolicy.com##.content-ungated
 
 ! The Guardian
-! ├── Ads
+! ─── Ads
 ||assets.guim.co.uk/assets/TopRightAdSlot-importable.*.js$script,domain=theguardian.com
-! ├── Annoyances
+! ─── Annoyances
 ||assets.guim.co.uk/assets/SignInGateSelector-importable.*.js$script,domain=theguardian.com
 theguardian.com###sp_message_container_690155
 theguardian.com##.site-message--banner
 theguardian.com##gu-island[name="StickyBottomBanner"]
 
 ! Harper’s Magazine
-! ├── Paywalls
+! ─── Paywalls
 harpers.org##+js(cookie-remover, hr_session)
 
 ! High Country News
-! ├── Paywalls
+! ─── Paywalls
 hcn.org##+js(ra, content, meta[name="UID"])
 
 ! Literary Hub
-! ├── Ads
+! ─── Ads
 lithub.com,crimereads.com##[class*="ai-viewport-"]
 lithub.com,crimereads.com##.ai_widget
 lithub.com,crimereads.com##.code-block:has(> [class*="pubg-"])
 lithub.com##.header-ad-leaderboard
-! ├── Popups
+! ─── Popups
 lithub.com,crimereads.com###post_more_wrapper
 
 ! Los Angeles Times
-! ├── Paywalls
+! ─── Paywalls
 ||libs.platform.californiatimes.com/meteringjs/latspot.js$script,domain=latimes.com
 
 ! The Marshall Project
-! ├── Popups
+! ─── Popups
 ||themarshallproject.org/notifications/v*/toast$xhr,1p
 
 ! Medievalists
-! ├── Ads
+! ─── Ads
 medievalists.net###text-623000138
 medievalists.net###custom_html-4
 medievalists.net###text-623000147
@@ -211,110 +211,110 @@ medievalists.net###primis_intext
 medievalists.net##.ad
 
 ! Mother Jones
-! ├── Ads
+! ─── Ads
 motherjones.com##.incontent-promo
 
 ! Nautilus
-! ├── Popups
+! ─── Popups
 nautil.us##.subscibe-bar
 
 ! The New Atlantis
-! ├── Paywalls
+! ─── Paywalls
 ||thenewatlantis.com/wp-content/themes/thenewatlantis/js/donate.js$script,1p
 thenewatlantis.com##+js(rc, article-gated, .gutenberg-content)
 thenewatlantis.com##.gate-gradient
 
 ! The New Republic
-! ├── Paywalls
+! ─── Paywalls
 ||blink.net/json/public_data.newrepublic.com.json$xhr,domain=newrepublic.com
 
 ! New Statesman
-! ├── Paywalls
+! ─── Paywalls
 ||newstatesman.com/wp-content/plugins/nsmg-evolok-paywall/classes/assets/js/ev-em.min.js$script,1p
 
 ! The New York Review of Books
-! ├── Paywalls
+! ─── Paywalls
 nybooks.com##+js(rc, paywall-article, .article-main-content)
-! ├── Popups
+! ─── Popups
 nybooks.com##.toast-cta
 
 ! The New York Times
-! ├── Paywalls
+! ─── Paywalls
 ||meter-svc.nytimes.com/meter.js$xhr,1p
 ||mwcm.nytimes.com/capi/metered_assets/*$xhr,1p
-! ├── Popups
+! ─── Popups
 nytimes.com##.magnoliaDock
 
 ! The Point
-! ├── Paywalls
+! ─── Paywalls
 thepointmag.com##+js(cookie-remover, monthly_history)
 thepointmag.com##.overlay
 thepointmag.com###tpopup-
 
 ! Pysche
-! ├── Popups
+! ─── Popups
 ||psyche.co/_next/static/chunks/PopupManager.*.js$script,1p
-! ├── Annoyances
+! ─── Annoyances
 ||psyche.co/_next/static/chunks/SupportBannerHeader.*.js$script,1p
 
 ! Quanta Magazine
-! ├── Cookie notices
+! ─── Cookie notices
 quantamagazine.org##+js(rc, cookie-not-accepted, #app)
 quantamagazine.org##.disclosure-notification
 
 ! Reddit
-! ├── Popups
+! ─── Popups
 old.reddit.com##.read-next
-! ├── Annoyances
+! ─── Annoyances
 old.reddit.com##.listingsignupbar
 old.reddit.com##.commentsignupbar
 
 ! Reuters
-! ├── Paywalls
+! ─── Paywalls
 ||reuters.com/arc/subs/p.min.js$script,1p
 
 ! Rolling Stone
-! ├── Ads
+! ─── Ads
 rollingstone.com##.gcwp-carousel
 
 ! The San Diego Union-Tribune
-! ├── Paywalls
+! ─── Paywalls
 ||libs.platform.californiatimes.com/meteringjs/sdutspot.js$script,domain=sandiegouniontribune.com
 
 ! Scientific American
-! ├── Paywalls
+! ─── Paywalls
 scientificamerican.com##+js(cookie-remover, spw_l)
-! ├── Annoyances
+! ─── Annoyances
 scientificamerican.com##.home-banner
 scientificamerican.com###promo-header
 scientificamerican.com##.spw
 
 ! Scroll
-! ├── Popups
+! ─── Popups
 scroll.in##.floating-contribute-block
-! ├── Annoyances
+! ─── Annoyances
 scroll.in##.scrollstrap-container
 
 ! Stat
-! ├── Popups
+! ─── Popups
 statnews.com##.recirculation-bar
 
 ! Thomson Reuters Foundation Long Reads
-! ├── Popups
+! ─── Popups
 longreads.trust.org##.pa-footer
 
 ! Time
-! ├── Paywalls
+! ─── Paywalls
 ||time.com/dist/meter-wall-client-js.*.js$script,1p
 time.com##body:style(position: static !important;)
 
 ! The Walrus
-! ├── Popups
+! ─── Popups
 thewalrus.ca##.wppopups-whole
 thewalrus.ca##.spu-box
 
 ! The Washington Post
-! ├── Paywalls
+! ─── Paywalls
 ||washingtonpost.com/subscribe/static/tetro-client/fusion/tetro.min.js$script,1p
 ||washingtonpost.com/subscribe/static/tetro-client/tetro.min.js$script,1p
 
