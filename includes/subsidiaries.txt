@@ -1,2 +1,8 @@
 !#include subsidiaries/conde-nast.txt
-!#include subsidiaries/gannet.txt
+!#include subsidiaries/gannett.txt
+!#include subsidiaries/lee-enterprises.txt
+!#include subsidiaries/mcclatchy.txt
+!#include subsidiaries/nine-entertainment.txt
+!#include subsidiaries/outside.txt
+!#include subsidiaries/schwartz-media.txt
+!#include subsidiaries/tribune-publishing.txt

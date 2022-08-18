@@ -1,0 +1,7 @@
+! Tribune Publishing
+! https://careers.tribpub.com/portfolio/#-0
+
+! Paywalls
+
+||zephr.*/zephr/feature-decisions$xhr,domain=baltimoresun.com|capitalgazette.com|chicagotribune.com|courant.com|dailypress.com|mcall.com|nydailynews.com|orlandosentinel.com|pilotonline.com|sun-sentinel.com
+baltimoresun.com,capitalgazette.com,chicagotribune.com,courant.com,dailypress.com,mcall.com,nydailynews.com,orlandosentinel.com,pilotonline.com,sun-sentinel.com###top_article_fluid_wrapper

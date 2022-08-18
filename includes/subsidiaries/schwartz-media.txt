@@ -1,0 +1,10 @@
+! Schwartz Media
+! https://schwartzmedia.com.au/journalism
+
+! Paywalls
+
+themonthly.com.au##+js(aopr, localStorage.lam)
+themonthly.com.au##body:not(.node-is-locked) .paywall-container-outer
+
+||thesaturdaypaper.com.au/sites/all/modules/custom/node_meter/pw.js$script,1p
+thesaturdaypaper.com.au##.paywall-hard-always-show

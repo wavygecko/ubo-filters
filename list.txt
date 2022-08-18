@@ -82,12 +82,6 @@ harpers.org##+js(cookie-remover, hr_session)
 ! High Country News
 hcn.org##+js(ra, content, meta[name="UID"])
 
-! Lee Enterprises (https://lee.net/markets/)
-allpoliticsnow.com,atlanticcityweekly.com,auburnpub.com,azdailysun.com,beatricedailysun.com,big10central.com,billingsgazette.com,bismarcktribune.com,breakingone.com,buffalonews.com,casperjournal.com,chippewa.com,clarindaherald.com,columbustelegram.com,cumberlink.com,dailyjournalonline.com,dailyprogress.com,dbrnews.com,democratherald.com,dothaneagle.com,easytravel101.com,elkodaily.com,feastandfield.net,fredericksburg.com,fremonttribune.com,gazettetimes.com,globegazette.com,godanriver.com,greensboro.com,helenair.com,herald-review.com,heraldcourier.com,hickoryrecord.com,huskerextra.com,independenttribune.com,jg-tc.com,journalnow.com,journalstar.com,journaltimes.com,kearneyhub.com,kenoshanews.com,lacrossetribune.com,lakegenevanews.net,lebanon-express.com,lexch.com,loganwoodbine.com,madison.com,magicvalley.com,martinsvillebulletin.com,mcdowellnews.com,missoulian.com,mooresvilletribune.com,morganton.com,mtstandard.com,muscatinejournal.com,myaggienation.com,napavalleyregister.com,newsadvance.com,newsvirginian.com,nonpareilonline.com,nptelegraph.com,nwitimes.com,oanow.com,omaha.com,pantagraph.com,poststar.com,pressofatlanticcity.com,prostoknow.com,qconline.com,qctimes.com,qctoday.com,rapidcityjournal.com,ravallirepublic.com,richmond.com,roanoke.com,safeliving101.com,scnow.com,siouxcityjournal.com,smithmountainlake.com,starexponent.com,starherald.com,statesville.com,stlpinchhits.com,stltoday.com,swvatoday.com,tastyrecipes101.com,tdn.com,theeagle.com,thefranklinnewspost.com,theindependent.com,thesouthern.com,thetandd.com,timegoggles.com,trib.com,tucson.com,tulsaworld.com,valleynewstoday.com,wacotrib.com,wahoo-ashland-waverly.com,wcfcourier.com,whiskers101.com,winonadailynews.com,wiscnews.com,yorknewstimes.com##+js(aopr, TNCMS.Access)
-
-! McClatchy (https://www.mcclatchy.com/our-impact/markets#map)
-bellinghamherald.com,bnd.com,bradenton.com,centredaily.com,charlotteobserver.com,elnuevoherald.com,flkeysnews.com,fresnobee.com,heraldonline.com,heraldsun.com,idahostatesman.com,islandpacket.com,kansas.com,kansascity.com,kentucky.com,ledger-enquirer.com,macon.com,mcclatchydc.com,mercedsunstar.com,miamiherald.com,modbee.com,myrtlebeachonline.com,newsobserver.com,sacbee.com,sanluisobispo.com,star-telegram.com,sunherald.com,thenewstribune.com,theolympian.com,thestate.com,tri-cityherald.com##+js(cookie-remover, sessionz)
-
 ! Nant Capital
 ||libs.platform.californiatimes.com/meteringjs/latspot.js$script,domain=latimes.com
 ||libs.platform.californiatimes.com/meteringjs/sdutspot.js$script,domain=sandiegouniontribune.com
@@ -110,10 +104,6 @@ nybooks.com##+js(rc, paywall-article, .article-main-content)
 ||meter-svc.nytimes.com/meter.js$xhr,1p
 ||mwcm.nytimes.com/capi/metered_assets/*$xhr,1p
 
-! Nine Entertainment (https://www.nineforbrands.com.au/brands/#digital-&-print)
-||api.afr.com/graphql?query=*PaywallRuleQuery*$xhr,1p
-brisbanetimes.com.au,smh.com.au,theage.com.au,watoday.com.au##+js(aopr, localStorage.ffx:paywallCount)
-
 ! The Point
 thepointmag.com##+js(cookie-remover, monthly_history)
 thepointmag.com##.overlay
@@ -122,22 +112,12 @@ thepointmag.com###tpopup-
 ! Reuters
 ||reuters.com/arc/subs/p.min.js$script,1p
 
-! Schwartz Media (https://schwartzmedia.com.au/journalism)
-themonthly.com.au##+js(aopr, localStorage.lam)
-themonthly.com.au##body:not(.node-is-locked) .paywall-container-outer
-||thesaturdaypaper.com.au/sites/all/modules/custom/node_meter/pw.js$script,1p
-thesaturdaypaper.com.au##.paywall-hard-always-show
-
 ! Scientific American
 scientificamerican.com##+js(cookie-remover, spw_l)
 
 ! Time
 ||time.com/dist/meter-wall-client-js.*.js$script,1p
 time.com##body:style(position: static !important;)
-
-! Tribune Publishing (https://careers.tribpub.com/portfolio/#-0)
-||zephr.*/zephr/feature-decisions$xhr,domain=baltimoresun.com|capitalgazette.com|chicagotribune.com|courant.com|dailypress.com|mcall.com|nydailynews.com|orlandosentinel.com|pilotonline.com|sun-sentinel.com
-baltimoresun.com,capitalgazette.com,chicagotribune.com,courant.com,dailypress.com,mcall.com,nydailynews.com,orlandosentinel.com,pilotonline.com,sun-sentinel.com###top_article_fluid_wrapper
 
 ! The Washington Post
 ||washingtonpost.com/subscribe/static/tetro-client/fusion/tetro.min.js$script,1p
@@ -149,13 +129,6 @@ baltimoresun.com,capitalgazette.com,chicagotribune.com,courant.com,dailypress.co
 !  / ___ \ (_| \__ \
 ! /_/   \_\__,_|___/
 !
-
-!---------!
-! Generic !
-!---------!
-
-! Lee Enterprises (https://lee.net/markets/)
-##.lee-track-ilad
 
 !----------!
 ! Specific !
@@ -188,9 +161,6 @@ crimereads.com,lithub.com##[class*="ai-viewport-"]
 crimereads.com,lithub.com##.ai_widget
 crimereads.com,lithub.com##.code-block:has(> [class*="pubg-"])
 lithub.com##.header-ad-leaderboard
-
-! McClatchy (https://www.mcclatchy.com/our-impact/markets#map)
-bellinghamherald.com,bnd.com,bradenton.com,centredaily.com,charlotteobserver.com,elnuevoherald.com,flkeysnews.com,fresnobee.com,heraldonline.com,heraldsun.com,idahostatesman.com,islandpacket.com,kansas.com,kansascity.com,kentucky.com,ledger-enquirer.com,macon.com,mcclatchydc.com,mercedsunstar.com,miamiherald.com,modbee.com,myrtlebeachonline.com,newsobserver.com,sacbee.com,sanluisobispo.com,star-telegram.com,sunherald.com,thenewstribune.com,theolympian.com,thestate.com,tri-cityherald.com##.zone:has(#ConnatixVideoAd, #story-cta-widget)
 
 ! Mother Jones
 motherjones.com##.incontent-promo
@@ -348,9 +318,6 @@ emergencemagazine.org##.c-audio-bar:not(.has-played)
 theguardian.com###sp_message_container_690155
 theguardian.com##.site-message--banner
 theguardian.com##gu-island[name="StickyBottomBanner"]
-
-! Outside (https://www.outsideinc.com/brands/)
-backpacker.com,betamtb.com,betternutrition.com,cleaneatingmag.com,climbing.com,gymclimber.com,outsideonline.com,oxygenmag.com,pelotonmagazine.com,rockandice.com,skimag.com,trailrunnermag.com,triathlete.com,vegetariantimes.com,velonews.com,womensrunning.com,yogajournal.com##.c-thinbanner
 
 ! Scientific American
 scientificamerican.com##.spw
