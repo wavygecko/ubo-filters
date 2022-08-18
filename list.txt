@@ -146,6 +146,10 @@ currentaffairs.org##.wp-block-image:has(> a[href$="/subscribe"])
 ! The Economist
 economist.com##[class*="adComponent_advert__"]
 
+! Forbes
+forbes.com##fbs-ad
+forbes.com##.rule-embed + fbs-ad + .rule-embed
+
 ! The Guardian
 ||assets.guim.co.uk/assets/TopRightAdSlot-importable.*.js$script,domain=theguardian.com
 
@@ -154,6 +158,14 @@ crimereads.com,lithub.com##[class*="ai-viewport-"]
 crimereads.com,lithub.com##.ai_widget
 crimereads.com,lithub.com##.code-block:has(> [class*="pubg-"])
 lithub.com##.header-ad-leaderboard
+
+! Medievalists
+medievalists.net###text-623000138
+medievalists.net###custom_html-4
+medievalists.net###text-623000147
+medievalists.net###custom_html-7
+medievalists.net###primis_intext
+medievalists.net##.ad
 
 ! Mother Jones
 motherjones.com##.incontent-promo
