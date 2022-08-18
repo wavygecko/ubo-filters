@@ -1,5 +1,0 @@
-! SJC Media
-! https://www.stjoseph.com/divisions/media/#media-brands
-
-! Ads
-archive.canadianbusiness.com,chatelaine.com,macleans.ca,todaysparent.com###leaderboard
