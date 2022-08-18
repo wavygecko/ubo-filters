@@ -14,20 +14,6 @@
 ! Popups
 ||downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js$script
 
-! Pelcro (e.g., edweek.org, frieze.com)
-! Paywalls
-||js.pelcro.com/sdk/main.min.js$script
-
-! Piano (e.g., economist.com, sportico.com)
-! Paywalls
-/api/tinypass.min.js$script
-
-! Pico (e.g., cyclingtips.com, defector.com)
-! Paywalls
-||api.pico.tools/client/query/*$xhr
-||api.pico.tools/popup/null/*$xhr
-gadget.pico.tools##+js(json-prune, locked)
-
 ! MailOptin (e.g., apex-magazine.com)
 ! Popups
 /wp-content/plugins/mailoptin/*$script
