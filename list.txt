@@ -4,10 +4,6 @@
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! Licence: https://raw.githubusercontent.com/wavygecko/ubo-filters/main/LICENSE
 
-! Heading text generator: https://textkool.com/en/ascii-art-generator?hl=default&vl=default&font=Standard&text=Ads
-! Domain lookup tool: https://securitytrails.com/domain/wired.com/dns
-! Link extraction script: Array.from(document.querySelectorAll('.link')).map(el => el.getAttribute('href'))
-
 !#include includes/subsidiaries.txt
 
 !   ____       _            
