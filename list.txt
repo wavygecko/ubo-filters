@@ -210,23 +210,23 @@ quantamagazine.org##.disclosure-notification
 !---------!
 
 ! MailOptin (e.g., apex-magazine.com)
-##.mo-optin-form-lightbox
+/wp-content/plugins/mailoptin/*
 
 ! Newspack Popups (e.g., magazine.atavist.com)
-##.newspack-popup
+/wp-content/plugins/newspack-popups/*
 
 ! Pendo (e.g., lareviewofbooks.org)
-||data.pendo.io/data/guide.js/*$script
+||data.pendo.io/data/guide.js^$third-party
 
 ! Squarespace (e.g., bittersoutherner.com)
-||assets.squarespace.com/universal/scripts-compressed/popup-overlay-*-min.*.js$script
+||assets.squarespace.com/universal/scripts-compressed/popup-overlay-*.js$third-party
 
 !----------!
 ! Specific !
 !----------!
 
 ! Aeon
-||aeon.co/_next/static/chunks/NewsletterPopup.*.js$script,1p
+||aeon.co/_next/static/chunks/NewsletterPopup.*.js
 
 ! The Atlantic
 theatlantic.com###nonMeteredNudge
@@ -267,7 +267,7 @@ nybooks.com##.toast-cta
 nytimes.com##.magnoliaDock
 
 ! Pysche
-||psyche.co/_next/static/chunks/PopupManager.*.js$script,1p
+||psyche.co/_next/static/chunks/PopupManager.*.js
 
 ! Scroll
 scroll.in##.floating-contribute-block
@@ -294,7 +294,7 @@ thewalrus.ca##.spu-box
 !----------!
 
 ! Aeon
-||aeon.co/_next/static/chunks/SupportBannerHeader.*.js$script,1p
+||aeon.co/_next/static/chunks/SupportBannerHeader.*.js
 
 ! The Atlantic
 theatlantic.com##.c-non-metered-nudge
@@ -323,7 +323,7 @@ theguardian.com##.site-message--banner
 theguardian.com##gu-island[name="StickyBottomBanner"]
 
 ! Psyche
-||psyche.co/_next/static/chunks/SupportBannerHeader.*.js$script,1p
+||psyche.co/_next/static/chunks/SupportBannerHeader.*.js
 
 ! Scientific American
 scientificamerican.com##.spw
