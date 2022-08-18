@@ -262,6 +262,13 @@ thepointmag.com###tpopup-
 quantamagazine.org##+js(rc, cookie-not-accepted, #app)
 quantamagazine.org##.disclosure-notification
 
+! Reddit
+! Popups
+old.reddit.com##.read-next
+! Annoyances
+old.reddit.com##.listingsignupbar
+old.reddit.com##.commentsignupbar
+
 ! Reuters
 ! Paywalls
 ||reuters.com/arc/subs/p.min.js$script,1p
