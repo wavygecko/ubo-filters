@@ -2,7 +2,5 @@
 ! https://www.nineforbrands.com.au/brands/#digital-&-print
 
 ! Paywalls
-
 ||api.afr.com/graphql?query=*PaywallRuleQuery*$xhr,1p
-
 brisbanetimes.com.au,smh.com.au,theage.com.au,watoday.com.au##+js(aopr, localStorage.ffx:paywallCount)

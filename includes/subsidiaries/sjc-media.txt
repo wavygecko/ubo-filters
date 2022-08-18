@@ -2,5 +2,4 @@
 ! https://www.stjoseph.com/divisions/media/#media-brands
 
 ! Ads
-
 chatelaine.com,macleans.ca,todaysparent.com###leaderboard
