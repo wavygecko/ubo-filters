@@ -1,6 +1,4 @@
-! ╔══════════════╗
-! ║ Subsidiaries ║
-! ╚══════════════╝
+! SUBSIDIARIES
 
 ! Condé Nast (https://www.condenast.com/brands-and-markets/brands)
 ! paywalls
