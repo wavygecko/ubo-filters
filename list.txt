@@ -12,7 +12,7 @@
 ! popups
 /wp-content/plugins/boxzilla/*
 
-! MailOptin (e.g., apex-magazine.com)
+! MailOptin (apex-magazine.com)
 ! popups
 /wp-content/plugins/mailoptin/*
 
@@ -20,11 +20,11 @@
 ! popups
 /wp-content/plugins/newspack-popups/*
 
-! Pelcro (e.g., edweek.org, frieze.com)
+! Pelcro (edweek.org, frieze.com)
 ! paywalls
 ||js.pelcro.com/sdk/main.min.js$script
 
-! Pendo (e.g., lareviewofbooks.org)
+! Pendo (lareviewofbooks.org)
 ! popups
 ||data.pendo.io/data/guide.js/*$script
 
@@ -32,7 +32,7 @@
 ! paywalls
 /api/tinypass.min.js$script
 
-! Pico (e.g., cyclingtips.com, defector.com)
+! Pico (cyclingtips.com, defector.com)
 ! paywalls
 ||api.pico.tools/client/query/*$xhr
 ||api.pico.tools/popup/null/*$xhr
@@ -308,14 +308,6 @@ thewalrus.ca##.spu-box
 
 ! UNSORTED
 
-! MailChimp (e.g., bostonreview.net)
-! popups
-! ||downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js$script
-
-! Squarespace (e.g., bittersoutherner.com)
-! popups
-! ||assets.squarespace.com/universal/scripts-compressed/popup-overlay-*-min.*.js$script
-
 ! Time
 ! paywalls
 ||time.com/dist/meter-wall-client-js.*.js$script,1p
@@ -332,5 +324,4 @@ theathletic.com##.article-content-container ~ div:empty
 ! paywalls
 foreignpolicy.com##.content-gated:style(display: block !important;)
 foreignpolicy.com##.content-ungated
-
 
