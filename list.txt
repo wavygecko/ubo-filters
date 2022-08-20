@@ -106,6 +106,8 @@ bostonreview.net##.elementor-element-16134f5
 ! paywalls
 chronicle.com##+js(ra, data-content-body, .contentBody)
 chronicle.com##[data-content-summary]
+! annoyances
+chronicle.com##.Page-above
 
 ! Current Affairs
 ! ads
