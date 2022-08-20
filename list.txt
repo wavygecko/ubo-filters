@@ -77,14 +77,6 @@ behance.net##[class*="ImageElement-blockPointerEvents-"]:style(pointer-events: a
 behance.net##[class*="Module-blockGridPointerEvents-"] .grid__item-image:style(pointer-events: auto !important;)
 behance.net###lightbox-wrap img:style(pointer-events: auto !important;)
 
-! The Believer
-! popups
-thebeliever.net##.subscriber-popup-container
-
-! Bleacher Report
-! popups
-bleacherreport.com##.newsletterSubsModule.flyIn
-
 ! Bloomberg
 ! paywalls
 bloomberg.com##+js(aopr, localStorage)
@@ -101,10 +93,6 @@ bloomberg.com##.css--ad
 ! annoyances
 bostonreview.net##.elementor-element-1b2cb65
 bostonreview.net##.elementor-element-16134f5
-
-! The California Sunday Magazine
-! annoyances
-story.californiasunday.com##.story-actions
 
 ! The Chronicle of Higher Education
 ! paywalls
@@ -152,6 +140,10 @@ harpers.org##+js(cookie-remover, hr_session)
 ! High Country News
 ! paywalls
 hcn.org##+js(ra, content, meta[name="UID"])
+
+! Knowable Magazine
+! popups
+knowablemagazine.org##.newsletter-modal
 
 ! Literary Hub / CrimeReads
 ! ads
@@ -301,6 +293,7 @@ vox.com##.contribute-banner
 
 ! The Walrus
 ! popups
+||thewalrus.activehosted.com/f/embed.php?*id=45$script,domain=thewalrus.ca
 thewalrus.ca##.wppopups-whole
 thewalrus.ca##.spu-box
 
@@ -311,27 +304,17 @@ thewalrus.ca##.spu-box
 
 ! TODO
 
-! comments not loading - https://www.washingtonpost.com/opinions/interactive/2022/irs-pipeline-tax-return-delays/
-! popups - https://currentlyhq.com/global/times-up-for-the-colorado-river-and-a-scary-new-phase-begins/
-! popups - https://thewalrus.ca/bedroom-rapper/
-! ads - https://melmagazine.com/en-us/story/jono-mcleod-brandon-lee-my-old-school
-! paywalls - https://www.chicagotribune.com/investigations/ct-illinois-schools-discipline-tickets-fines-price-kids-pay-20220428-tpkekqt3sfcadhmczbl7xadcva-htmlstory.html
+
 
 ! UNSORTED
 
 ! MailChimp (e.g., bostonreview.net)
 ! popups
-||downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js$script
+! ||downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js$script
 
 ! Squarespace (e.g., bittersoutherner.com)
 ! popups
-||assets.squarespace.com/universal/scripts-compressed/popup-overlay-*-min.*.js$script
-
-! Knowable Magazine
-! popups
-knowablemagazine.org##.newsletter-modal
-! annoyances
-knowablemagazine.org###onetrust-consent-sdk#onetrust-consent-sdk
+! ||assets.squarespace.com/universal/scripts-compressed/popup-overlay-*-min.*.js$script
 
 ! Time
 ! paywalls
@@ -349,4 +332,5 @@ theathletic.com##.article-content-container ~ div:empty
 ! paywalls
 foreignpolicy.com##.content-gated:style(display: block !important;)
 foreignpolicy.com##.content-ungated
+
 
