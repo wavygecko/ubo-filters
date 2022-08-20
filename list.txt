@@ -12,6 +12,10 @@
 ! popups
 /wp-content/plugins/boxzilla/*
 
+! Digioh (deadline.com)
+! popups
+||lightboxcdn.com^$script
+
 ! MailOptin (apex-magazine.com)
 ! popups
 /wp-content/plugins/mailoptin/*
@@ -109,7 +113,6 @@ damninteresting.com##.plea
 
 ! Deadline
 ! popups
-deadline.com##+js(aopr, scrollSubscriber)
 deadline.com##.toaster
 
 ! The Drift
@@ -140,6 +143,10 @@ harpers.org##+js(cookie-remover, hr_session)
 ! High Country News
 ! paywalls
 hcn.org##+js(ra, content, meta[name="UID"])
+
+! How to Geek
+! popups
+howtogeek.com###notificationAllowPrompt
 
 ! Knowable Magazine
 ! popups
@@ -324,4 +331,3 @@ theathletic.com##.article-content-container ~ div:empty
 ! paywalls
 foreignpolicy.com##.content-gated:style(display: block !important;)
 foreignpolicy.com##.content-ungated
-
