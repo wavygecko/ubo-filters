@@ -12,9 +12,13 @@
 ! popups
 /wp-content/plugins/boxzilla/*
 
+! Crux Knowledge (prospect.org)
+! trackers
+||api*.crux.kn^$3p
+
 ! Digioh (deadline.com)
 ! popups
-||lightboxcdn.com^$script
+||lightboxcdn.com^$3p
 
 ! MailOptin (apex-magazine.com)
 ! popups
@@ -32,7 +36,7 @@
 ! popups
 ||data.pendo.io/data/guide.js/*$script
 
-! Piano (economist.com, sportico.com, theintercept.com)
+! Piano (economist.com, theintercept.com)
 ! paywalls
 /api/tinypass.min.js$script
 
@@ -41,6 +45,10 @@
 ||api.pico.tools/client/query/*$xhr
 ||api.pico.tools/popup/null/*$xhr
 gadget.pico.tools##+js(json-prune, locked)
+
+! WP Popups (thewalrus.ca)
+! popups
+/wp-content/plugins/wppopups/*
 
 ! SPECIFIC
 
@@ -55,10 +63,6 @@ gadget.pico.tools##+js(json-prune, locked)
 albumoftheyear.org##div:has(> .adHeading)
 ! annoyances
 albumoftheyear.org##.donorBanner
-
-! The American Prospect
-! trackers
-||api3.crux.kn^$script,domain=prospect.org
 
 ! The Atavist Magazine
 ! paywalls
@@ -128,6 +132,11 @@ eater.com###toaster
 emergencemagazine.org##.newsletter-overlay
 emergencemagazine.org##.newsletter-popup
 emergencemagazine.org##.newsletter-dropin
+
+! Foreign Policy
+! paywalls
+foreignpolicy.com##+js(rc, content-gated)
+foreignpolicy.com##.content-ungated
 
 ! The Guardian
 ! popups
@@ -294,6 +303,11 @@ statnews.com##.recirculation-bar
 ! popups
 longreads.trust.org##.pa-footer
 
+! Time
+! paywalls
+time.com##+js(cookie-remover, time_meter_v2)
+time.com##.meter-wall
+
 ! Vox
 ! annoyances
 vox.com##.contribute-banner
@@ -301,33 +315,12 @@ vox.com##.contribute-banner
 ! The Walrus
 ! popups
 ||thewalrus.activehosted.com/f/embed.php?*id=45$script,domain=thewalrus.ca
-thewalrus.ca##.wppopups-whole
 thewalrus.ca##.spu-box
 
 ! The Washington Post
-! paywalls
+! paywalls - TODO: this breaks comments section?
 ||washingtonpost.com/subscribe/static/tetro-client/fusion/tetro.min.js$script,1p
 ||washingtonpost.com/subscribe/static/tetro-client/tetro.min.js$script,1p
 
-! TODO
-
-
-
 ! UNSORTED
 
-! Time
-! paywalls
-||time.com/dist/meter-wall-client-js.*.js$script,1p
-time.com##body:style(position: static !important;)
-
-! The Athletic
-! paywalls
-theathletic.com##body.noscroll:style(overflow: visible !important; position: static !important;)
-theathletic.com###darken-overlay
-theathletic.com###slideup-paywall
-theathletic.com##.article-content-container ~ div:empty
-
-! Foreign Policy
-! paywalls
-foreignpolicy.com##.content-gated:style(display: block !important;)
-foreignpolicy.com##.content-ungated
