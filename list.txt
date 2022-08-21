@@ -59,8 +59,6 @@ gadget.pico.tools##+js(json-prune, locked)
 ||aeon.co/_next/static/chunks/SupportBannerHeader.*.js$script,1p
 
 ! Album of the Year
-! ads
-albumoftheyear.org##div:has(> .adHeading)
 ! annoyances
 albumoftheyear.org##.donorBanner
 
@@ -88,13 +86,18 @@ behance.net##[class*="ImageElement-blockPointerEvents-"]:style(pointer-events: a
 behance.net##[class*="Module-blockGridPointerEvents-"] .grid__item-image:style(pointer-events: auto !important;)
 behance.net###lightbox-wrap img:style(pointer-events: auto !important;)
 
+! The Believer
+! popups
+culture.org,thebeliever.net##.subscriber-popup-container
+
+! Bleacher Report
+! popups
+bleacherreport.com##.newsletterSubsModule.flyIn
+
 ! Bloomberg
 ! paywalls
 bloomberg.com##+js(aopr, localStorage)
 bloomberg.com###fortress-preblocked-container-root
-! ads
-bloomberg.com##.dvz-v0-ad-top
-bloomberg.com##.css--ad
 
 ! The Boston Globe
 ! paywalls
@@ -117,8 +120,13 @@ chronicle.com##[data-content-summary]
 chronicle.com##.Page-above
 
 ! Current Affairs
-! ads
+! annoyances
 currentaffairs.org##.wp-block-image:has(> a[href$="/subscribe"])
+currentaffairs.org##.wp-block-image:has(> a[href$="/donate"])
+
+! Currently
+! popups
+currentlyhq.com##+js(aopr, elementorProFrontend.modules.popup.popupPopped)
 
 ! Damn Interesting
 ! popups
@@ -170,14 +178,9 @@ howtogeek.com###notificationAllowPrompt
 ! popups
 knowablemagazine.org##.newsletter-modal
 
-! Literary Hub / CrimeReads
-! ads
-lithub.com,crimereads.com##[class*="ai-viewport-"]
-lithub.com,crimereads.com##.ai_widget
-lithub.com,crimereads.com##.code-block:has(> [class*="pubg-"])
-lithub.com##.header-ad-leaderboard
+! Literary Hub
 ! popups
-lithub.com,crimereads.com###post_more_wrapper
+crimereads.com,lithub.com###post_more_wrapper
 
 ! Los Angeles Times
 ! paywalls
@@ -191,18 +194,7 @@ lithub.com,crimereads.com###post_more_wrapper
 ! popups
 mcsweeneys.net###floating-footer-container
 
-! Medievalists
-! ads
-medievalists.net###text-623000138
-medievalists.net###custom_html-4
-medievalists.net###text-623000147
-medievalists.net###custom_html-7
-medievalists.net###primis_intext
-medievalists.net##.ad
-
 ! Mother Jones
-! ads
-motherjones.com##.incontent-promo
 ! popups
 motherjones.com##.mj-adblock-widget
 
@@ -271,10 +263,6 @@ old.reddit.com##.commentsignupbar
 ! Reuters
 ! paywalls
 ||reuters.com/arc/subs/p.min.js$script,1p
-
-! Rolling Stone
-! ads
-rollingstone.com##.gcwp-carousel
 
 ! The San Diego Union-Tribune
 ! paywalls
