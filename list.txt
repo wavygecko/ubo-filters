@@ -79,6 +79,9 @@ theatlantic.com###sponsoredNonMeteredNudge
 theatlantic.com##.c-non-metered-nudge
 
 ! Behance
+! popups
+behance.net##.Popup-popup-Hub
+behance.net##[class*="PrimaryNav-loggedOutOptions-"] [class*="PrimaryNav-tooltipWrapper-"]
 ! annoyances
 behance.net##[class*="Search-contentBlocker-"]
 behance.net##[class*="ImageElement-blockPointerEvents-"]:style(pointer-events: auto !important;)
@@ -101,6 +104,10 @@ bloomberg.com##.css--ad
 ! annoyances
 bostonreview.net##.elementor-element-1b2cb65
 bostonreview.net##.elementor-element-16134f5
+
+! CodePen
+! popups
+cdpn.io##.referer-warning
 
 ! The Chronicle of Higher Education
 ! paywalls
@@ -292,6 +299,11 @@ scroll.in##.floating-contribute-block
 ! annoyances
 scroll.in##.scrollstrap-container
 
+! Smarter Playlists
+! annoyances
+smarterplaylists.playlistmachinery.com##th:has-text(Created)
+smarterplaylists.playlistmachinery.com##th:has-text(# Components)
+
 ! Spiegel
 ! popups
 ||sp-spiegel-de.spiegel.de/index.html?message_id=692560$subdocument,1p
@@ -309,6 +321,14 @@ longreads.trust.org##.pa-footer
 ! paywalls
 time.com##+js(cookie-remover, time_meter_v2)
 time.com##.meter-wall
+
+! Twitch
+! popups
+twitch.tv###twilight-sticky-footer-root
+! annoyances
+twitch.tv##.prime-offers__pill
+twitch.tv##.extensions-dock__layout
+twitch.tv##button[data-a-target="player-clip-button"]
 
 ! Vox
 ! annoyances
