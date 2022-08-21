@@ -1,5 +1,5 @@
 ! Title: WavyGecko’s uBlock filters
-! Description: Blocks paywalls, ads, trackers, cookie notices, popups, and other annoyances. Use with EasyList Cookie List and the default uBlock filters.
+! Description: Blocks paywalls, trackers, popups, and other annoyances. Use with EasyList Cookie List and the default uBlock filters.
 ! Expires: 4 days
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! Licence: https://raw.githubusercontent.com/wavygecko/ubo-filters/main/LICENSE
@@ -251,11 +251,6 @@ polygon.com###toaster
 ||psyche.co/_next/static/chunks/PopupManager.*.js$script,1p
 ! annoyances
 ||psyche.co/_next/static/chunks/SupportBannerHeader.*.js$script,1p
-
-! Quanta Magazine
-! annoyances
-quantamagazine.org##+js(rc, cookie-not-accepted, #app)
-quantamagazine.org##.disclosure-notification
 
 ! Reddit (Old)
 ! popups
