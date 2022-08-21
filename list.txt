@@ -1,4 +1,4 @@
-! Title: WavyGecko’s uBlock filters
+! Title: WavyGecko’s uBlock₀ filters
 ! Description: Blocks paywalls, trackers, popups, and other annoyances. Use with EasyList Cookie List and the default uBlock filters.
 ! Expires: 4 days
 ! Homepage: https://github.com/wavygecko/ubo-filters
