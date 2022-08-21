@@ -329,9 +329,6 @@ twitch.tv##.extensions-dock__layout
 twitch.tv##button[data-a-target="player-clip-button"]
 
 ! Vanity Fair Archive
-! popups
-archive.vanityfair.com##body.page_shared:style(overflow: visible !important;)
-archive.vanityfair.com##body.page_shared .bnd_subscribe
 ! annoyances
 archive.vanityfair.com##.shared_footer_cta_basic
 archive.vanityfair.com##.shared_footer_cta_primary:remove()
@@ -350,4 +347,9 @@ thewalrus.ca##.spu-box
 ||washingtonpost.com/tetro/evaluate$xhr,1p
 
 ! UNSORTED
+
+! Vanity Fair Archive
+! popups
+archive.vanityfair.com##body.page_shared:style(overflow: visible !important;)
+archive.vanityfair.com##body.page_shared .bnd_subscribe
 
