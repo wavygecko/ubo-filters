@@ -340,9 +340,8 @@ vox.com##.contribute-banner
 thewalrus.ca##.spu-box
 
 ! The Washington Post
-! paywalls - TODO: this breaks comments section?
-||washingtonpost.com/subscribe/static/tetro-client/fusion/tetro.min.js$script,1p
-||washingtonpost.com/subscribe/static/tetro-client/tetro.min.js$script,1p
+! paywalls
+||washingtonpost.com/tetro/evaluate$xhr,1p
 
 ! UNSORTED
 
