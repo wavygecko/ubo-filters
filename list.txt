@@ -38,6 +38,7 @@
 
 ! Piano (economist.com, theintercept.com)
 ! paywalls
+/api/piano.js$script
 /api/tinypass.min.js$script
 
 ! Pico (cyclingtips.com, defector.com)
@@ -165,6 +166,10 @@ emergencemagazine.org##.newsletter-dropin
 foreignpolicy.com##+js(rc, content-gated)
 foreignpolicy.com##.content-ungated
 
+! gCaptain
+! popups
+gcaptain.com###newsletterModal
+
 ! The Guardian
 ! popups
 ||sourcepoint.theguardian.com/index.html?message_id=690155$subdocument,1p
@@ -179,10 +184,16 @@ harpers.org##+js(cookie-remover, hr_session)
 ! High Country News
 ! paywalls
 hcn.org##+js(ra, content, meta[name="UID"])
+! popups
+hcn.org##+js(aopr, $.delayPromo)
 
 ! How to Geek
 ! popups
 howtogeek.com###notificationAllowPrompt
+
+! Jacobin
+! popups
+jacobin.com###mailing-list-popup
 
 ! Knowable Magazine
 ! popups
@@ -241,8 +252,13 @@ nybooks.com##.toast-cta
 ! paywalls
 ||meter-svc.nytimes.com/meter.js$xhr,1p
 ||mwcm.nytimes.com/capi/metered_assets/*$xhr,1p
+nytimes.com##[data-testid="inline-message"]
 ! popups
 nytimes.com##.magnoliaDock
+
+! PBS
+! popups
+pbs.org##.popup
 
 ! The Point
 ! paywalls
@@ -357,4 +373,13 @@ thewalrus.ca##.spu-box
 ! popups
 archive.vanityfair.com##body.page_shared:style(overflow: visible !important;)
 archive.vanityfair.com##body.page_shared .bnd_subscribe
+
+! Yale E360
+! popups
+||cdn.jsdelivr.net/npm/sweetalert2@*/dist/sweetalert2.all.min.js$script,domain=e360.yale.edu
+
+! Vimeo
+! popups
+vimeo.com##.hofxdK
+vimeo.com##.huuWTP
 
