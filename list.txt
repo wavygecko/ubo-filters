@@ -194,6 +194,11 @@ crimereads.com,lithub.com###post_more_wrapper
 ! popups
 mcsweeneys.net###floating-footer-container
 
+! The Monthly
+! paywalls
+themonthly.com.au##+js(aopr, localStorage.lam)
+themonthly.com.au##body:not(.node-is-locked) .paywall-container-outer
+
 ! Mother Jones
 ! popups
 motherjones.com##.mj-adblock-widget
@@ -252,7 +257,7 @@ polygon.com###toaster
 quantamagazine.org##+js(rc, cookie-not-accepted, #app)
 quantamagazine.org##.disclosure-notification
 
-! Reddit
+! Reddit (Old)
 ! popups
 old.reddit.com##.read-next
 ! annoyances
@@ -267,6 +272,11 @@ old.reddit.com##.commentsignupbar
 ! The San Diego Union-Tribune
 ! paywalls
 ||libs.platform.californiatimes.com/meteringjs/sdutspot.js$script,domain=sandiegouniontribune.com
+
+! The Saturday Paper
+! paywalls
+||thesaturdaypaper.com.au/sites/all/modules/custom/node_meter/pw.js$script,1p
+thesaturdaypaper.com.au##.paywall-hard-always-show
 
 ! Science
 ! popups
@@ -317,6 +327,14 @@ twitch.tv###twilight-sticky-footer-root
 twitch.tv##.prime-offers__pill
 twitch.tv##.extensions-dock__layout
 twitch.tv##button[data-a-target="player-clip-button"]
+
+! Vanity Fair Archive
+! popups
+archive.vanityfair.com##body.page_shared:style(overflow: visible !important;)
+archive.vanityfair.com##body.page_shared .bnd_subscribe
+! annoyances
+archive.vanityfair.com##.shared_footer_cta_basic
+archive.vanityfair.com##.shared_footer_cta_primary:remove()
 
 ! Vox
 ! annoyances
