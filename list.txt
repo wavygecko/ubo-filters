@@ -362,13 +362,11 @@ thewalrus.ca##._form-wrapper
 ! paywalls
 ||washingtonpost.com/tetro/evaluate$xhr,1p
 
-! Yale E360
+! Yale Environment 360
 ! popups
 e360.yale.edu##+js(nostif, Swal.fire, 15000)
 
 ! YouTube
-! popups
-youtube.com##ytd-popup-container
 ! annoyances
 youtube.com###big-yoodle
 youtube.com##.ytd-rich-section-renderer
