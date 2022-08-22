@@ -12,10 +12,6 @@
 ! popups
 /wp-content/plugins/boxzilla/*
 
-! Crux Knowledge (prospect.org)
-! trackers
-||api*.crux.kn^$3p
-
 ! Digioh (deadline.com)
 ! popups
 ||lightboxcdn.com^$3p
@@ -360,26 +356,32 @@ vox.com##.contribute-banner
 
 ! The Walrus
 ! popups
-||thewalrus.activehosted.com/f/embed.php?*id=45$script,domain=thewalrus.ca
-thewalrus.ca##.spu-box
+thewalrus.ca##._form-wrapper
 
 ! The Washington Post
 ! paywalls
 ||washingtonpost.com/tetro/evaluate$xhr,1p
 
+! Yale E360
+! popups
+e360.yale.edu##+js(nostif, Swal.fire, 15000)
+
+! YouTube
+! popups
+youtube.com##ytd-popup-container
+! annoyances
+youtube.com###big-yoodle
+youtube.com##.ytd-rich-section-renderer
+
 ! UNSORTED
 
 ! Vanity Fair Archive
 ! popups
-archive.vanityfair.com##body.page_shared:style(overflow: visible !important;)
-archive.vanityfair.com##body.page_shared .bnd_subscribe
-
-! Yale E360
-! popups
-||cdn.jsdelivr.net/npm/sweetalert2@*/dist/sweetalert2.all.min.js$script,domain=e360.yale.edu
+! archive.vanityfair.com##body.page_shared:style(overflow: visible !important;)
+! archive.vanityfair.com##body.page_shared .bnd_subscribe
 
 ! Vimeo
 ! popups
-vimeo.com##.hofxdK
-vimeo.com##.huuWTP
+! vimeo.com##.hofxdK
+! vimeo.com##.huuWTP
 
