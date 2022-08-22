@@ -61,7 +61,7 @@ albumoftheyear.org##.donorBanner
 
 ! The Atavist Magazine
 ! paywalls
-magazine.atavist.com##+js(aopr, paywalledArticlesRead)
+magazine.atavist.com##+js(set, paywalledArticlesRead, '')
 
 ! The Atlantic
 ! paywalls
@@ -177,7 +177,7 @@ harpers.org##+js(cookie-remover, hr_session)
 ! paywalls
 hcn.org##+js(ra, content, meta[name="UID"])
 ! popups
-hcn.org##+js(aopr, $.delayPromo)
+hcn.org##+js(set, $.delayPromo, noopFunc)
 
 ! How to Geek
 ! popups
@@ -348,6 +348,11 @@ archive.vanityfair.com##^body.page_shared #bnd_subscribe_modaal
 archive.vanityfair.com##.shared_footer_cta_basic
 archive.vanityfair.com##.shared_footer_cta_primary:remove()
 
+! Vimeo
+! popups
+vimeo.com##+js(set, vimeo.clip_page_config.google_app_id, '')
+vimeo.com##+js(set, vimeo.clip_page_config.banner, {})
+
 ! Vox
 ! annoyances
 vox.com##.contribute-banner
@@ -368,11 +373,9 @@ e360.yale.edu##+js(nostif, Swal.fire, 15000)
 ! annoyances
 youtube.com###big-yoodle
 youtube.com##.ytd-rich-section-renderer
+youtube.com##.ytp-cards-button
+youtube.com##.ytp-cards-teaser
+youtube.com##.iv-branding
 
 ! UNSORTED
-
-! Vimeo
-! popups
-! vimeo.com##.hofxdK
-! vimeo.com##.huuWTP
 
