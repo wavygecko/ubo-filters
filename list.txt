@@ -342,6 +342,8 @@ twitch.tv##.extensions-dock__layout
 twitch.tv##button[data-a-target="player-clip-button"]
 
 ! Vanity Fair Archive
+! popups
+archive.vanityfair.com##^body.page_shared #bnd_subscribe_modaal
 ! annoyances
 archive.vanityfair.com##.shared_footer_cta_basic
 archive.vanityfair.com##.shared_footer_cta_primary:remove()
@@ -368,11 +370,6 @@ youtube.com###big-yoodle
 youtube.com##.ytd-rich-section-renderer
 
 ! UNSORTED
-
-! Vanity Fair Archive
-! popups
-! archive.vanityfair.com##body.page_shared:style(overflow: visible !important;)
-! archive.vanityfair.com##body.page_shared .bnd_subscribe
 
 ! Vimeo
 ! popups
