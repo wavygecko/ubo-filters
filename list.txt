@@ -162,10 +162,6 @@ emergencemagazine.org##.newsletter-dropin
 foreignpolicy.com##+js(rc, content-gated)
 foreignpolicy.com##.content-ungated
 
-! gCaptain
-! popups
-gcaptain.com###newsletterModal
-
 ! The Guardian
 ! popups
 ||sourcepoint.theguardian.com/index.html?message_id=690155$subdocument,1p
