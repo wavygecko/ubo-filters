@@ -64,6 +64,16 @@ albumoftheyear.org##.donorBanner
 discussions.apple.com##.notification.site-wide
 discussions.apple.com##.persist-question
 
+! Art & Education
+! popups
+artandeducation.net##.overlayer
+
+! Artforum
+! paywalls
+artforum.com##+js(cookie-remover, Mwadhjg0834HAugdjhkNQ)
+artforum.com##+js(cookie-remover, WuyKAug487fYF08ksQeZiuyfq)
+artforum.com##^af-paywall-counter
+
 ! The Atavist Magazine
 ! paywalls
 magazine.atavist.com##+js(set, paywalledArticlesRead, '')
@@ -104,6 +114,12 @@ bleacherreport.com##.newsletterSubsModule.flyIn
 ! paywalls
 bloomberg.com##+js(aopr, localStorage)
 bloomberg.com###fortress-preblocked-container-root
+
+! Bookforum
+! paywalls
+bookforum.com##^af-paywall,af-paywall-counter
+! popups
+bookforum.com##^af-dont-go
 
 ! The Boston Globe
 ! paywalls
@@ -161,6 +177,10 @@ deadline.com##.toaster
 ! Eater
 ! popups
 eater.com###toaster
+
+! e-flux
+! popups
+e-flux.com##.landing-subscribe
 
 ! Emergence Magazine
 ! popups
