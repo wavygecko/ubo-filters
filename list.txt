@@ -62,6 +62,12 @@ gadget.pico.tools##+js(json-prune, locked)
 ! annoyances
 albumoftheyear.org##.donorBanner
 
+! American Banker
+americanbanker.com##+js(set, contentGating.ungate, true)
+
+! American Affairs
+||americanaffairsjournal.org/wp-content/mu-plugins/app/src/paywall/*$1p
+
 ! Apple Support Community
 ! popups
 discussions.apple.com##.notification.site-wide
@@ -70,6 +76,9 @@ discussions.apple.com##.persist-question
 ! Art & Education
 ! popups
 artandeducation.net##.overlayer
+
+! The Art Newspaper
+theartnewspaper.com##+js(cookie-remover, tan.adaa)
 
 ! Artforum
 ! paywalls
@@ -132,6 +141,10 @@ bookforum.com##^af-dont-go
 ! annoyances
 bostonreview.net##.elementor-element-1b2cb65
 bostonreview.net##.elementor-element-16134f5
+
+! The Business of Fashion
+||businessoffashion.com/zephr/features$xhr,1p
+businessoffashion.com##[data-test="common-nbabanner"]
 
 ! Chemical & Engineering News
 ! paywalls
