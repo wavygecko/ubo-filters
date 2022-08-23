@@ -16,6 +16,9 @@
 ! popups
 ||lightboxcdn.com^$3p
 
+! Hustle (mediabiasfactcheck.com)
+/wp-content/plugins/wordpress-popup/*
+
 ! MailOptin (apex-magazine.com)
 ! popups
 /wp-content/plugins/mailoptin/*
@@ -129,6 +132,19 @@ bookforum.com##^af-dont-go
 ! annoyances
 bostonreview.net##.elementor-element-1b2cb65
 bostonreview.net##.elementor-element-16134f5
+
+! Chemical & Engineering News
+! paywalls
+cen.acs.org##+js(cookie-remover, paywall-cookie)
+cen.acs.org##.ipar_paywall
+
+! The Christian Science Monitor
+! paywalls
+csmonitor.com##+js(set, csmJs.util.isSubscriber, trueFunc)
+csmonitor.com###sticky-messenger
+! annoyances
+csmonitor.com###csm-promotions-banner
+csmonitor.com##.ad-login
 
 ! CodePen
 ! popups
