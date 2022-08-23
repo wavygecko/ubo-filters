@@ -161,6 +161,8 @@ eater.com###toaster
 emergencemagazine.org##.newsletter-overlay
 emergencemagazine.org##.newsletter-popup
 emergencemagazine.org##.newsletter-dropin
+emergencemagazine.org##.c-social-dropin
+emergencemagazine.org##.c-audio-bar:not(.has-played)
 
 ! Foreign Policy
 ! paywalls
@@ -235,7 +237,7 @@ thenewatlantis.com##.gate-gradient
 ! paywalls
 ||blink.net/json/public_data.newrepublic.com.json$xhr,domain=newrepublic.com
 
-! New Statesman
+! The New Statesman
 ! paywalls
 ||newstatesman.com/wp-content/plugins/nsmg-evolok-paywall/classes/assets/js/ev-em.min.js$script,1p
 
