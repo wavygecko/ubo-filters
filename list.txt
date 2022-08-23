@@ -156,7 +156,7 @@ deadline.com##.toaster
 
 ! The Drift
 ! paywalls
-||thedriftmag.com/wp-content/plugins/drift-paywall-plugin/public/js/drift-paywall-plugin-public.js$script,1p
+||thedriftmag.com/wp-content/plugins/drift-paywall-plugin/*$1p
 
 ! Eater
 ! popups
@@ -248,7 +248,7 @@ thenewatlantis.com##.gate-gradient
 
 ! The New Statesman
 ! paywalls
-||newstatesman.com/wp-content/plugins/nsmg-evolok-paywall/classes/assets/js/ev-em.min.js$script,1p
+||newstatesman.com/wp-content/plugins/nsmg-evolok-paywall/*$1p
 
 ! The New York Review of Books
 ! paywalls
