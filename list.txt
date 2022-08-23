@@ -164,6 +164,9 @@ emergencemagazine.org##.newsletter-dropin
 emergencemagazine.org##.c-social-dropin
 emergencemagazine.org##.c-audio-bar:not(.has-played)
 
+! Fandom
+fandom.com###WikiaBar:has(> #WikiaBarWrapper > .wikia-bar-anon)
+
 ! Foreign Policy
 ! paywalls
 foreignpolicy.com##+js(rc, content-gated)
