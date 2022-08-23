@@ -93,7 +93,7 @@ theatlantic.com##.c-non-metered-nudge
 
 ! The Australian Financial Review
 ! paywalls
-||api.afr.com/graphql?query=*PaywallRuleQuery*$xhr,1p
+||api.afr.com/graphql?query=*PaywallRuleQuery$xhr,1p
 
 ! Behance
 ! popups
