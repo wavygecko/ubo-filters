@@ -220,6 +220,7 @@ foreignpolicy.com##.content-ungated
 ||contributions.guardianapis.com/modules/v*/banners/contributions/ContributionsBanner.js$script,domain=theguardian.com
 ! annoyances
 ||assets.guim.co.uk/assets/SignInGateSelector-importable.*.js$script,domain=theguardian.com
+||assets.guim.co.uk/assets/TopRightAdSlot-importable.*.js$script,domain=theguardian.com
 
 ! Harper’s Magazine
 ! paywalls
