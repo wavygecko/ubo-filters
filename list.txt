@@ -59,6 +59,11 @@ gadget.pico.tools##+js(json-prune, locked)
 ! annoyances
 albumoftheyear.org##.donorBanner
 
+! Apple Support Community
+! popups
+discussions.apple.com##.notification.site-wide
+discussions.apple.com##.persist-question
+
 ! The Atavist Magazine
 ! paywalls
 magazine.atavist.com##+js(set, paywalledArticlesRead, '')
