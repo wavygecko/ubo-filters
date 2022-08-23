@@ -1,4 +1,4 @@
-! NEWS NETWORKS
+! LOCAL NEWS
 
 ! Gannett (https://www.gannett.com/brands/)
 ! paywalls
