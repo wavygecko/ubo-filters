@@ -118,6 +118,12 @@ bostonreview.net##.elementor-element-16134f5
 ! popups
 cdpn.io##.referer-warning
 
+! Columbia Journalism Review
+! popups
+||cjr.org/wp-content/themes/cjr2017/*interstitial_full_sail*$1p
+! annoyances
+cjr.org##^#chartbeat-flicker-control-style
+
 ! Condé Nast
 ! paywalls
 ||journey.*/build-*.js$script,domain=allure.com|architecturaldigest.com|bonappetit.com|cntraveler.com|gq.com|newyorker.com|pitchfork.com|vanityfair.com|vogue.co.uk|vogue.com|voguebusiness.com|wired.com
