@@ -351,7 +351,7 @@ twitch.tv##button[data-a-target="player-clip-button"]
 archive.vanityfair.com##^body.page_shared #bnd_subscribe_modaal
 ! annoyances
 archive.vanityfair.com##.shared_footer_cta_basic
-archive.vanityfair.com##.shared_footer_cta_primary:remove()
+archive.vanityfair.com##.shared_footer_cta_primary
 
 ! Vimeo
 ! popups
