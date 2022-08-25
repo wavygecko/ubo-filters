@@ -1,0 +1,26 @@
+! Title: WavyGecko’s filters – Behavior modifications
+! Description: Modifies how elements behave to remove annoyances.
+
+
+! GENERIC
+
+
+
+! SPECIFIC
+
+! 2022-08-25 https://emergencemagazine.org
+emergencemagazine.org##.c-audio-bar:not(.has-played)
+
+! 2022-08-25 https://www.twitch.tv
+twitch.tv##.prime-offers__pill
+twitch.tv##.extensions-dock__layout
+twitch.tv##button[data-a-target="player-clip-button"]
+
+! 2022-08-25 https://www.behance.net
+behance.net##[class*="ImageElement-blockPointerEvents-"]:style(pointer-events: auto !important;)
+behance.net##[class*="Module-blockGridPointerEvents-"] .grid__item-image:style(pointer-events: auto !important;)
+behance.net###lightbox-wrap img:style(pointer-events: auto !important;)
+
+! 2022-08-25 http://smarterplaylists.playlistmachinery.com
+smarterplaylists.playlistmachinery.com##th:has-text(Created)
+smarterplaylists.playlistmachinery.com##th:has-text(# Components)

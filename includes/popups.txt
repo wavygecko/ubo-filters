@@ -1,4 +1,5 @@
-! Popups
+! Title: WavyGecko’s filters – Popups
+! Description: Blocks sticky, nonessential banners, widgets, and overlays.
 
 
 ! GENERIC
@@ -82,8 +83,6 @@ bleacherreport.com##.newsletterSubsModule.flyIn
 emergencemagazine.org##.newsletter-overlay
 emergencemagazine.org##.newsletter-popup
 emergencemagazine.org##.newsletter-dropin
-emergencemagazine.org##.c-social-dropin
-emergencemagazine.org##.c-audio-bar:not(.has-played)
 
 ! 2022-08-25 https://discussions.apple.com
 discussions.apple.com##.notification.site-wide
