@@ -3,175 +3,180 @@
 
 ! GENERIC
 
-! Boxzilla (thebaffler.com)
-/wp-content/plugins/boxzilla/*
-
-! Digioh (deadline.com)
-||lightboxcdn.com^$3p
-
-! Hustle (mediabiasfactcheck.com)
-/wp-content/plugins/wordpress-popup/*
-
-! MailOptin (apex-magazine.com)
-/wp-content/plugins/mailoptin/*
-
-! Newspack (magazine.atavist.com)
+! 2022-08-25 https://magazine.atavist.com (and other websites that use Newspack)
 /wp-content/plugins/newspack-popups/*
 
-! Pendo (lareviewofbooks.org)
+! 2022-08-25 https://mediabiasfactcheck.com (and other websites that use Hustle)
+/wp-content/plugins/wordpress-popup/*
+
+! 2022-08-25 https://deadline.com (and other websites that use Digioh)
+||lightboxcdn.com^$3p
+
+! 2022-08-25 https://lareviewofbooks.org (and other websites that use Pendo)
 ||data.pendo.io/data/guide.js/*$script
 
-! WP Popups (thewalrus.ca)
+! 2022-08-25 https://thebaffler.com (and other websites that use Boxzilla)
+/wp-content/plugins/boxzilla/*
+
+! 2022-08-25 https://thewalrus.ca (and other websites that use WP Popups)
 /wp-content/plugins/wppopups/*
+
+! 2022-08-25 https://apex-magazine.com (and other websites that use MailOptin)
+/wp-content/plugins/mailoptin/*
 
 
 ! SPECIFIC
 
-! Aeon
-||aeon.co/_next/static/chunks/NewsletterPopup.*.js$script,1p
+! 2022-08-24 https://www.bookforum.com
+bookforum.com##^af-dont-go
 
-! Apple Support Community
-discussions.apple.com##.notification.site-wide
-discussions.apple.com##.persist-question
+! 2022-08-24 https://www.nybooks.com
+nybooks.com##.toast-cta
 
-! Art & Education
-artandeducation.net##.overlayer
+! 2022-08-24 https://www.scientificamerican.com
+scientificamerican.com##.spw
 
-! The Atlantic
+! 2022-08-24 https://www.theatlantic.com
 theatlantic.com###nonMeteredNudge
 theatlantic.com###sponsoredNonMeteredNudge
 theatlantic.com##.c-non-metered-nudge
 
-! Behance
+! 2022-08-25 https://www.nytimes.com
+nytimes.com##.magnoliaDock
+
+! 2022-08-25 https://www.theguardian.com
+||sourcepoint.theguardian.com/index.html?message_id=690155$subdocument,1p
+||contributions.guardianapis.com/modules/v*/banners/contributions/ContributionsBanner.js$script,domain=theguardian.com
+
+! 2022-08-25 https://www.hcn.org
+hcn.org##+js(set, $.delayPromo, noopFunc)
+
+! 2022-08-25 https://aeon.co
+||aeon.co/_next/static/chunks/NewsletterPopup.*.js$script,1p
+
+! 2022-08-25 https://psyche.co
+||psyche.co/_next/static/chunks/PopupManager.*.js$script,1p
+
+! 2022-08-25 https://www.behance.net
 behance.net##.Popup-popup-Hub
 behance.net##[class*="PrimaryNav-loggedOutOptions-"] [class*="PrimaryNav-tooltipWrapper-"]
 
-! The Believer
-culture.org,thebeliever.net##.subscriber-popup-container
-
-! Bleacher Report
-bleacherreport.com##.newsletterSubsModule.flyIn
-
-! Bookforum
-bookforum.com##^af-dont-go
-
-! CodePen
+! 2022-08-25 https://cdpn.io
 cdpn.io##.referer-warning
 
-! Columbia Journalism Review
+! 2022-08-25 https://www.youtube.com
+youtube.com##.ytp-cards-button
+youtube.com##.ytp-cards-teaser
+youtube.com##.iv-branding
+
+! 2022-08-25 https://www.cjr.org
 ||cjr.org/wp-content/themes/cjr2017/*interstitial_full_sail*$1p
 
-! Currently
-currentlyhq.com##+js(aopr, elementorProFrontend.modules.popup.popupPopped)
+! 2022-08-25 https://bleacherreport.com
+bleacherreport.com##.newsletterSubsModule.flyIn
 
-! Damn Interesting
-damninteresting.com##.plea
-
-! Deadline
-deadline.com##.toaster
-
-! Eater
-eater.com###toaster
-
-! e-flux
-e-flux.com##.landing-subscribe
-
-! Emergence Magazine
+! 2022-08-25 https://emergencemagazine.org
 emergencemagazine.org##.newsletter-overlay
 emergencemagazine.org##.newsletter-popup
 emergencemagazine.org##.newsletter-dropin
 emergencemagazine.org##.c-social-dropin
 emergencemagazine.org##.c-audio-bar:not(.has-played)
 
-! Fandom
-fandom.com###WikiaBar:has(> #WikiaBarWrapper > .wikia-bar-anon)
+! 2022-08-25 https://discussions.apple.com
+discussions.apple.com##.notification.site-wide
+discussions.apple.com##.persist-question
 
-! The Guardian
-||sourcepoint.theguardian.com/index.html?message_id=690155$subdocument,1p
-||contributions.guardianapis.com/modules/v*/banners/contributions/ContributionsBanner.js$script,domain=theguardian.com
+! 2022-08-25 https://www.artandeducation.net
+artandeducation.net##.overlayer
 
-! High Country News
-hcn.org##+js(set, $.delayPromo, noopFunc)
+! 2022-08-25 https://www.thebeliever.net
+thebeliever.net##.subscriber-popup-container
 
-! How to Geek
-howtogeek.com###notificationAllowPrompt
-
-! Jacobin
-jacobin.com###mailing-list-popup
-
-! Knowable Magazine
-knowablemagazine.org##.newsletter-modal
-
-! Literary Hub
-crimereads.com,lithub.com###post_more_wrapper
-
-! The Marshall Project
-||themarshallproject.org/notifications/v*/toast$xhr,1p
-
-! McSweeney’s
-mcsweeneys.net###floating-footer-container
-
-! Mother Jones
-motherjones.com##.mj-adblock-widget
-
-! Nautilus
-nautil.us##.subscibe-bar
-
-! The New York Review of Books
-nybooks.com##.toast-cta
-
-! The New York Times
-nytimes.com##.magnoliaDock
-
-! PBS
-pbs.org##.popup
-
-! Polygon
-polygon.com###toaster
-
-! ProPublica
+! 2022-08-25 https://www.propublica.org
 ||assets.propublica.org/static/prod/v*/js/deploy/syndicated-newsletter-v*.js$script,1p
 
-! Psyche
-||psyche.co/_next/static/chunks/PopupManager.*.js$script,1p
+! 2022-08-25 https://currentlyhq.com
+currentlyhq.com##+js(aopr, elementorProFrontend.modules.popup.popupPopped)
 
-! Reddit (Old)
-old.reddit.com##.read-next
+! 2022-08-25 https://www.fandom.com
+fandom.com###WikiaBar:has(> #WikiaBarWrapper > .wikia-bar-anon)
 
-! Science
-science.org##.alert-donation
+! 2022-08-25 https://www.damninteresting.com
+damninteresting.com##.plea
 
-! Scientific American
-scientificamerican.com##.spw
+! 2022-08-25 https://knowablemagazine.org
+knowablemagazine.org##.newsletter-modal
 
-! Scroll
-scroll.in##.floating-contribute-block
+! 2022-08-25 https://www.mcsweeneys.net
+mcsweeneys.net###floating-footer-container
 
-! Spiegel
-||sp-spiegel-de.spiegel.de/index.html?message_id=692560$subdocument,1p
-spiegel.de###spPlusBanner
+! 2022-08-25 https://www.motherjones.com
+motherjones.com##.mj-adblock-widget
 
-! Stat
-statnews.com##.recirculation-bar
-
-! Thomson Reuters Foundation Long Reads
-longreads.trust.org##.pa-footer
-
-! Twitch
+! 2022-08-25 https://www.twitch.tv
 twitch.tv###twilight-sticky-footer-root
 
-! Vanity Fair Archive
+! 2022-08-25 https://vimeo.com
+vimeo.com##+js(set, vimeo.clip_page_config.google_app_id, '')
+vimeo.com##+js(set, vimeo.clip_page_config.banner, {})
+
+! 2022-08-25 https://www.themarshallproject.org
+||themarshallproject.org/notifications/v*/toast$xhr,1p
+
+! 2022-08-25 https://archive.vanityfair.com
 archive.vanityfair.com##^body.page_shared #bnd_subscribe_modaal
 archive.vanityfair.com##.shared_footer_cta_basic
 archive.vanityfair.com##.shared_footer_cta_primary
 
-! Vimeo
-vimeo.com##+js(set, vimeo.clip_page_config.google_app_id, '')
-vimeo.com##+js(set, vimeo.clip_page_config.banner, {})
-
-! The Walrus
+! 2022-08-25 https://thewalrus.ca
 thewalrus.ca##._form-wrapper
 
-! Yale Environment 360
+! 2022-08-25 https://e360.yale.edu
 e360.yale.edu##+js(nostif, Swal.fire, 15000)
+
+! 2022-08-25 https://nautil.us
+nautil.us##.subscibe-bar
+
+! 2022-08-25 https://old.reddit.com
+old.reddit.com##.read-next
+
+! 2022-08-25 https://www.e-flux.com
+e-flux.com##.landing-subscribe
+
+! 2022-08-25 https://www.polygon.com
+polygon.com###toaster
+
+! 2022-08-25 https://deadline.com
+deadline.com##.toaster
+
+! 2022-08-25 https://www.science.org
+science.org##.alert-donation
+
+! 2022-08-25 https://www.eater.com
+eater.com###toaster
+
+! 2022-08-25 https://jacobin.com
+jacobin.com###mailing-list-popup
+
+! 2022-08-25 https://www.howtogeek.com
+howtogeek.com###notificationAllowPrompt
+
+! 2022-08-25 https://www.statnews.com
+statnews.com##.recirculation-bar
+
+! 2022-08-25 https://lithub.com (and https://crimereads.com)
+crimereads.com,lithub.com###post_more_wrapper
+
+! 2022-08-25 https://longreads.trust.org
+longreads.trust.org##.pa-footer
+
+! 2022-08-25 https://scroll.in
+scroll.in##.floating-contribute-block
+
+! 2022-08-25 https://www.pbs.org
+pbs.org##.popup
+
+! 2022-08-25 https://www.spiegel.de
+||sp-spiegel-de.spiegel.de/index.html?message_id=692560$subdocument,1p
+spiegel.de###spPlusBanner
 
