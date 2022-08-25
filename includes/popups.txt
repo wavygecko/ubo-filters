@@ -24,6 +24,9 @@
 ! 2022-08-25 https://apex-magazine.com (and other websites that use MailOptin)
 /wp-content/plugins/mailoptin/*
 
+! 2022-08-25 https://delacortereview.org (and other websites that use Popup Builder)
+/wp-content/plugins/popup-builder/*
+
 
 ! SPECIFIC
 
