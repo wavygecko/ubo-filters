@@ -185,7 +185,3 @@ scroll.in##.floating-contribute-block
 
 ! 2022-08-25 https://www.pbs.org
 pbs.org##.popup
-
-! 2022-08-25 https://www.spiegel.de
-||sp-spiegel-de.spiegel.de/index.html?message_id=692560$subdocument,1p
-spiegel.de###spPlusBanner
