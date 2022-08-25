@@ -1,5 +1,8 @@
 ! Title: WavyGecko’s filters – Popups
 ! Description: Blocks sticky, nonessential banners, widgets, and overlays.
+! Expires: 2 days
+! Homepage: https://github.com/wavygecko/ubo-filters
+! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
 
 
 ! GENERIC

@@ -1,5 +1,8 @@
 ! Title: WavyGecko’s filters – Annoyances
 ! Description: Blocks static, nonessential banners and self-promo ads.
+! Expires: 2 days
+! Homepage: https://github.com/wavygecko/ubo-filters
+! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
 
 
 ! GENERIC

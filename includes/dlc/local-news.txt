@@ -1,5 +1,8 @@
 ! Title: WavyGecko’s filters – Local news
 ! Description: Blocks content gates, popups, and other annoyances on local news websites.
+! Expires: 2 days
+! Homepage: https://github.com/wavygecko/ubo-filters
+! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
 
 
 ! GENERIC

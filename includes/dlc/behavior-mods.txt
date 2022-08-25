@@ -1,5 +1,8 @@
 ! Title: WavyGecko’s filters – Behavior modifications
 ! Description: Modifies how elements behave in order to remove annoyances.
+! Expires: 2 days
+! Homepage: https://github.com/wavygecko/ubo-filters
+! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
 
 
 ! GENERIC

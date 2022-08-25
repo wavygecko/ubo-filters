@@ -1,5 +1,8 @@
 ! Title: WavyGecko’s filters – Gates
 ! Description: Blocks paywalls and sign-in gates.
+! Expires: 2 days
+! Homepage: https://github.com/wavygecko/ubo-filters
+! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
 
 
 ! GENERIC
