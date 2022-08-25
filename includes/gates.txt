@@ -167,4 +167,3 @@ behance.net##[class*="Search-contentBlocker-"]
 ! 2022-08-25 https://time.com
 time.com##+js(cookie-remover, time_meter_v2)
 time.com##.meter-wall
-
