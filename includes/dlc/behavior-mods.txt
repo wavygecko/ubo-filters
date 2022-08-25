@@ -1,5 +1,5 @@
 ! Title: WavyGecko’s filters – Behavior modifications
-! Description: Modifies how elements behave to remove annoyances.
+! Description: Modifies how elements behave in order to remove annoyances.
 
 
 ! GENERIC
