@@ -61,3 +61,6 @@ vox.com##.contribute-banner
 ! 2022-08-25 https://www.currentaffairs.org
 currentaffairs.org##.wp-block-image:has(> a[href$="/subscribe"])
 currentaffairs.org##.wp-block-image:has(> a[href$="/donate"])
+
+! 2022-08-26 https://developer.mozilla.org
+developer.mozilla.org##.mdn-cta-container
