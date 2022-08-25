@@ -1,0 +1,138 @@
+! CONTENT GATES
+
+! 2022-08-24 https://www.bloomberg.com
+bloomberg.com##+js(aopw, localStorage)
+bloomberg.com###fortress-preblocked-container-root
+||assets.bwbx.io/s3/javelin/public/javelin/js/foundation/transporter/foundation_transporter-*.js$script,domain=bloomberg.com
+
+! 2022-08-24 https://cen.acs.org
+cen.acs.org##+js(cookie-remover, paywall-cookie)
+cen.acs.org##.ipar_paywall
+
+! 2022-08-24 https://www.vogue.com (and other Condé Nast websites)
+||journey.*/build-*.js$script,domain=allure.com|architecturaldigest.com|bonappetit.com|cntraveler.com|gq.com|newyorker.com|pitchfork.com|vanityfair.com|vogue.co.uk|vogue.com|voguebusiness.com|wired.com
+
+! 2022-08-24 https://www.forbes.com
+||cdn.tinypass.com/api/tinypass.min.js$script,domain=forbes.com
+
+! 2022-08-24 https://fortune.com
+fortune.com##+js(rc, paywallActive, .paywall)
+
+! 2022-08-24 https://www.artforum.com
+artforum.com##+js(cookie-remover, WuyKAug487fYF08ksQeZiuyfq)
+artforum.com##.paywall-counter
+
+! 2022-08-24 https://www.bookforum.com
+bookforum.com##+js(set, localStorage.paywallCounter, '')
+bookforum.com##.paywall-counter
+
+! 2022-08-24 https://harpers.org
+harpers.org##+js(cookie-remover, hr_session)
+
+! 2022-08-24 https://www.nybooks.com
+nybooks.com##+js(rc, paywall-article, .article-main-content)
+
+! 2022-08-24 https://foreignpolicy.com
+||cdn.tinypass.com/api/tinypass.min.js$script,domain=foreignpolicy.com
+foreignpolicy.com##+js(rc, content-gated)
+foreignpolicy.com##.content-ungated
+
+! 2022-08-24 https://www.thenation.com
+||cdn.tinypass.com/api/tinypass.min.js$script,domain=thenation.com
+
+! 2022-08-24 https://theintercept.com
+||o.prod.theintercept.com/api/tinypass.min.js$script,1p
+
+! 2022-08-24 https://newrepublic.com
+||blink.net/json/public_data.newrepublic.com.json$xhr,domain=newrepublic.com
+
+! 2022-08-24 https://www.scientificamerican.com
+scientificamerican.com##+js(cookie-remover, spw_l)
+
+! 2022-08-24 https://www.bostonglobe.com
+||meter.bostonglobe.com/js/meter.js$script,1p
+
+! 2022-08-24 https://www.theatlantic.com
+theatlantic.com##+js(cookie-remover, articleViews)
+theatlantic.com###paywall
+theatlantic.com##.c-nudge__container
+
+! 2022-08-25 https://www.nytimes.com
+||meter-svc.nytimes.com/meter.js$xhr,1p
+||mwcm.nytimes.com/capi/metered_assets/*$xhr,1p
+nytimes.com##[data-testid="inline-message"]
+
+! 2022-08-25 https://www.washingtonpost.com
+||washingtonpost.com/tetro/evaluate$xhr,1p
+
+! 2022-08-25 https://www.latimes.com
+||libs.platform.californiatimes.com/meteringjs/latspot.js$script,domain=latimes.com
+
+! 2022-08-25 https://www.sandiegouniontribune.com
+||libs.platform.californiatimes.com/meteringjs/sdutspot.js$script,domain=sandiegouniontribune.com
+
+! 2022-08-25 https://philosophynow.org
+philosophynow.org##+js(cookie-remover, PNQuota)
+philosophynow.org###welcome_box
+
+! 2022-08-25 https://www.reuters.com
+||reuters.com/arc/subs/p.min.js$script,1p
+
+! 2022-08-25 https://www.telegraph.co.uk
+||telegraph.co.uk/etc/designs/telegraph/core/clientlibs/piano.min.*.js$script,1p
+
+! 2022-08-25 https://thepointmag.com
+thepointmag.com##+js(nostif, DisplayInfo, 3000)
+
+! 2022-08-25 https://www.thenewatlantis.com
+thenewatlantis.com##+js(rc, article-gated, .gutenberg-content)
+thenewatlantis.com##.gate-gradient
+
+! 2022-08-25 https://www.frieze.com
+||js.pelcro.com/sdk/main.min.js$script,domain=frieze.com
+
+! 2022-08-25 https://www.edweek.org
+||js.pelcro.com/sdk/main.min.js$script,domain=edweek.org
+
+! 2022-08-25 https://www.economist.com
+||cdn.tinypass.com/api/tinypass.min.js$script,domain=economist.com
+
+! 2022-08-25 https://www.americanbanker.com
+americanbanker.com##+js(set, contentGating.ungate, true)
+
+! 2022-08-25 https://americanaffairsjournal.org
+||americanaffairsjournal.org/wp-content/mu-plugins/app/src/paywall/paywall.js$script,1p
+
+! 2022-08-25 https://www.csmonitor.com
+csmonitor.com##+js(set, csmJs.util.isSubscriber, trueFunc)
+csmonitor.com###sticky-messenger
+
+! 2022-08-25 https://www.theartnewspaper.com
+theartnewspaper.com##+js(cookie-remover, tan.adaa)
+
+! 2022-08-25 https://magazine.atavist.com
+magazine.atavist.com##+js(set, paywalledArticlesRead, '')
+
+! 2022-08-25 https://www.afr.com
+||api.afr.com/graphql?query=*PaywallRuleQuery$xhr,1p
+
+! 2022-08-25 https://www.chronicle.com (and https://www.philanthropy.com)
+chronicle.com,philanthropy.com##+js(ra, data-content-body, .contentBody)
+chronicle.com,philanthropy.com##[data-content-summary]
+
+! 2022-08-25 https://www.thedriftmag.com
+||thedriftmag.com/wp-content/plugins/drift-paywall-plugin/public/js/drift-paywall-plugin-public.js$script,1p
+
+! 2022-08-25 https://www.theguardian.com
+||assets.guim.co.uk/assets/SignInGateSelector-importable.*.js$script,domain=theguardian.com
+
+! 2022-08-25 https://www.hcn.org
+hcn.org##+js(ra, content, meta[name="UID"])
+
+! 2022-08-25 https://time.com
+time.com##+js(cookie-remover, time_meter_v2)
+time.com##.meter-wall
+
+
+
+
