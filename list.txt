@@ -1,4 +1,4 @@
-! Title: WavyGecko’s uBlock Origin filters
+! Title: WavyGecko’s filters
 ! Description: Blocks content gates, popups, and other annoyances. Use with EasyList Cookie List and the default uBlock Origin filters.
 ! Expires: 2 days
 ! Homepage: https://github.com/wavygecko/ubo-filters
