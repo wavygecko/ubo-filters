@@ -1,4 +1,15 @@
-! CONTENT GATES
+! Gates
+
+
+! GENERIC
+
+! 2022-08-25 https://defector.com (and other websites that use Pico)
+||api.pico.tools/popup/null/*$xhr
+||api.pico.tools/client/query/*$xhr
+gadget.pico.tools##+js(json-prune, locked)
+
+
+! SPECIFIC
 
 ! 2022-08-24 https://www.bloomberg.com
 bloomberg.com##+js(aopw, localStorage)
@@ -132,7 +143,4 @@ hcn.org##+js(ra, content, meta[name="UID"])
 ! 2022-08-25 https://time.com
 time.com##+js(cookie-remover, time_meter_v2)
 time.com##.meter-wall
-
-
-
 
