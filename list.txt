@@ -8,4 +8,3 @@
 !#include includes/gates.txt
 !#include includes/popups.txt
 !#include includes/dlc/behavior-mods.txt
-!#include includes/dlc/local-news.txt
