@@ -1,4 +1,5 @@
-! Local news
+! Title: WavyGecko’s filters – Local news
+! Description: Blocks content gates, popups, and other annoyances on local news websites.
 
 
 ! GENERIC
