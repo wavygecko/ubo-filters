@@ -4,15 +4,8 @@
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
 
-
-! CORE
-
+!#include includes/annoyances.txt
 !#include includes/gates.txt
 !#include includes/popups.txt
-!#include includes/annoyances.txt
 
-
-! EXPANSION PACKS
-
-!#include includes/expansion-packs/local-news.txt
-
+!#include includes/dlc/local-news.txt
