@@ -7,9 +7,9 @@
 
 ! CORE
 
-!#include includes/core/gates.txt
-!#include includes/core/popups.txt
-!#include includes/core/annoyances.txt
+!#include includes/gates.txt
+!#include includes/popups.txt
+!#include includes/annoyances.txt
 
 
 ! EXPANSION PACKS
