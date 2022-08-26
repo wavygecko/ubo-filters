@@ -7,13 +7,16 @@
 
 ! GENERIC
 
-! 2022-08-24 https://www.forbes.com (and other websites that use Piano)
-/api/tinypass.min.js$script
-
-! 2022-08-25 https://defector.com (and other websites that use Pico)
+! 2022-08-23 https://defector.com (and other websites that use Pico)
 ||api.pico.tools/popup/null/*$xhr
 ||api.pico.tools/client/query/*$xhr
 gadget.pico.tools##+js(json-prune, locked)
+
+! 2022-08-24 https://www.forbes.com (and other websites that use Piano)
+/api/tinypass.min.js$script
+
+! 2022-08-24 https://www.edweek.org (and other websites that use Pelcro)
+||js.pelcro.com/sdk/main.min.js$script
 
 
 ! SPECIFIC
@@ -112,12 +115,6 @@ thepointmag.com##+js(nostif, DisplayInfo, 3000)
 ! 2022-08-25 https://www.thenewatlantis.com
 thenewatlantis.com##+js(rc, article-gated, .gutenberg-content)
 thenewatlantis.com##.gate-gradient
-
-! 2022-08-25 https://www.frieze.com
-||js.pelcro.com/sdk/main.min.js$script,domain=frieze.com
-
-! 2022-08-25 https://www.edweek.org
-||js.pelcro.com/sdk/main.min.js$script,domain=edweek.org
 
 ! 2022-08-25 https://www.americanbanker.com
 americanbanker.com##+js(set, contentGating.ungate, true)
