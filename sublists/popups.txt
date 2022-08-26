@@ -14,7 +14,7 @@
 /wp-content/plugins/wordpress-popup/*
 
 ! 2022-08-25 https://deadline.com (and other websites that use Digioh)
-||lightboxcdn.com^$3p
+||lightboxcdn.com/vendor/*/lightbox_speed.js$script
 
 ! 2022-08-25 https://lareviewofbooks.org (and other websites that use Pendo)
 ||data.pendo.io/data/guide.js/*$script
