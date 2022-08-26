@@ -422,6 +422,8 @@ old.reddit.com##.commentsignupbar
 ! Reuters ; 2022-08-25
 ! gates
 ||reuters.com/arc/subs/p.min.js$script,1p
+! annoyances
+reuters.com##[class*="registration-prompt__container__"]
 
 ! S
 
@@ -453,6 +455,10 @@ scroll.in##.scrollstrap-container
 ! annoyances
 smarterplaylists.playlistmachinery.com##th:has-text(Created)
 smarterplaylists.playlistmachinery.com##th:has-text(# Components)
+
+! Spotify ; 2022-08-27
+! popups
+open.spotify.com##[data-testid="signup-bar"]
 
 ! Stat ; 2022-08-25
 ! popups
@@ -535,4 +541,7 @@ youtube.com###big-yoodle
 youtube.com##.ytd-rich-section-renderer
 
 ! Z
+
+
+! UNSORTED
 
