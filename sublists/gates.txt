@@ -7,6 +7,9 @@
 
 ! GENERIC
 
+! 2022-08-24 https://www.forbes.com (and other websites that use Piano)
+/api/tinypass.min.js$script
+
 ! 2022-08-25 https://defector.com (and other websites that use Pico)
 ||api.pico.tools/popup/null/*$xhr
 ||api.pico.tools/client/query/*$xhr
@@ -27,9 +30,6 @@ cen.acs.org##.ipar_paywall
 ! 2022-08-24 https://www.vogue.com (and other Condé Nast websites)
 ||journey.*/build-*.js$script,domain=allure.com|architecturaldigest.com|bonappetit.com|cntraveler.com|gq.com|newyorker.com|pitchfork.com|vanityfair.com|vogue.co.uk|vogue.com|voguebusiness.com|wired.com
 
-! 2022-08-24 https://www.forbes.com
-||cdn.tinypass.com/api/tinypass.min.js$script,domain=forbes.com
-
 ! 2022-08-24 https://fortune.com
 fortune.com##+js(rc, paywallActive, .paywall)
 
@@ -48,15 +48,8 @@ harpers.org##+js(cookie-remover, hr_session)
 nybooks.com##+js(rc, paywall-article, .article-main-content)
 
 ! 2022-08-24 https://foreignpolicy.com
-||cdn.tinypass.com/api/tinypass.min.js$script,domain=foreignpolicy.com
 foreignpolicy.com##+js(rc, content-gated)
 foreignpolicy.com##.content-ungated
-
-! 2022-08-24 https://www.thenation.com
-||cdn.tinypass.com/api/tinypass.min.js$script,domain=thenation.com
-
-! 2022-08-24 https://theintercept.com
-||o.prod.theintercept.com/api/tinypass.min.js$script,1p
 
 ! 2022-08-24 https://newrepublic.com
 ||blink.net/json/public_data.newrepublic.com.json$xhr,domain=newrepublic.com
@@ -125,9 +118,6 @@ thenewatlantis.com##.gate-gradient
 
 ! 2022-08-25 https://www.edweek.org
 ||js.pelcro.com/sdk/main.min.js$script,domain=edweek.org
-
-! 2022-08-25 https://www.economist.com
-||cdn.tinypass.com/api/tinypass.min.js$script,domain=economist.com
 
 ! 2022-08-25 https://www.americanbanker.com
 americanbanker.com##+js(set, contentGating.ungate, true)
