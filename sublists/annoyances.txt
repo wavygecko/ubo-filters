@@ -94,7 +94,7 @@ old.reddit.com##.commentsignupbar
 scientificamerican.com##.home-banner
 scientificamerican.com###promo-header
 
-! Scroll, 2022-08-25
+! Scroll ; 2022-08-25
 scroll.in##.scrollstrap-container
 
 ! T
