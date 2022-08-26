@@ -64,3 +64,9 @@ currentaffairs.org##.wp-block-image:has(> a[href$="/donate"])
 
 ! 2022-08-26 https://developer.mozilla.org
 developer.mozilla.org##.mdn-cta-container
+
+! 2022-08-26 https://www.mcsweeneys.net
+mcsweeneys.net##.breaking-news-container
+
+! 2022-08-26 https://deadline.com
+deadline.com##.pmc-breaking-news
