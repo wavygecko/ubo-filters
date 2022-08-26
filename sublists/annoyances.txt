@@ -5,68 +5,118 @@
 ! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
 
 
-! GENERIC
-
-
-
 ! SPECIFIC
 
-! 2022-08-24 https://www.vogue.com (and other Condé Nast websites)
-ad-italia.it,ad-magazin.de,admagazine.com,admagazine.fr,admagazine.ru,allure.com,architecturaldigest.com,architecturaldigest.in,bonappetit.com,cntraveler.com,cntraveller.com,cntraveller.in,glamour.com,glamour.de,glamour.es,glamour.mx,glamour.ru,glamourmagazine.co.uk,gq-magazin.de,gq-magazine.co.uk,gq.com,gq.com.mx,gq.com.tw,gq.ru,gqindia.com,gqitalia.it,gqjapan.jp,gqmagazine.fr,houseandgarden.co.uk,lacucinaitaliana.it,newyorker.com,pitchfork.com,revistaad.es,revistagq.com,revistavanityfair.es,self.com,tatler.com,tatler.ru,teenvogue.com,them.us,traveler.es,vanityfair.com,vanityfair.fr,vanityfair.it,vogue.co.jp,vogue.co.uk,vogue.com,vogue.com.tw,vogue.de,vogue.es,vogue.fr,vogue.in,vogue.it,vogue.mx,vogue.ru,voguebusiness.com,wired.co.uk,wired.com,wired.it,wired.jp##.ticker-view
+! #
 
-! 2022-08-24 https://www.scientificamerican.com
-scientificamerican.com##.home-banner
-scientificamerican.com###promo-header
+! A
 
-! 2022-08-25 https://www.csmonitor.com
+! Aeon ; 2022-08-25
+||aeon.co/_next/static/chunks/SupportBannerHeader.*.js$script,1p
+
+! Album of the Year ; 2022-08-25
+albumoftheyear.org##.donorBanner
+
+! B
+
+! Boston Review ; 2022-08-25
+bostonreview.net##.elementor-element-1b2cb65
+bostonreview.net##.elementor-element-16134f5
+
+! C
+
+! Christian Science Monitor, The ; 2022-08-25
 csmonitor.com###csm-promotions-banner
 
-! 2022-08-25 https://www.theguardian.com
+! Columbia Journalism Review ; 2022-08-25
+cjr.org##^#chartbeat-flicker-control-style
+
+! Condé Nast ; 2022-08-24
+ad-italia.it,ad-magazin.de,admagazine.com,admagazine.fr,admagazine.ru,allure.com,architecturaldigest.com,architecturaldigest.in,bonappetit.com,cntraveler.com,cntraveller.com,cntraveller.in,glamour.com,glamour.de,glamour.es,glamour.mx,glamour.ru,glamourmagazine.co.uk,gq-magazin.de,gq-magazine.co.uk,gq.com,gq.com.mx,gq.com.tw,gq.ru,gqindia.com,gqitalia.it,gqjapan.jp,gqmagazine.fr,houseandgarden.co.uk,lacucinaitaliana.it,newyorker.com,pitchfork.com,revistaad.es,revistagq.com,revistavanityfair.es,self.com,tatler.com,tatler.ru,teenvogue.com,them.us,traveler.es,vanityfair.com,vanityfair.fr,vanityfair.it,vogue.co.jp,vogue.co.uk,vogue.com,vogue.com.tw,vogue.de,vogue.es,vogue.fr,vogue.in,vogue.it,vogue.mx,vogue.ru,voguebusiness.com,wired.co.uk,wired.com,wired.it,wired.jp##.ticker-view
+
+! Current Affairs ; 2022-08-25
+currentaffairs.org##.wp-block-image:has(> a[href$="/subscribe"])
+currentaffairs.org##.wp-block-image:has(> a[href$="/donate"])
+
+! D
+
+! Deadline ; 2022-08-26
+deadline.com##.pmc-breaking-news
+
+! E
+
+! F
+
+! G
+
+! Guardian, The ; 2022-08-25
 ||assets.guim.co.uk/assets/TopRightAdSlot-importable.*.js$script,domain=theguardian.com
 
-! 2022-08-25 https://archive.vanityfair.com
-archive.vanityfair.com##.shared_substory_cta
+! H
 
-! 2022-08-25 https://old.reddit.com
+! I
+
+! J
+
+! K
+
+! L
+
+! M
+
+! McSweeney’s ; 2022-08-26
+mcsweeneys.net##.breaking-news-container
+
+! MDN Web Docs ; 2022-08-26
+developer.mozilla.org##.mdn-cta-container
+
+! N
+
+! O
+
+! P
+
+! Psyche ; 2022-08-25
+||psyche.co/_next/static/chunks/SupportBannerHeader.*.js$script,1p
+
+! Q
+
+! R
+
+! Reddit, Old ; 2022-08-25
 old.reddit.com##.premium-banner-outer
 old.reddit.com##.listingsignupbar
 old.reddit.com##.commentsignupbar
 
-! 2022-08-25 https://scroll.in
+! S
+
+! Scientific American ; 2022-08-24
+scientificamerican.com##.home-banner
+scientificamerican.com###promo-header
+
+! Scroll, 2022-08-25
 scroll.in##.scrollstrap-container
 
-! 2022-08-25 https://aeon.co
-||aeon.co/_next/static/chunks/SupportBannerHeader.*.js$script,1p
+! T
 
-! 2022-08-25 https://psyche.co
-||psyche.co/_next/static/chunks/SupportBannerHeader.*.js$script,1p
+! U
 
-! 2022-08-25 https://www.albumoftheyear.org
-albumoftheyear.org##.donorBanner
+! V
 
-! 2022-08-25 https://bostonreview.net
-bostonreview.net##.elementor-element-1b2cb65
-bostonreview.net##.elementor-element-16134f5
+! Vanity Fair Archive ; 2022-08-25
+archive.vanityfair.com##.shared_substory_cta
 
-! 2022-08-25 https://www.youtube.com
+! Vox ; 2022-08-25
+vox.com##.contribute-banner
+
+! W
+
+! X
+
+! Y
+
+! YouTube ; 2022-08-25
 youtube.com###big-yoodle
 youtube.com##.ytd-rich-section-renderer
 
-! 2022-08-25 https://www.cjr.org
-cjr.org##^#chartbeat-flicker-control-style
-
-! 2022-08-25 https://www.vox.com
-vox.com##.contribute-banner
-
-! 2022-08-25 https://www.currentaffairs.org
-currentaffairs.org##.wp-block-image:has(> a[href$="/subscribe"])
-currentaffairs.org##.wp-block-image:has(> a[href$="/donate"])
-
-! 2022-08-26 https://developer.mozilla.org
-developer.mozilla.org##.mdn-cta-container
-
-! 2022-08-26 https://www.mcsweeneys.net
-mcsweeneys.net##.breaking-news-container
-
-! 2022-08-26 https://deadline.com
-deadline.com##.pmc-breaking-news
+! Z

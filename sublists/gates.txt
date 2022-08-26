@@ -7,150 +7,204 @@
 
 ! GENERIC
 
-! 2022-08-23 https://defector.com (and other websites that use Pico)
+! Piano ; 2022-08-24 (e.g., forbes.com, theintercept.com)
+/api/tinypass.min.js$script
+
+! Pico ; 2022-08-23 (e.g., defector.com)
 ||api.pico.tools/popup/null/*$xhr
 ||api.pico.tools/client/query/*$xhr
 gadget.pico.tools##+js(json-prune, locked)
 
-! 2022-08-24 https://www.forbes.com (and other websites that use Piano)
-/api/tinypass.min.js$script
-
-! 2022-08-24 https://www.edweek.org (and other websites that use Pelcro)
+! Pelcro ; 2022-08-24 (e.g., edweek.org, frieze.com)
 ||js.pelcro.com/sdk/main.min.js$script
 
 
 ! SPECIFIC
 
-! 2022-08-24 https://www.bloomberg.com
-bloomberg.com##+js(aopw, localStorage)
-bloomberg.com###fortress-preblocked-container-root
-||assets.bwbx.io/s3/javelin/public/javelin/js/foundation/transporter/foundation_transporter-*.js$script,domain=bloomberg.com
+! #
 
-! 2022-08-24 https://cen.acs.org
-cen.acs.org##+js(cookie-remover, paywall-cookie)
-cen.acs.org##.ipar_paywall
+! A
 
-! 2022-08-24 https://www.vogue.com (and other Condé Nast websites)
-||journey.*/build-*.js$script,domain=allure.com|architecturaldigest.com|bonappetit.com|cntraveler.com|gq.com|newyorker.com|pitchfork.com|vanityfair.com|vogue.co.uk|vogue.com|voguebusiness.com|wired.com
+! American Affairs ; 2022-08-25
+||americanaffairsjournal.org/wp-content/mu-plugins/app/src/paywall/paywall.js$script,1p
 
-! 2022-08-24 https://fortune.com
-fortune.com##+js(rc, paywallActive, .paywall)
+! American Banker ; 2022-08-25
+americanbanker.com##+js(set, contentGating.ungate, true)
 
-! 2022-08-24 https://www.artforum.com
+! Art Newspaper, The ; 2022-08-25
+theartnewspaper.com##+js(cookie-remover, tan.adaa)
+
+! Artforum ; 2022-08-24
 artforum.com##+js(cookie-remover, WuyKAug487fYF08ksQeZiuyfq)
 artforum.com##.paywall-counter
 
-! 2022-08-24 https://www.bookforum.com
-bookforum.com##+js(set, localStorage.paywallCounter, '')
-bookforum.com##.paywall-counter
+! Atavist Magazine, The ; 2022-08-25
+magazine.atavist.com##+js(set, paywalledArticlesRead, '')
 
-! 2022-08-24 https://harpers.org
-harpers.org##+js(cookie-remover, hr_session)
-
-! 2022-08-24 https://www.nybooks.com
-nybooks.com##+js(rc, paywall-article, .article-main-content)
-
-! 2022-08-24 https://foreignpolicy.com
-foreignpolicy.com##+js(rc, content-gated)
-foreignpolicy.com##.content-ungated
-
-! 2022-08-24 https://newrepublic.com
-||blink.net/json/public_data.newrepublic.com.json$xhr,domain=newrepublic.com
-
-! 2022-08-24 https://www.scientificamerican.com
-scientificamerican.com##+js(cookie-remover, spw_l)
-
-! 2022-08-24 https://www.bostonglobe.com
-||meter.bostonglobe.com/js/meter.js$script,1p
-
-! 2022-08-24 https://www.theatlantic.com
+! Atlantic, The ; 2022-08-24
 theatlantic.com##+js(cookie-remover, articleViews)
 theatlantic.com###paywall
 theatlantic.com##.c-nudge__container
 
-! 2022-08-25 https://www.cincinnati.com (and other Gannett news websites)
+! Australian Financial Review, The ; 2022-08-25
+||api.afr.com/graphql?query=*PaywallRuleQuery$xhr,1p
+
+! B
+
+! Behance ; 2022-08-25
+behance.net##[class*="Search-contentBlocker-"]
+
+! Bloomberg ; 2022-08-24
+bloomberg.com##+js(aopw, localStorage)
+bloomberg.com###fortress-preblocked-container-root
+||assets.bwbx.io/s3/javelin/public/javelin/js/foundation/transporter/foundation_transporter-*.js$script,domain=bloomberg.com
+
+! Bookforum ; 2022-08-24
+bookforum.com##+js(set, localStorage.paywallCounter, '')
+bookforum.com##.paywall-counter
+
+! Boston Globe, The ; 2022-08-24
+||meter.bostonglobe.com/js/meter.js$script,1p
+
+! C
+
+! Chemical & Engineering News ; 2022-08-24
+cen.acs.org##+js(cookie-remover, paywall-cookie)
+cen.acs.org##.ipar_paywall
+
+! Christian Science Monitor, The ; 2022-08-25
+csmonitor.com##+js(set, csmJs.util.isSubscriber, trueFunc)
+csmonitor.com###sticky-messenger
+
+! Chronicle of Higher Education, The (and Chronicle of Philanthropy, The) ; 2022-08-25
+chronicle.com,philanthropy.com##+js(ra, data-content-body, .contentBody)
+chronicle.com,philanthropy.com##[data-content-summary]
+
+! Condé Nast ; 2022-08-24
+||journey.*/build-*.js$script,domain=allure.com|architecturaldigest.com|bonappetit.com|cntraveler.com|gq.com|newyorker.com|pitchfork.com|vanityfair.com|vogue.co.uk|vogue.com|voguebusiness.com|wired.com
+
+! D
+
+! Drift, The ; 2022-08-25
+||thedriftmag.com/wp-content/plugins/drift-paywall-plugin/public/js/drift-paywall-plugin-public.js$script,1p
+
+! E
+
+! F
+
+! Foreign Policy ; 2022-08-24
+foreignpolicy.com##+js(rc, content-gated)
+foreignpolicy.com##.content-ungated
+
+! Fortune ; 2022-08-24
+fortune.com##+js(rc, paywallActive, .paywall)
+
+! G
+
+! Gannett ; 2022-08-25
 aberdeennews.com,alamogordonews.com,amarillo.com,amestrib.com,app.com,argusleader.com,augustachronicle.com,azcentral.com,battlecreekenquirer.com,beaconjournal.com,blueridgenow.com,buckscountycouriertimes.com,bucyrustelegraphforum.com,burlingtoncountytimes.com,burlingtonfreepress.com,caller.com,cantondailyledger.com,cantonrep.com,capecodtimes.com,cheboygannews.com,chieftain.com,chillicothegazette.com,cincinnati.com,citizen-times.com,cjonline.com,clarionledger.com,coloradoan.com,columbiadailyherald.com,columbiatribune.com,commercialappeal.com,coshoctontribune.com,courier-journal.com,courier-tribune.com,courierpostonline.com,courierpress.com,currentargus.com,daily-jeff.com,daily-times.com,dailyamerican.com,dailycomet.com,dailycommercial.com,dailyrecord.com,dailyworld.com,delawareonline.com,delmarvanow.com,demingheadlight.com,democratandchronicle.com,desertsun.com,desmoinesregister.com,devilslakejournal.com,dispatch.com,dnj.com,ellwoodcityledger.com,elpasotimes.com,enterprisenews.com,eveningsun.com,eveningtribune.com,examiner-enterprise.com,fayobserver.com,fdlreporter.com,floridatoday.com,fosters.com,freep.com,gadsdentimes.com,gainesville.com,galesburg.com,gastongazette.com,goerie.com,gosanangelo.com,goupstate.com,greatfallstribune.com,greenbaypressgazette.com,greenvilleonline.com,hattiesburgamerican.com,heraldmailmedia.com,heraldnews.com,heraldtribune.com,hillsdale.net,hollandsentinel.com,hoosiertimes.com,houmatoday.com,htrnews.com,hutchnews.com,indeonline.com,independentmail.com,indystar.com,ithacajournal.com,jacksonsun.com,jacksonville.com,jconline.com,jdnews.com,journalstandard.com,jsonline.com,kinston.com,kitsapsun.com,knoxnews.com,lancastereaglegazette.com,lansingstatejournal.com,lcsun-news.com,ldnews.com,lenconnect.com,lincolncourier.com,livingstondaily.com,lohud.com,lubbockonline.com,mansfieldnewsjournal.com,marionstar.com,marshfieldnewsherald.com,mcdonoughvoice.com,metrowestdailynews.com,milforddailynews.com,monroenews.com,montgomeryadvertiser.com,mpnnow.com,mycentraljersey.com,naplesnews.com,newarkadvocate.com,newbernsj.com,newportri.com,news-journalonline.com,news-leader.com,news-press.com,newschief.com,newsherald.com,newsleader.com,njherald.com,northjersey.com,norwichbulletin.com,nwfdailynews.com,oakridger.com,ocala.com,oklahoman.com,onlineathens.com,pal-item.com,palmbeachdailynews.com,palmbeachpost.com,patriotledger.com,pekintimes.com,petoskeynews.com,pjstar.com,pnj.com,poconorecord.com,pontiacdailyleader.com,portclintonnewsherald.com,postcrescent.com,poughkeepsiejournal.com,press-citizen.com,pressconnects.com,progress-index.com,providencejournal.com,publicopiniononline.com,record-courier.com,recordnet.com,recordonline.com,redding.com,registerguard.com,reporter-times.com,reporternews.com,rgj.com,rrstar.com,ruidosonews.com,salina.com,savannahnow.com,scsun-news.com,sctimes.com,seacoastonline.com,sheboyganpress.com,shelbystar.com,shreveporttimes.com,sj-r.com,sooeveningnews.com,southbendtribune.com,southcoasttoday.com,starcourier.com,stargazette.com,starnewsonline.com,statesman.com,statesmanjournal.com,staugustine.com,stevenspointjournal.com,sturgisjournal.com,swtimes.com,tallahassee.com,tauntongazette.com,tcpalm.com,telegram.com,tennessean.com,the-daily-record.com,the-dispatch.com,the-leader.com,the-review.com,theadvertiser.com,thecalifornian.com,thedailyjournal.com,thedailyreporter.com,thegardnernews.com,thegleaner.com,thehawkeye.com,theintell.com,theleafchronicle.com,theledger.com,thenews-messenger.com,thenewsstar.com,thenorthwestern.com,thepublicopinion.com,therecordherald.com,thespectrum.com,thestarpress.com,thetimesherald.com,thetimesnews.com,thetowntalk.com,times-gazette.com,timesonline.com,timesrecordnews.com,timesreporter.com,timestelegram.com,tmnews.com,tricountyindependent.com,tuscaloosanews.com,uticaod.com,vcstar.com,visaliatimesdelta.com,vvdailypress.com,wausaudailyherald.com,wisconsinrapidstribune.com,ydr.com,zanesvilletimesrecorder.com##+js(cookie-remover, firefly_akamai_meter)
 ##.gnt_pm
 
-! https://www.chicagotribune.com (and other Tribune news websites)
-||zephr.*/zephr/feature-decisions$xhr,domain=baltimoresun.com|capitalgazette.com|chicagotribune.com|courant.com|dailypress.com|mcall.com|nydailynews.com|orlandosentinel.com|pilotonline.com|sun-sentinel.com
-baltimoresun.com,capitalgazette.com,chicagotribune.com,courant.com,dailypress.com,mcall.com,nydailynews.com,orlandosentinel.com,pilotonline.com,sun-sentinel.com###top_article_fluid_wrapper
+! Guardian, The ; 2022-08-25
+||assets.guim.co.uk/assets/SignInGateSelector-importable.*.js$script,domain=theguardian.com
 
-! 2022-08-25 https://napavalleyregister.com (and other Lee news websites)
+! H
+
+! Harper’s Magazine ; 2022-08-24
+harpers.org##+js(cookie-remover, hr_session)
+
+! High Country News ; 2022-08-25
+hcn.org##+js(ra, content, meta[name="UID"])
+
+! I
+
+! J
+
+! K
+
+! L
+
+! Lee Enterprises ; 2022-08-25
 allpoliticsnow.com,atlanticcityweekly.com,auburnpub.com,azdailysun.com,beatricedailysun.com,big10central.com,billingsgazette.com,bismarcktribune.com,breakingone.com,buffalonews.com,casperjournal.com,chippewa.com,clarindaherald.com,columbustelegram.com,cumberlink.com,dailyjournalonline.com,dailyprogress.com,dbrnews.com,democratherald.com,dothaneagle.com,easytravel101.com,elkodaily.com,feastandfield.net,fredericksburg.com,fremonttribune.com,gazettetimes.com,globegazette.com,godanriver.com,greensboro.com,helenair.com,herald-review.com,heraldcourier.com,hickoryrecord.com,huskerextra.com,independenttribune.com,jg-tc.com,journalnow.com,journalstar.com,journaltimes.com,kearneyhub.com,kenoshanews.com,lacrossetribune.com,lakegenevanews.net,lebanon-express.com,lexch.com,loganwoodbine.com,madison.com,magicvalley.com,martinsvillebulletin.com,mcdowellnews.com,missoulian.com,mooresvilletribune.com,morganton.com,mtstandard.com,muscatinejournal.com,myaggienation.com,napavalleyregister.com,newsadvance.com,newsvirginian.com,nonpareilonline.com,nptelegraph.com,nwitimes.com,oanow.com,omaha.com,pantagraph.com,poststar.com,pressofatlanticcity.com,prostoknow.com,qconline.com,qctimes.com,qctoday.com,rapidcityjournal.com,ravallirepublic.com,richmond.com,roanoke.com,safeliving101.com,scnow.com,siouxcityjournal.com,smithmountainlake.com,starexponent.com,starherald.com,statesville.com,stlpinchhits.com,stltoday.com,swvatoday.com,tastyrecipes101.com,tdn.com,theeagle.com,thefranklinnewspost.com,theindependent.com,thesouthern.com,thetandd.com,timegoggles.com,trib.com,tucson.com,tulsaworld.com,valleynewstoday.com,wacotrib.com,wahoo-ashland-waverly.com,wcfcourier.com,whiskers101.com,winonadailynews.com,wiscnews.com,yorknewstimes.com##+js(set, TNCMS.Access.checkAccess, noopFunc)
 
-! 2022-08-25 https://www.theolympian.com (and other McClatchy news websites)
+! Los Angeles Times ; 2022-08-25
+||libs.platform.californiatimes.com/meteringjs/latspot.js$script,domain=latimes.com
+
+! M
+
+! McClatchy ; 2022-08-25
 bellinghamherald.com,bnd.com,bradenton.com,centredaily.com,charlotteobserver.com,elnuevoherald.com,flkeysnews.com,fresnobee.com,heraldonline.com,heraldsun.com,idahostatesman.com,islandpacket.com,kansas.com,kansascity.com,kentucky.com,ledger-enquirer.com,macon.com,mcclatchydc.com,mercedsunstar.com,miamiherald.com,modbee.com,myrtlebeachonline.com,newsobserver.com,sacbee.com,sanluisobispo.com,star-telegram.com,sunherald.com,thenewstribune.com,theolympian.com,thestate.com,tri-cityherald.com##+js(cookie-remover, sessionz)
 
-! https://www.smh.com.au (and other Nine news websites)
-brisbanetimes.com.au,smh.com.au,theage.com.au,watoday.com.au##+js(aopr, localStorage.ffx:paywallCount)
+! N
 
-! 2022-08-25 https://www.nytimes.com
+! New Atlantis, The ; 2022-08-25
+thenewatlantis.com##+js(rc, article-gated, .gutenberg-content)
+thenewatlantis.com##.gate-gradient
+
+! New Republic, The ; 2022-08-24
+||blink.net/json/public_data.newrepublic.com.json$xhr,domain=newrepublic.com
+
+! New York Review of Books, The ; 2022-08-24
+nybooks.com##+js(rc, paywall-article, .article-main-content)
+
+! New York Times, The ; 2022-08-25
 ||meter-svc.nytimes.com/meter.js$xhr,1p
 ||mwcm.nytimes.com/capi/metered_assets/*$xhr,1p
 nytimes.com##[data-testid="inline-message"]
 
-! 2022-08-25 https://www.washingtonpost.com
-||washingtonpost.com/tetro/evaluate$xhr,1p
+! Nine Entertainment ; 2022-08-25
+brisbanetimes.com.au,smh.com.au,theage.com.au,watoday.com.au##+js(aopr, localStorage.ffx:paywallCount)
 
-! 2022-08-25 https://www.latimes.com
-||libs.platform.californiatimes.com/meteringjs/latspot.js$script,domain=latimes.com
+! O
 
-! 2022-08-25 https://www.sandiegouniontribune.com
-||libs.platform.californiatimes.com/meteringjs/sdutspot.js$script,domain=sandiegouniontribune.com
+! P
 
-! 2022-08-25 https://philosophynow.org
+! Philosophy Now ; 2022-08-25
 philosophynow.org##+js(cookie-remover, PNQuota)
 philosophynow.org###welcome_box
 
-! 2022-08-25 https://www.reuters.com
-||reuters.com/arc/subs/p.min.js$script,1p
-
-! 2022-08-25 https://www.telegraph.co.uk
-||telegraph.co.uk/etc/designs/telegraph/core/clientlibs/piano.min.*.js$script,1p
-
-! 2022-08-25 https://thepointmag.com
+! Point, The ; 2022-08-25
 thepointmag.com##+js(nostif, DisplayInfo, 3000)
 
-! 2022-08-25 https://www.thenewatlantis.com
-thenewatlantis.com##+js(rc, article-gated, .gutenberg-content)
-thenewatlantis.com##.gate-gradient
+! Q
 
-! 2022-08-25 https://www.americanbanker.com
-americanbanker.com##+js(set, contentGating.ungate, true)
+! R
 
-! 2022-08-25 https://americanaffairsjournal.org
-||americanaffairsjournal.org/wp-content/mu-plugins/app/src/paywall/paywall.js$script,1p
+! Reuters ; 2022-08-25
+||reuters.com/arc/subs/p.min.js$script,1p
 
-! 2022-08-25 https://www.csmonitor.com
-csmonitor.com##+js(set, csmJs.util.isSubscriber, trueFunc)
-csmonitor.com###sticky-messenger
+! S
 
-! 2022-08-25 https://www.theartnewspaper.com
-theartnewspaper.com##+js(cookie-remover, tan.adaa)
+! San Diego Union-Tribune, The ; 2022-08-25
+||libs.platform.californiatimes.com/meteringjs/sdutspot.js$script,domain=sandiegouniontribune.com
 
-! 2022-08-25 https://magazine.atavist.com
-magazine.atavist.com##+js(set, paywalledArticlesRead, '')
+! Scientific American ; 2022-08-24
+scientificamerican.com##+js(cookie-remover, spw_l)
 
-! 2022-08-25 https://www.afr.com
-||api.afr.com/graphql?query=*PaywallRuleQuery$xhr,1p
+! T
 
-! 2022-08-25 https://www.chronicle.com (and https://www.philanthropy.com)
-chronicle.com,philanthropy.com##+js(ra, data-content-body, .contentBody)
-chronicle.com,philanthropy.com##[data-content-summary]
+! Telegraph, The ; 2022-08-25
+||telegraph.co.uk/etc/designs/telegraph/core/clientlibs/piano.min.*.js$script,1p
 
-! 2022-08-25 https://www.thedriftmag.com
-||thedriftmag.com/wp-content/plugins/drift-paywall-plugin/public/js/drift-paywall-plugin-public.js$script,1p
-
-! 2022-08-25 https://www.theguardian.com
-||assets.guim.co.uk/assets/SignInGateSelector-importable.*.js$script,domain=theguardian.com
-
-! 2022-08-25 https://www.hcn.org
-hcn.org##+js(ra, content, meta[name="UID"])
-
-! 2022-08-25 https://www.behance.net
-behance.net##[class*="Search-contentBlocker-"]
-
-! 2022-08-25 https://time.com
+! Time ; 2022-08-25
 time.com##+js(cookie-remover, time_meter_v2)
 time.com##.meter-wall
+
+! Tribune Publishing ; 2022-08-25
+||zephr.*/zephr/feature-decisions$xhr,domain=baltimoresun.com|capitalgazette.com|chicagotribune.com|courant.com|dailypress.com|mcall.com|nydailynews.com|orlandosentinel.com|pilotonline.com|sun-sentinel.com
+baltimoresun.com,capitalgazette.com,chicagotribune.com,courant.com,dailypress.com,mcall.com,nydailynews.com,orlandosentinel.com,pilotonline.com,sun-sentinel.com###top_article_fluid_wrapper
+
+! U
+
+! V
+
+! W
+
+! Washington Post ; 2022-08-25
+||washingtonpost.com/tetro/evaluate$xhr,1p
+
+! X
+
+! Y
+
+! Z
