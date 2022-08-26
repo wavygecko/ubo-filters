@@ -161,6 +161,7 @@ deadline.com##.toaster
 
 ! 2022-08-25 https://www.science.org
 science.org##.alert-donation
+science.org##.related-content.pop-after-passed.js-sticky
 
 ! 2022-08-25 https://www.eater.com
 eater.com###toaster
@@ -185,3 +186,6 @@ scroll.in##.floating-contribute-block
 
 ! 2022-08-25 https://www.pbs.org
 pbs.org##.popup
+
+! 2022-08-26 https://www.nature.com
+nature.com##.c-site-messages--nature-briefing
