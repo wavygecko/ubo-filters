@@ -12,9 +12,9 @@
 ! popups
 /wp-content/plugins/boxzilla/*
 
-! Digioh ; 2022-08-25 (e.g., deadline.com)
+! Digioh ; 2022-08-25 (e.g., csmonitor.com, deadline.com)
 ! popups
-||lightboxcdn.com/vendor/*/lightbox_speed.js$script
+||lightboxcdn.com^$3p
 
 ! Hustle ; 2022-08-25 (e.g., mediabiasfactcheck.com)
 ! popups
@@ -244,12 +244,12 @@ fandom.com###WikiaBar:has(> #WikiaBarWrapper > .wikia-bar-anon)
 
 ! Foreign Policy ; 2022-08-24
 ! gates
-foreignpolicy.com##+js(rc, content-gated)
+foreignpolicy.com##+js(rc, content-gated, , stay)
 foreignpolicy.com##.content-ungated
 
 ! Fortune ; 2022-08-24
 ! gates
-fortune.com##+js(rc, paywallActive, .paywall)
+fortune.com##+js(rc, paywallActive, , stay)
 
 ! G
 
@@ -288,6 +288,10 @@ hcn.org##+js(set, $.delayPromo, noopFunc)
 howtogeek.com###notificationAllowPrompt
 
 ! I
+
+! International Consortium of Investigative Journalists, The ; 2022-08-27
+! popups
+icij.org##^modal-popup[track="WEB-POPUP-ARTICLE"]
 
 ! J
 
@@ -351,8 +355,10 @@ nautil.us##.subscibe-bar
 
 ! New Atlantis, The ; 2022-08-25
 ! gates
-thenewatlantis.com##+js(rc, article-gated, .gutenberg-content)
+thenewatlantis.com##+js(rc, article-gated, , stay)
 thenewatlantis.com##.gate-gradient
+! popups
+||thenewatlantis.com/wp-content/themes/thenewatlantis/js/donate.js$script,1p
 
 ! New Republic, The ; 2022-08-24
 ! gates
@@ -360,7 +366,7 @@ thenewatlantis.com##.gate-gradient
 
 ! New York Review of Books, The ; 2022-08-24
 ! gates
-nybooks.com##+js(rc, paywall-article, .article-main-content)
+nybooks.com##+js(rc, paywall-article, , stay)
 ! popups
 nybooks.com##.toast-cta
 
