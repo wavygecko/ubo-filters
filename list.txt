@@ -240,6 +240,7 @@ emergencemagazine.org##.c-audio-bar:not(.has-played)
 
 ! Fandom ; 2022-08-25
 ! popups
+fandom.com##.notifications-placeholder
 fandom.com###WikiaBar:has(> #WikiaBarWrapper > .wikia-bar-anon)
 
 ! Foreign Policy ; 2022-08-24
