@@ -240,6 +240,11 @@ emergencemagazine.org##.newsletter-dropin
 ! annoyances
 emergencemagazine.org##.c-audio-bar:not(.has-played)
 
+! eNotes ; 2022-08-27
+! gates
+enotes.com##+js(cookie-remover, ENOTESID)
+enotes.com##.c-cta-section
+
 ! F
 
 ! Fandom ; 2022-08-25
