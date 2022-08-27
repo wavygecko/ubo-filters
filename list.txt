@@ -20,6 +20,10 @@
 ! popups
 /wp-content/plugins/wordpress-popup/*
 
+! Klaviyo ; 2022-08-27 (e.g., cooksy.com)
+! popups
+||static.klaviyo.com/onsite/js/*signup_forms.*.js$script
+
 ! MailOptin ; 2022-08-25 (e.g., apex-magazine.com)
 ! popups
 /wp-content/plugins/mailoptin/*
@@ -364,6 +368,8 @@ thenewatlantis.com##.gate-gradient
 ! New Republic, The ; 2022-08-24
 ! gates
 ||blink.net/json/public_data.newrepublic.com.json$xhr,domain=newrepublic.com
+! annoyances
+newrepublic.com##.ad-container-house
 
 ! New York Review of Books, The ; 2022-08-24
 ! gates
