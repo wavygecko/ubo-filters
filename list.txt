@@ -557,6 +557,7 @@ e360.yale.edu##+js(nostif, Swal.fire, 15000)
 
 ! YouTube ; 2022-08-25
 ! popups
+youtube-nocookie.com,youtube.com##.ytp-pause-overlay
 youtube.com##.ytp-cards-button
 youtube.com##.ytp-cards-teaser
 youtube.com##.iv-branding
