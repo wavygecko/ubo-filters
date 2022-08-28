@@ -54,6 +54,10 @@ gadget.pico.tools##+js(json-prune, locked)
 ! popups
 /wp-content/plugins/popup-builder/*
 
+! Weebly ; 2022-08-28 (e.g., valeriewai.com)
+! popups
+||cdn-promote.weebly.com/js/dist/lead-form.js$script
+
 ! WP Popups ; 2022-08-25 (e.g., thewalrus.ca)
 ! popups
 /wp-content/plugins/wppopups/*
@@ -153,9 +157,9 @@ bookforum.com##.paywall-counter
 ! popups
 bookforum.com##^af-dont-go
 
-! Boston Globe, The ; 2022-08-24
+! Boston Globe, The ; 2022-08-28
 ! gates
-||meter.bostonglobe.com/js/meter.js$script,1p
+||meter.bostonglobe.com^$1p
 
 ! Boston Review ; 2022-08-25
 ! annoyances
