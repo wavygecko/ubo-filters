@@ -157,10 +157,6 @@ bookforum.com##.paywall-counter
 ! popups
 bookforum.com##^af-dont-go
 
-! Boston Globe, The ; 2022-08-28
-! gates
-||meter.bostonglobe.com^$1p
-
 ! Boston Review ; 2022-08-25
 ! annoyances
 bostonreview.net##.elementor-element-1b2cb65
