@@ -561,6 +561,10 @@ markandgraham.com,pbteen.com,potterybarn.com,potterybarnkids.com,rejuvenation.co
 pbteen.com,potterybarn.com,potterybarnkids.com,westelm.com,williams-sonoma.com###quiqChatLaunch
 rejuvenation.com###quiqWebChat
 
+! Windows Central ; 2022-08-29
+! popups
+windowscentral.com###slice-container-exitIntent
+
 ! X
 
 ! Y
@@ -583,4 +587,15 @@ youtube.com##.ytd-rich-section-renderer
 
 
 ! UNSORTED
+
+
+! Tumblr ; 2022-08-28
+! gates
+||assets.tumblr.com/pop/js/modern/async-login-wall-*.js$script,1p
+tumblr.com##+js(ra, data-login-wall-type, , stay)
+! popups
+tumblr.com##div:has(> [style="background:#7c5cff;color:#ffffff"])
+tumblr.com##div:has(> [style="background: rgb(124, 92, 255) none repeat scroll 0% 0%; color: rgb(255, 255, 255);"])
+! annoyances
+tumblr.com##div:has(> [style="background: rgb(255, 138, 0) none repeat scroll 0% 0%; color: rgb(255, 255, 255);"])
 
