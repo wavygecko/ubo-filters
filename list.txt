@@ -222,6 +222,10 @@ deadline.com##.toaster
 ! annoyances
 deadline.com##.pmc-breaking-news
 
+! Door of Perception ; 2022-08-28
+! popups
+doorofperception.com##+js(nostif, newsletter_show, 2000)
+
 ! Drift, The ; 2022-08-25
 ! gates
 ||thedriftmag.com/wp-content/plugins/drift-paywall-plugin/public/js/drift-paywall-plugin-public.js$script,1p
@@ -322,6 +326,10 @@ knowablemagazine.org##.newsletter-modal
 ! Lee Enterprises ; 2022-08-25
 ! gates
 allpoliticsnow.com,atlanticcityweekly.com,auburnpub.com,azdailysun.com,beatricedailysun.com,big10central.com,billingsgazette.com,bismarcktribune.com,breakingone.com,buffalonews.com,casperjournal.com,chippewa.com,clarindaherald.com,columbustelegram.com,cumberlink.com,dailyjournalonline.com,dailyprogress.com,dbrnews.com,democratherald.com,dothaneagle.com,easytravel101.com,elkodaily.com,feastandfield.net,fredericksburg.com,fremonttribune.com,gazettetimes.com,globegazette.com,godanriver.com,greensboro.com,helenair.com,herald-review.com,heraldcourier.com,hickoryrecord.com,huskerextra.com,independenttribune.com,jg-tc.com,journalnow.com,journalstar.com,journaltimes.com,kearneyhub.com,kenoshanews.com,lacrossetribune.com,lakegenevanews.net,lebanon-express.com,lexch.com,loganwoodbine.com,madison.com,magicvalley.com,martinsvillebulletin.com,mcdowellnews.com,missoulian.com,mooresvilletribune.com,morganton.com,mtstandard.com,muscatinejournal.com,myaggienation.com,napavalleyregister.com,newsadvance.com,newsvirginian.com,nonpareilonline.com,nptelegraph.com,nwitimes.com,oanow.com,omaha.com,pantagraph.com,poststar.com,pressofatlanticcity.com,prostoknow.com,qconline.com,qctimes.com,qctoday.com,rapidcityjournal.com,ravallirepublic.com,richmond.com,roanoke.com,safeliving101.com,scnow.com,siouxcityjournal.com,smithmountainlake.com,starexponent.com,starherald.com,statesville.com,stlpinchhits.com,stltoday.com,swvatoday.com,tastyrecipes101.com,tdn.com,theeagle.com,thefranklinnewspost.com,theindependent.com,thesouthern.com,thetandd.com,timegoggles.com,trib.com,tucson.com,tulsaworld.com,valleynewstoday.com,wacotrib.com,wahoo-ashland-waverly.com,wcfcourier.com,whiskers101.com,winonadailynews.com,wiscnews.com,yorknewstimes.com##+js(set, TNCMS.Access.checkAccess, noopFunc)
+
+! List Apart, A ; 2022-08-28
+! popups
+alistapart.com##.coil-banner-message-container
 
 ! Literary Hub (and CrimeReads) ; 2022-08-25
 ! popups
@@ -546,6 +554,12 @@ thewalrus.ca##._form-wrapper
 ! Washington Post ; 2022-08-25
 ! gates
 ||washingtonpost.com/tetro/evaluate$xhr,1p
+
+! Williams-Sonoma ; 2022-08-28
+! popups
+markandgraham.com,pbteen.com,potterybarn.com,potterybarnkids.com,rejuvenation.com,westelm.com,williams-sonoma.com##+js(set, WSI.contentPersonalization.hideEmailCaptureOverlay, true)
+pbteen.com,potterybarn.com,potterybarnkids.com,westelm.com,williams-sonoma.com###quiqChatLaunch
+rejuvenation.com###quiqWebChat
 
 ! X
 
