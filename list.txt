@@ -1,551 +1,171 @@
 [uBlock Origin]
 ! Title: WavyGecko’s filters
-! Description: Blocks content gates, popups, and other annoyances. Use with EasyList Cookie List and the default uBlock Origin filters.
+! Description: Blocks paywalls and other annoyances
 ! Expires: 2 days
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
 
 
-! GENERIC
+! Paywalls
 
 ! 2022-08-23 Pico (e.g., https://defector.com)
-! gates
 ||api.pico.tools/popup/null/*$xhr
 ||api.pico.tools/client/query/*$xhr
 gadget.pico.tools##+js(json-prune, locked)
 
-! 2022-08-24 Piano (e.g., https://www.forbes.com, https://theintercept.com)
-! gates
-/api/tinypass.min.js$script
-
-! 2022-08-24 Pelcro (e.g., https://www.edweek.org, https://www.frieze.com)
-! gates
-||js.pelcro.com/sdk/main.min.js$script
-
-! 2022-08-25 Popup Builder (e.g., https://delacortereview.org)
-! popups
-/wp-content/plugins/popup-builder/*
-
-! 2022-08-25 Digioh (e.g., https://www.csmonitor.com, https://deadline.com)
-! popups
-||lightboxcdn.com^$3p
-
-! 2022-08-25 MailOptin (e.g., https://apex-magazine.com)
-! popups
-/wp-content/plugins/mailoptin/*
-
-! 2022-08-25 Hustle (e.g., https://mediabiasfactcheck.com)
-! popups
-/wp-content/plugins/wordpress-popup/*
-
-! 2022-08-25 Boxzilla (e.g., https://thebaffler.com)
-! popups
-/wp-content/plugins/boxzilla/*
-
-! 2022-08-25 Pendo (e.g., https://lareviewofbooks.org)
-! popups
-||data.pendo.io/data/guide.js/*$script
-
-! 2022-08-25 Newspack (e.g., https://magazine.atavist.com)
-! popups
-/wp-content/plugins/newspack-popups/*
-
-! 2022-08-25 WP Popups (e.g., https://thewalrus.ca)
-! popups
-/wp-content/plugins/wppopups/*
-
-! 2022-08-27 Klaviyo (e.g., https://cooksy.com)
-! popups
-||static.klaviyo.com/onsite/js/*signup_forms.*.js$script
-
-! 2022-08-28 Weebly (e.g., https://www.valeriewai.com)
-! popups
-||cdn-promote.weebly.com/js/dist/lead-form.js$script
-
-! 2022-08-28 Tumblr (e.g., https://theycantalk.com)
-! popups
-##.tmblr-iframe--follow-teaser
-
-
-! SPECIFIC
-
 ! 2022-08-24 Condé Nast (e.g., https://www.vogue.com)
-! gates
 ||journey.*/build-*.js$script,domain=allure.com|architecturaldigest.com|bonappetit.com|cntraveler.com|gq.com|newyorker.com|pitchfork.com|vanityfair.com|vogue.co.uk|vogue.com|voguebusiness.com|wired.com
-! annoyances
-ad-italia.it,ad-magazin.de,admagazine.com,admagazine.fr,admagazine.ru,allure.com,architecturaldigest.com,architecturaldigest.in,bonappetit.com,cntraveler.com,cntraveller.com,cntraveller.in,glamour.com,glamour.de,glamour.es,glamour.mx,glamour.ru,glamourmagazine.co.uk,gq-magazin.de,gq-magazine.co.uk,gq.com,gq.com.mx,gq.com.tw,gq.ru,gqindia.com,gqitalia.it,gqjapan.jp,gqmagazine.fr,houseandgarden.co.uk,lacucinaitaliana.it,newyorker.com,pitchfork.com,revistaad.es,revistagq.com,revistavanityfair.es,self.com,tatler.com,tatler.ru,teenvogue.com,them.us,traveler.es,vanityfair.com,vanityfair.fr,vanityfair.it,vogue.co.jp,vogue.co.uk,vogue.com,vogue.com.tw,vogue.de,vogue.es,vogue.fr,vogue.in,vogue.it,vogue.mx,vogue.ru,voguebusiness.com,wired.co.uk,wired.com,wired.it,wired.jp##.ticker-view
 
 ! 2022-08-24 https://www.bloomberg.com
-! gates
 bloomberg.com##+js(aopw, localStorage)
 bloomberg.com###fortress-preblocked-container-root
 ||assets.bwbx.io/s3/javelin/public/javelin/js/foundation/transporter/foundation_transporter-*.js$script,domain=bloomberg.com
 
+! 2022-08-24 Piano (e.g., https://theintercept.com)
+/api/tinypass.min.js$script
+
 ! 2022-08-24 https://newrepublic.com
-! gates
 ||blink.net/json/public_data.newrepublic.com.json$xhr,domain=newrepublic.com
-! annoyances
-newrepublic.com##.ad-container-house
 
 ! 2022-08-24 https://www.artforum.com
-! gates
 artforum.com##+js(cookie-remover, WuyKAug487fYF08ksQeZiuyfq)
 artforum.com##.paywall-counter
 
 ! 2022-08-24 https://www.bookforum.com
-! gates
 bookforum.com##+js(set, localStorage.paywallCounter, '')
 bookforum.com##.paywall-counter
-! popups
-bookforum.com##^af-dont-go
 
 ! 2022-08-24 https://www.theatlantic.com
-! gates
 theatlantic.com##+js(cookie-remover, articleViews)
 theatlantic.com###paywall
 theatlantic.com##.c-nudge__container
-! popups
-theatlantic.com###nonMeteredNudge
-theatlantic.com###sponsoredNonMeteredNudge
-theatlantic.com##.c-non-metered-nudge
 
 ! 2022-08-24 https://fortune.com
-! gates
 fortune.com##+js(rc, paywallActive, , stay)
 
 ! 2022-08-24 https://foreignpolicy.com
-! gates
 foreignpolicy.com##+js(rc, content-gated, , stay)
 foreignpolicy.com##.content-ungated
 
 ! 2022-08-24 https://cen.acs.org
-! gates
 cen.acs.org##+js(cookie-remover, paywall-cookie)
 cen.acs.org##.ipar_paywall
 
 ! 2022-08-24 https://harpers.org
-! gates
 harpers.org##+js(cookie-remover, hr_session)
 
 ! 2022-08-24 https://www.nybooks.com
-! gates
 nybooks.com##+js(rc, paywall-article, , stay)
-! popups
-nybooks.com##.toast-cta
+
+! 2022-08-24 Pelcro (e.g., https://www.frieze.com)
+||js.pelcro.com/sdk/main.min.js$script
 
 ! 2022-08-24 https://www.scientificamerican.com
-! gates
 scientificamerican.com##+js(cookie-remover, spw_l)
-! popups
-scientificamerican.com##.spw
-! annoyances
-scientificamerican.com##.home-banner
-scientificamerican.com###promo-header
-
-! 2022-08-25 https://www.damninteresting.com
-! popups
-damninteresting.com##.plea
-
-! 2022-08-25 https://bleacherreport.com
-! popups
-bleacherreport.com##.newsletterSubsModule.flyIn
-! annoyances
-bleacherreport.com##.topNews
-
-! 2022-08-25 https://www.theguardian.com
-! gates
-||assets.guim.co.uk/assets/SignInGateSelector-importable.*.js$script,domain=theguardian.com
-! popups
-||sourcepoint.theguardian.com/index.html?message_id=690155$subdocument,1p
-||contributions.guardianapis.com/modules/v*/banners/contributions/ContributionsBanner.js$script,domain=theguardian.com
-! annoyances
-||assets.guim.co.uk/assets/TopRightAdSlot-importable.*.js$script,domain=theguardian.com
 
 ! 2022-08-25 https://www.thedriftmag.com
-! gates
 ||thedriftmag.com/wp-content/plugins/drift-paywall-plugin/public/js/drift-paywall-plugin-public.js$script,1p
 
 ! 2022-08-25 https://www.theartnewspaper.com
-! gates
 theartnewspaper.com##+js(cookie-remover, tan.adaa)
 
 ! 2022-08-25 Nine Entertainment (e.g., https://www.smh.com.au)
-! gates
 brisbanetimes.com.au,smh.com.au,theage.com.au,watoday.com.au##+js(aopr, localStorage.ffx:paywallCount)
 
 ! 2022-08-25 https://philosophynow.org
-! gates
 philosophynow.org##+js(cookie-remover, PNQuota)
 philosophynow.org###welcome_box
 
 ! 2022-08-25 https://www.reuters.com
-! gates
 ||reuters.com/arc/subs/p.min.js$script,1p
-! annoyances
-reuters.com##[class*="registration-prompt__container__"]
-
-! 2022-08-25 https://www.vox.com
-! annoyances
-vox.com##.contribute-banner
 
 ! 2022-08-25 https://americanaffairsjournal.org
-! gates
 ||americanaffairsjournal.org/wp-content/mu-plugins/app/src/paywall/paywall.js$script,1p
 
-! 2022-08-25 https://www.pbs.org
-! popups
-pbs.org##.popup
-
-! 2022-08-25 http://smarterplaylists.playlistmachinery.com
-! annoyances
-smarterplaylists.playlistmachinery.com##th:has-text(Created)
-smarterplaylists.playlistmachinery.com##th:has-text(# Components)
-
 ! 2022-08-25 https://www.telegraph.co.uk
-! gates
 ||telegraph.co.uk/etc/designs/telegraph/core/clientlibs/piano.min.*.js$script,1p
-! annoyances
-telegraph.co.uk##.subscribe-banner
 
 ! 2022-08-25 https://magazine.atavist.com
-! gates
 magazine.atavist.com##+js(set, paywalledArticlesRead, '')
 
 ! 2022-08-25 https://www.americanbanker.com
-! gates
 americanbanker.com##+js(set, contentGating.ungate, true)
 
 ! 2022-08-25 https://thepointmag.com
-! gates
 thepointmag.com##+js(nostif, DisplayInfo, 3000)
 
 ! 2022-08-25 https://www.washingtonpost.com
-! gates
 ||washingtonpost.com/tetro/evaluate$xhr,1p
 
-! 2022-08-25 https://www.polygon.com
-! popups
-polygon.com###toaster
-
-! 2022-08-25 https://old.reddit.com
-! popups
-old.reddit.com##.read-next
-! annoyances
-old.reddit.com##.premium-banner-outer
-old.reddit.com##.listingsignupbar
-old.reddit.com##.commentsignupbar
-
-! 2022-08-25 https://lithub.com, https://crimereads.com
-! popups
-crimereads.com,lithub.com###post_more_wrapper
-
-! 2022-08-25 https://www.howtogeek.com
-! popups
-howtogeek.com###notificationAllowPrompt
-
-! 2022-08-25 https://knowablemagazine.org
-! popups
-knowablemagazine.org##.newsletter-modal
-
 ! 2022-08-25 https://www.hcn.org
-! gates
 hcn.org##+js(ra, content, meta[name="UID"])
-! popups
-hcn.org##+js(set, $.delayPromo, noopFunc)
-
-! 2022-08-25 https://www.cjr.org
-! popups
-||cjr.org/wp-content/themes/cjr2017/*interstitial_full_sail*$1p
-! annoyances
-cjr.org##^#chartbeat-flicker-control-style
 
 ! 2022-08-25 Tribune Publishing (e.g., https://www.chicagotribune.com)
-! gates
 ||zephr.*/zephr/feature-decisions$xhr,domain=baltimoresun.com|capitalgazette.com|chicagotribune.com|courant.com|dailypress.com|mcall.com|nydailynews.com|orlandosentinel.com|pilotonline.com|sun-sentinel.com
 baltimoresun.com,capitalgazette.com,chicagotribune.com,courant.com,dailypress.com,mcall.com,nydailynews.com,orlandosentinel.com,pilotonline.com,sun-sentinel.com###top_article_fluid_wrapper
 
-! 2022-08-25 https://www.fandom.com
-! popups
-fandom.com##.notifications-placeholder
-fandom.com###WikiaBar:has(> #WikiaBarWrapper > .wikia-bar-anon)
-
-! 2022-08-25 https://www.twitch.tv
-! popups
-twitch.tv###twilight-sticky-footer-root
-! annoyances
-twitch.tv##.prime-offers__pill
-twitch.tv##.extensions-dock__layout
-twitch.tv##button[data-a-target="player-clip-button"]
-
-! 2022-08-25 https://bostonreview.net
-! annoyances
-bostonreview.net##.elementor-element-1b2cb65
-bostonreview.net##.elementor-element-16134f5
-
 ! 2022-08-25 https://www.latimes.com
-! gates
 ||libs.platform.californiatimes.com/meteringjs/latspot.js$script,domain=latimes.com
 
 ! 2022-08-25 https://www.sandiegouniontribune.com
-! gates
 ||libs.platform.californiatimes.com/meteringjs/sdutspot.js$script,domain=sandiegouniontribune.com
 
-! 2022-08-25 https://thewalrus.ca/
-! popups
-thewalrus.ca##._form-wrapper
-
-! 2022-08-25 https://discussions.apple.com
-! popups
-discussions.apple.com##.notification.site-wide
-discussions.apple.com##.persist-question
-
-! 2022-08-25 https://vimeo.com
-! popups
-vimeo.com##+js(set, vimeo.clip_page_config.google_app_id, '')
-vimeo.com##+js(set, vimeo.clip_page_config.banner, {})
-
-! 2022-08-25 https://deadline.com
-! popups
-deadline.com##.toaster
-! annoyances
-deadline.com##.pmc-breaking-news
-
-! 2022-08-25 https://www.mcsweeneys.net
-! popups
-mcsweeneys.net###floating-footer-container
-! annoyances
-mcsweeneys.net##.breaking-news-container
-
-! 2022-08-25 https://www.propublica.org
-! popups
-||assets.propublica.org/static/prod/v*/js/deploy/syndicated-newsletter-v*.js$script,1p
-
 ! 2022-08-25 https://www.afr.com
-! gates
 ||api.afr.com/graphql?query=*PaywallRuleQuery$xhr,1p
 
-! 2022-08-25 https://nautil.us
-! popups
-nautil.us##.subscibe-bar
-
 ! 2022-08-25 McClatchy (e.g., https://www.theolympian.com)
-! gates
 bellinghamherald.com,bnd.com,bradenton.com,centredaily.com,charlotteobserver.com,elnuevoherald.com,flkeysnews.com,fresnobee.com,heraldonline.com,heraldsun.com,idahostatesman.com,islandpacket.com,kansas.com,kansascity.com,kentucky.com,ledger-enquirer.com,macon.com,mcclatchydc.com,mercedsunstar.com,miamiherald.com,modbee.com,myrtlebeachonline.com,newsobserver.com,sacbee.com,sanluisobispo.com,star-telegram.com,sunherald.com,thenewstribune.com,theolympian.com,thestate.com,tri-cityherald.com##+js(cookie-remover, sessionz)
 
-! 2022-08-25 https://www.behance.net
-! gates
-behance.net##[class*="Search-contentBlocker-"]
-! popups
-behance.net##.Popup-popup-Hub
-behance.net##[class*="PrimaryNav-loggedOutOptions-"] [class*="PrimaryNav-tooltipWrapper-"]
-! annoyances
-behance.net##[class*="ImageElement-blockPointerEvents-"]:style(pointer-events: auto !important;)
-behance.net##[class*="Module-blockGridPointerEvents-"] .grid__item-image:style(pointer-events: auto !important;)
-behance.net###lightbox-wrap img:style(pointer-events: auto !important;)
-
 ! 2022-08-25 https://www.csmonitor.com
-! gates
 csmonitor.com##+js(set, csmJs.util.isSubscriber, trueFunc)
 csmonitor.com###sticky-messenger
-! annoyances
-csmonitor.com###csm-promotions-banner
-
-! 2022-08-25 https://www.artandeducation.net
-! popups
-artandeducation.net##.overlayer
-
-! 2022-08-25 https://www.currentaffairs.org
-! annoyances
-currentaffairs.org##.wp-block-image:has(> a[href$="/subscribe"])
-currentaffairs.org##.wp-block-image:has(> a[href$="/donate"])
-
-! 2022-08-25 https://www.thebeliever.net
-! popups
-thebeliever.net##.subscriber-popup-container
-
-! 2022-08-25 https://emergencemagazine.org
-! popups
-emergencemagazine.org##.newsletter-overlay
-emergencemagazine.org##.newsletter-popup
-emergencemagazine.org##.newsletter-dropin
-! annoyances
-emergencemagazine.org##.c-audio-bar:not(.has-played)
-
-! 2022-08-25 https://e360.yale.edu
-! popups
-e360.yale.edu##+js(nostif, Swal.fire, 15000)
-
-! 2022-08-25 https://www.themarshallproject.org
-! popups
-||themarshallproject.org/notifications/v*/toast$xhr,1p
-
-! 2022-08-25 https://jacobin.com
-! popups
-jacobin.com###mailing-list-popup
 
 ! 2022-08-25 Gannett (e.g., https://www.heraldnews.com)
-! gates
 aberdeennews.com,alamogordonews.com,amarillo.com,amestrib.com,app.com,argusleader.com,augustachronicle.com,azcentral.com,battlecreekenquirer.com,beaconjournal.com,blueridgenow.com,buckscountycouriertimes.com,bucyrustelegraphforum.com,burlingtoncountytimes.com,burlingtonfreepress.com,caller.com,cantondailyledger.com,cantonrep.com,capecodtimes.com,cheboygannews.com,chieftain.com,chillicothegazette.com,cincinnati.com,citizen-times.com,cjonline.com,clarionledger.com,coloradoan.com,columbiadailyherald.com,columbiatribune.com,commercialappeal.com,coshoctontribune.com,courier-journal.com,courier-tribune.com,courierpostonline.com,courierpress.com,currentargus.com,daily-jeff.com,daily-times.com,dailyamerican.com,dailycomet.com,dailycommercial.com,dailyrecord.com,dailyworld.com,delawareonline.com,delmarvanow.com,demingheadlight.com,democratandchronicle.com,desertsun.com,desmoinesregister.com,devilslakejournal.com,dispatch.com,dnj.com,ellwoodcityledger.com,elpasotimes.com,enterprisenews.com,eveningsun.com,eveningtribune.com,examiner-enterprise.com,fayobserver.com,fdlreporter.com,floridatoday.com,fosters.com,freep.com,gadsdentimes.com,gainesville.com,galesburg.com,gastongazette.com,goerie.com,gosanangelo.com,goupstate.com,greatfallstribune.com,greenbaypressgazette.com,greenvilleonline.com,hattiesburgamerican.com,heraldmailmedia.com,heraldnews.com,heraldtribune.com,hillsdale.net,hollandsentinel.com,hoosiertimes.com,houmatoday.com,htrnews.com,hutchnews.com,indeonline.com,independentmail.com,indystar.com,ithacajournal.com,jacksonsun.com,jacksonville.com,jconline.com,jdnews.com,journalstandard.com,jsonline.com,kinston.com,kitsapsun.com,knoxnews.com,lancastereaglegazette.com,lansingstatejournal.com,lcsun-news.com,ldnews.com,lenconnect.com,lincolncourier.com,livingstondaily.com,lohud.com,lubbockonline.com,mansfieldnewsjournal.com,marionstar.com,marshfieldnewsherald.com,mcdonoughvoice.com,metrowestdailynews.com,milforddailynews.com,monroenews.com,montgomeryadvertiser.com,mpnnow.com,mycentraljersey.com,naplesnews.com,newarkadvocate.com,newbernsj.com,newportri.com,news-journalonline.com,news-leader.com,news-press.com,newschief.com,newsherald.com,newsleader.com,njherald.com,northjersey.com,norwichbulletin.com,nwfdailynews.com,oakridger.com,ocala.com,oklahoman.com,onlineathens.com,pal-item.com,palmbeachdailynews.com,palmbeachpost.com,patriotledger.com,pekintimes.com,petoskeynews.com,pjstar.com,pnj.com,poconorecord.com,pontiacdailyleader.com,portclintonnewsherald.com,postcrescent.com,poughkeepsiejournal.com,press-citizen.com,pressconnects.com,progress-index.com,providencejournal.com,publicopiniononline.com,record-courier.com,recordnet.com,recordonline.com,redding.com,registerguard.com,reporter-times.com,reporternews.com,rgj.com,rrstar.com,ruidosonews.com,salina.com,savannahnow.com,scsun-news.com,sctimes.com,seacoastonline.com,sheboyganpress.com,shelbystar.com,shreveporttimes.com,sj-r.com,sooeveningnews.com,southbendtribune.com,southcoasttoday.com,starcourier.com,stargazette.com,starnewsonline.com,statesman.com,statesmanjournal.com,staugustine.com,stevenspointjournal.com,sturgisjournal.com,swtimes.com,tallahassee.com,tauntongazette.com,tcpalm.com,telegram.com,tennessean.com,the-daily-record.com,the-dispatch.com,the-leader.com,the-review.com,theadvertiser.com,thecalifornian.com,thedailyjournal.com,thedailyreporter.com,thegardnernews.com,thegleaner.com,thehawkeye.com,theintell.com,theleafchronicle.com,theledger.com,thenews-messenger.com,thenewsstar.com,thenorthwestern.com,thepublicopinion.com,therecordherald.com,thespectrum.com,thestarpress.com,thetimesherald.com,thetimesnews.com,thetowntalk.com,times-gazette.com,timesonline.com,timesrecordnews.com,timesreporter.com,timestelegram.com,tmnews.com,tricountyindependent.com,tuscaloosanews.com,uticaod.com,vcstar.com,visaliatimesdelta.com,vvdailypress.com,wausaudailyherald.com,wisconsinrapidstribune.com,ydr.com,zanesvilletimesrecorder.com##+js(cookie-remover, firefly_akamai_meter)
 aberdeennews.com,alamogordonews.com,amarillo.com,amestrib.com,app.com,argusleader.com,augustachronicle.com,azcentral.com,battlecreekenquirer.com,beaconjournal.com,blueridgenow.com,buckscountycouriertimes.com,bucyrustelegraphforum.com,burlingtoncountytimes.com,burlingtonfreepress.com,caller.com,cantondailyledger.com,cantonrep.com,capecodtimes.com,cheboygannews.com,chieftain.com,chillicothegazette.com,cincinnati.com,citizen-times.com,cjonline.com,clarionledger.com,coloradoan.com,columbiadailyherald.com,columbiatribune.com,commercialappeal.com,coshoctontribune.com,courier-journal.com,courier-tribune.com,courierpostonline.com,courierpress.com,currentargus.com,daily-jeff.com,daily-times.com,dailyamerican.com,dailycomet.com,dailycommercial.com,dailyrecord.com,dailyworld.com,delawareonline.com,delmarvanow.com,demingheadlight.com,democratandchronicle.com,desertsun.com,desmoinesregister.com,devilslakejournal.com,dispatch.com,dnj.com,ellwoodcityledger.com,elpasotimes.com,enterprisenews.com,eveningsun.com,eveningtribune.com,examiner-enterprise.com,fayobserver.com,fdlreporter.com,floridatoday.com,fosters.com,freep.com,gadsdentimes.com,gainesville.com,galesburg.com,gastongazette.com,goerie.com,gosanangelo.com,goupstate.com,greatfallstribune.com,greenbaypressgazette.com,greenvilleonline.com,hattiesburgamerican.com,heraldmailmedia.com,heraldnews.com,heraldtribune.com,hillsdale.net,hollandsentinel.com,hoosiertimes.com,houmatoday.com,htrnews.com,hutchnews.com,indeonline.com,independentmail.com,indystar.com,ithacajournal.com,jacksonsun.com,jacksonville.com,jconline.com,jdnews.com,journalstandard.com,jsonline.com,kinston.com,kitsapsun.com,knoxnews.com,lancastereaglegazette.com,lansingstatejournal.com,lcsun-news.com,ldnews.com,lenconnect.com,lincolncourier.com,livingstondaily.com,lohud.com,lubbockonline.com,mansfieldnewsjournal.com,marionstar.com,marshfieldnewsherald.com,mcdonoughvoice.com,metrowestdailynews.com,milforddailynews.com,monroenews.com,montgomeryadvertiser.com,mpnnow.com,mycentraljersey.com,naplesnews.com,newarkadvocate.com,newbernsj.com,newportri.com,news-journalonline.com,news-leader.com,news-press.com,newschief.com,newsherald.com,newsleader.com,njherald.com,northjersey.com,norwichbulletin.com,nwfdailynews.com,oakridger.com,ocala.com,oklahoman.com,onlineathens.com,pal-item.com,palmbeachdailynews.com,palmbeachpost.com,patriotledger.com,pekintimes.com,petoskeynews.com,pjstar.com,pnj.com,poconorecord.com,pontiacdailyleader.com,portclintonnewsherald.com,postcrescent.com,poughkeepsiejournal.com,press-citizen.com,pressconnects.com,progress-index.com,providencejournal.com,publicopiniononline.com,record-courier.com,recordnet.com,recordonline.com,redding.com,registerguard.com,reporter-times.com,reporternews.com,rgj.com,rrstar.com,ruidosonews.com,salina.com,savannahnow.com,scsun-news.com,sctimes.com,seacoastonline.com,sheboyganpress.com,shelbystar.com,shreveporttimes.com,sj-r.com,sooeveningnews.com,southbendtribune.com,southcoasttoday.com,starcourier.com,stargazette.com,starnewsonline.com,statesman.com,statesmanjournal.com,staugustine.com,stevenspointjournal.com,sturgisjournal.com,swtimes.com,tallahassee.com,tauntongazette.com,tcpalm.com,telegram.com,tennessean.com,the-daily-record.com,the-dispatch.com,the-leader.com,the-review.com,theadvertiser.com,thecalifornian.com,thedailyjournal.com,thedailyreporter.com,thegardnernews.com,thegleaner.com,thehawkeye.com,theintell.com,theleafchronicle.com,theledger.com,thenews-messenger.com,thenewsstar.com,thenorthwestern.com,thepublicopinion.com,therecordherald.com,thespectrum.com,thestarpress.com,thetimesherald.com,thetimesnews.com,thetowntalk.com,times-gazette.com,timesonline.com,timesrecordnews.com,timesreporter.com,timestelegram.com,tmnews.com,tricountyindependent.com,tuscaloosanews.com,uticaod.com,vcstar.com,visaliatimesdelta.com,vvdailypress.com,wausaudailyherald.com,wisconsinrapidstribune.com,ydr.com,zanesvilletimesrecorder.com##.gnt_pm
-! popups
-aberdeennews.com,alamogordonews.com,amarillo.com,amestrib.com,app.com,argusleader.com,augustachronicle.com,azcentral.com,battlecreekenquirer.com,beaconjournal.com,blueridgenow.com,buckscountycouriertimes.com,bucyrustelegraphforum.com,burlingtoncountytimes.com,burlingtonfreepress.com,caller.com,cantondailyledger.com,cantonrep.com,capecodtimes.com,cheboygannews.com,chieftain.com,chillicothegazette.com,cincinnati.com,citizen-times.com,cjonline.com,clarionledger.com,coloradoan.com,columbiadailyherald.com,columbiatribune.com,commercialappeal.com,coshoctontribune.com,courier-journal.com,courier-tribune.com,courierpostonline.com,courierpress.com,currentargus.com,daily-jeff.com,daily-times.com,dailyamerican.com,dailycomet.com,dailycommercial.com,dailyrecord.com,dailyworld.com,delawareonline.com,delmarvanow.com,demingheadlight.com,democratandchronicle.com,desertsun.com,desmoinesregister.com,devilslakejournal.com,dispatch.com,dnj.com,ellwoodcityledger.com,elpasotimes.com,enterprisenews.com,eveningsun.com,eveningtribune.com,examiner-enterprise.com,fayobserver.com,fdlreporter.com,floridatoday.com,fosters.com,freep.com,gadsdentimes.com,gainesville.com,galesburg.com,gastongazette.com,goerie.com,gosanangelo.com,goupstate.com,greatfallstribune.com,greenbaypressgazette.com,greenvilleonline.com,hattiesburgamerican.com,heraldmailmedia.com,heraldnews.com,heraldtribune.com,hillsdale.net,hollandsentinel.com,hoosiertimes.com,houmatoday.com,htrnews.com,hutchnews.com,indeonline.com,independentmail.com,indystar.com,ithacajournal.com,jacksonsun.com,jacksonville.com,jconline.com,jdnews.com,journalstandard.com,jsonline.com,kinston.com,kitsapsun.com,knoxnews.com,lancastereaglegazette.com,lansingstatejournal.com,lcsun-news.com,ldnews.com,lenconnect.com,lincolncourier.com,livingstondaily.com,lohud.com,lubbockonline.com,mansfieldnewsjournal.com,marionstar.com,marshfieldnewsherald.com,mcdonoughvoice.com,metrowestdailynews.com,milforddailynews.com,monroenews.com,montgomeryadvertiser.com,mpnnow.com,mycentraljersey.com,naplesnews.com,newarkadvocate.com,newbernsj.com,newportri.com,news-journalonline.com,news-leader.com,news-press.com,newschief.com,newsherald.com,newsleader.com,njherald.com,northjersey.com,norwichbulletin.com,nwfdailynews.com,oakridger.com,ocala.com,oklahoman.com,onlineathens.com,pal-item.com,palmbeachdailynews.com,palmbeachpost.com,patriotledger.com,pekintimes.com,petoskeynews.com,pjstar.com,pnj.com,poconorecord.com,pontiacdailyleader.com,portclintonnewsherald.com,postcrescent.com,poughkeepsiejournal.com,press-citizen.com,pressconnects.com,progress-index.com,providencejournal.com,publicopiniononline.com,record-courier.com,recordnet.com,recordonline.com,redding.com,registerguard.com,reporter-times.com,reporternews.com,rgj.com,rrstar.com,ruidosonews.com,salina.com,savannahnow.com,scsun-news.com,sctimes.com,seacoastonline.com,sheboyganpress.com,shelbystar.com,shreveporttimes.com,sj-r.com,sooeveningnews.com,southbendtribune.com,southcoasttoday.com,starcourier.com,stargazette.com,starnewsonline.com,statesman.com,statesmanjournal.com,staugustine.com,stevenspointjournal.com,sturgisjournal.com,swtimes.com,tallahassee.com,tauntongazette.com,tcpalm.com,telegram.com,tennessean.com,the-daily-record.com,the-dispatch.com,the-leader.com,the-review.com,theadvertiser.com,thecalifornian.com,thedailyjournal.com,thedailyreporter.com,thegardnernews.com,thegleaner.com,thehawkeye.com,theintell.com,theleafchronicle.com,theledger.com,thenews-messenger.com,thenewsstar.com,thenorthwestern.com,thepublicopinion.com,therecordherald.com,thespectrum.com,thestarpress.com,thetimesherald.com,thetimesnews.com,thetowntalk.com,times-gazette.com,timesonline.com,timesrecordnews.com,timesreporter.com,timestelegram.com,tmnews.com,tricountyindependent.com,tuscaloosanews.com,usatoday.com,uticaod.com,vcstar.com,visaliatimesdelta.com,vvdailypress.com,wausaudailyherald.com,wisconsinrapidstribune.com,ydr.com,zanesvilletimesrecorder.com##+js(nostif, gnt_mol_oy)
 
 ! 2022-08-25 https://www.nytimes.com
-! gates
 ||meter-svc.nytimes.com/meter.js$xhr,1p
 ||mwcm.nytimes.com/capi/metered_assets/*$xhr,1p
-nytimes.com##[data-testid="inline-message"]
-! popups
-nytimes.com##.magnoliaDock
-
-! 2022-08-25 https://www.science.org
-! popups
-science.org##.alert-donation
-science.org##.related-content.pop-after-passed.js-sticky
-
-! 2022-08-25 https://aeon.co
-! popups
-||aeon.co/_next/static/chunks/NewsletterPopup.*.js$script,1p
-! annoyances
-||aeon.co/_next/static/chunks/SupportBannerHeader.*.js$script,1p
-
-! 2022-08-25 https://psyche.co
-! popups
-||psyche.co/_next/static/chunks/PopupManager.*.js$script,1p
-! annoyances
-||psyche.co/_next/static/chunks/SupportBannerHeader.*.js$script,1p
 
 ! 2022-08-25 Lee Enterprises (e.g., https://roanoke.com)
-! gates
 allpoliticsnow.com,atlanticcityweekly.com,auburnpub.com,azdailysun.com,beatricedailysun.com,big10central.com,billingsgazette.com,bismarcktribune.com,breakingone.com,buffalonews.com,casperjournal.com,chippewa.com,clarindaherald.com,columbustelegram.com,cumberlink.com,dailyjournalonline.com,dailyprogress.com,dbrnews.com,democratherald.com,dothaneagle.com,easytravel101.com,elkodaily.com,feastandfield.net,fredericksburg.com,fremonttribune.com,gazettetimes.com,globegazette.com,godanriver.com,greensboro.com,helenair.com,herald-review.com,heraldcourier.com,hickoryrecord.com,huskerextra.com,independenttribune.com,jg-tc.com,journalnow.com,journalstar.com,journaltimes.com,kearneyhub.com,kenoshanews.com,lacrossetribune.com,lakegenevanews.net,lebanon-express.com,lexch.com,loganwoodbine.com,madison.com,magicvalley.com,martinsvillebulletin.com,mcdowellnews.com,missoulian.com,mooresvilletribune.com,morganton.com,mtstandard.com,muscatinejournal.com,myaggienation.com,napavalleyregister.com,newsadvance.com,newsvirginian.com,nonpareilonline.com,nptelegraph.com,nwitimes.com,oanow.com,omaha.com,pantagraph.com,poststar.com,pressofatlanticcity.com,prostoknow.com,qconline.com,qctimes.com,qctoday.com,rapidcityjournal.com,ravallirepublic.com,richmond.com,roanoke.com,safeliving101.com,scnow.com,siouxcityjournal.com,smithmountainlake.com,starexponent.com,starherald.com,statesville.com,stlpinchhits.com,stltoday.com,swvatoday.com,tastyrecipes101.com,tdn.com,theeagle.com,thefranklinnewspost.com,theindependent.com,thesouthern.com,thetandd.com,timegoggles.com,trib.com,tucson.com,tulsaworld.com,valleynewstoday.com,wacotrib.com,wahoo-ashland-waverly.com,wcfcourier.com,whiskers101.com,winonadailynews.com,wiscnews.com,yorknewstimes.com##+js(set, TNCMS.Access.checkAccess, noopFunc)
 
-! 2022-08-25 https://www.statnews.com
-! popups
-statnews.com##.recirculation-bar
-
-! 2022-08-25 https://codepen.io, https://cdpn.io
-! popups
-cdpn.io##.referer-warning
-
 ! 2022-08-25 https://www.chronicle.com, https://www.philanthropy.com
-! gates
 chronicle.com,philanthropy.com##+js(ra, data-content-body, .contentBody)
 chronicle.com,philanthropy.com##[data-content-summary]
 
-! 2022-08-25 https://www.eater.com
-! popups
-eater.com###toaster
-
-! 2022-08-25 https://longreads.trust.org
-! popups
-longreads.trust.org##.pa-footer
-
-! 2022-08-25 https://www.albumoftheyear.org
-! annoyances
-albumoftheyear.org##.donorBanner
-
-! 2022-08-25 https://www.youtube.com, https://www.youtube-nocookie.com
-! popups
-youtube-nocookie.com,youtube.com##.ytp-pause-overlay
-youtube.com##.ytp-cards-button
-youtube.com##.ytp-cards-teaser
-youtube.com##.iv-branding
-! annoyances
-youtube.com###big-yoodle
-youtube.com##.ytd-rich-section-renderer
-
-! 2022-08-25 https://currentlyhq.com
-! popups
-currentlyhq.com##+js(aopr, elementorProFrontend.modules.popup.popupPopped)
-
-! 2022-08-25 https://scroll.in
-! popups
-scroll.in##.floating-contribute-block
-! annoyances
-scroll.in##.scrollstrap-container
-
 ! 2022-08-25 https://time.com
-! gates
 time.com##+js(cookie-remover, time_meter_v2)
 time.com##.meter-wall
 
 ! 2022-08-25 https://www.thenewatlantis.com
-! gates
 thenewatlantis.com##+js(rc, article-gated, , stay)
 thenewatlantis.com##.gate-gradient
-! popups
-||thenewatlantis.com/wp-content/themes/thenewatlantis/js/donate.js$script,1p
-
-! 2022-08-25 https://archive.vanityfair.com
-! popups
-archive.vanityfair.com##^body.page_shared #bnd_subscribe_modaal
-archive.vanityfair.com##.shared_footer_cta_basic
-archive.vanityfair.com##.shared_footer_cta_primary
-! annoyances
-archive.vanityfair.com##.shared_substory_cta
-
-! 2022-08-25 https://www.e-flux.com
-! popups
-e-flux.com##.landing-subscribe
-
-! 2022-08-25 Mother Jones
-! popups
-motherjones.com##.mj-adblock-widget
-! annoyances
-motherjones.com###ticker-newsletter-container
-
-! 2022-08-26 https://www.nature.com
-! popups
-nature.com##.c-site-messages--nature-briefing
-
-! 2022-08-26 https://developer.mozilla.org
-! annoyances
-developer.mozilla.org##.mdn-cta-container
 
 ! 2022-08-27 https://www.enotes.com
-! gates
 enotes.com##+js(cookie-remover, ENOTESID)
 enotes.com##.c-cta-section
 
-! 2022-08-27 https://www.icij.org
-! popups
-icij.org##^modal-popup[track="WEB-POPUP-ARTICLE"]
 
-! 2022-08-27 https://open.spotify.com
-! popups
-open.spotify.com##[data-testid="signup-bar"]
+! Annoyances
 
-! 2022-08-28 https://tinyview.com
-! annoyances
-tinyview.com##.open-app-container
+! 2022-08-25 http://smarterplaylists.playlistmachinery.com
+smarterplaylists.playlistmachinery.com##th:has-text(Created)
+smarterplaylists.playlistmachinery.com##th:has-text(# Components)
 
-! 2022-08-28 https://doorofperception.com
-! popups
-doorofperception.com##+js(nostif, newsletter_show, 2000)
+! 2022-08-25 https://old.reddit.com
+old.reddit.com##.commentsignupbar
+old.reddit.com##.read-next
 
-! 2022-08-28 https://alistapart.com
-! popups
-alistapart.com##.coil-banner-message-container
+! 2022-08-25 https://www.twitch.tv
+twitch.tv##.prime-offers__pill
+twitch.tv##.extensions-dock__layout
+twitch.tv##button[data-a-target="player-clip-button"]
 
-! 2022-08-28 Williams-Sonoma (e.g., https://www.potterybarn.com, https://www.rejuvenation.com)
-! popups
-markandgraham.com,pbteen.com,potterybarn.com,potterybarnkids.com,rejuvenation.com,westelm.com,williams-sonoma.com##+js(set, WSI.contentPersonalization.hideEmailCaptureOverlay, true)
-pbteen.com,potterybarn.com,potterybarnkids.com,westelm.com,williams-sonoma.com###quiqChatLaunch
-rejuvenation.com###quiqWebChat
+! 2022-08-25 https://codepen.io, https://cdpn.io
+cdpn.io##.referer-warning
 
-! 2022-08-29 https://www.windowscentral.com
-! popups
-windowscentral.com###slice-container-exitIntent
+! 2022-08-31 https://www.theguardian.com
+theguardian.com###sp_message_container_690155
 
-
-! UNSORTED
-
-! 2022-08-28 https://www.tumblr.com
-! gates
-||assets.tumblr.com/pop/js/modern/async-login-wall-*.js$script,1p
-tumblr.com##+js(ra, data-login-wall-type, , stay)
-! popups
-tumblr.com##div:has(> [style="background:#7c5cff;color:#ffffff"])
-tumblr.com##div:has(> [style="background: rgb(124, 92, 255) none repeat scroll 0% 0%; color: rgb(255, 255, 255);"])
-! annoyances
-tumblr.com##div:has(> [style="background: rgb(255, 138, 0) none repeat scroll 0% 0%; color: rgb(255, 255, 255);"])
