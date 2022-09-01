@@ -133,7 +133,7 @@ allpoliticsnow.com,atlanticcityweekly.com,auburnpub.com,azdailysun.com,beatriced
 
 ! 2022-08-25 https://www.chronicle.com, https://www.philanthropy.com
 chronicle.com,philanthropy.com##+js(ra, data-content-body, .contentBody)
-chronicle.com,philanthropy.com##[data-content-summary]
+chronicle.com,philanthropy.com##div[data-content-summary]
 
 ! 2022-08-25 https://time.com
 time.com##+js(cookie-remover, time_meter_v2)
@@ -168,4 +168,8 @@ cdpn.io##.referer-warning
 
 ! 2022-08-31 https://www.theguardian.com
 theguardian.com###sp_message_container_690155
+
+! 2022-09-01 https://www.albumoftheyear.org
+albumoftheyear.org##div[style="padding: 30px 0 60px 0; text-align: center;"]
+albumoftheyear.org##.donorBanner
 
