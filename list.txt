@@ -147,6 +147,9 @@ thenewatlantis.com##.gate-gradient
 enotes.com##+js(cookie-remover, ENOTESID)
 enotes.com##.c-cta-section
 
+! 2022-09-02 Axate (e.g., https://www.musicomh.com)
+||wallet.axate.io/cashBustedBundle.*.js$script
+
 
 ! Annoyances
 
