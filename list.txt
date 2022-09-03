@@ -173,6 +173,10 @@ cdpn.io##.referer-warning
 theguardian.com###sp_message_container_690155
 
 ! 2022-09-01 https://www.albumoftheyear.org
-albumoftheyear.org##div[style="padding: 30px 0 60px 0; text-align: center;"]
+albumoftheyear.org##.fullWidth .albumBlock ~ div[style^="padding:"]
 albumoftheyear.org##.donorBanner
+albumoftheyear.org##.signInReview
+albumoftheyear.org##.signInComments
+albumoftheyear.org##.buyAmazon
+albumoftheyear.org##.commentFooter
 
