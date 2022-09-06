@@ -158,6 +158,8 @@ smarterplaylists.playlistmachinery.com##th:has-text(Created)
 smarterplaylists.playlistmachinery.com##th:has-text(# Components)
 
 ! 2022-08-25 https://old.reddit.com
+old.reddit.com##.premium-banner
+old.reddit.com##.listingsignupbar
 old.reddit.com##.commentsignupbar
 old.reddit.com##.read-next
 
@@ -180,4 +182,10 @@ albumoftheyear.org##.signInReview
 albumoftheyear.org##.signInComments
 albumoftheyear.org##.buyAmazon
 albumoftheyear.org##.commentFooter
+
+! 2022-09-06 https://www.nytimes.com
+nytimes.com##.pz-header-sales:style(height: 53px !important;)
+nytimes.com##.pz-header-sales > .nav-messaging.pz-nav:style(top: 0 !important;)
+nytimes.com##.pz-header-sales > .nav-messaging.pz-nav-drawer:style(top: 52px !important;)
+nytimes.com##.pz-header-sales > .show-messaging
 
