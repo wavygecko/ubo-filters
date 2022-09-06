@@ -6,7 +6,7 @@
 ! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
 
 
-! Paywalls
+! Paywalls and sign-in gates
 
 ! 2022-08-23 Pico (e.g., https://defector.com)
 ||api.pico.tools/popup/null/*$xhr
@@ -150,8 +150,11 @@ enotes.com##.c-cta-section
 ! 2022-09-02 Axate (e.g., https://www.musicomh.com)
 ||wallet.axate.io/cashBustedBundle.*.js$script
 
+! 2022-09-06 https://www.theguardian.com
+||assets.guim.co.uk/assets/SignInGateSelector-importable.*.js$script,domain=theguardian.com
 
-! Annoyances
+
+! Ads, pop-ups, and annoyances
 
 ! 2022-08-25 http://smarterplaylists.playlistmachinery.com
 smarterplaylists.playlistmachinery.com##th:has-text(Created)
@@ -188,4 +191,7 @@ nytimes.com##.pz-header-sales:style(height: 53px !important;)
 nytimes.com##.pz-header-sales > .nav-messaging.pz-nav:style(top: 0 !important;)
 nytimes.com##.pz-header-sales > .nav-messaging.pz-nav-drawer:style(top: 52px !important;)
 nytimes.com##.pz-header-sales > .show-messaging
+
+! 2022-09-06 https://www.theguardian.com
+||contributions.guardianapis.com/banner$xhr,domain=theguardian.com
 
