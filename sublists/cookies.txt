@@ -1,0 +1,15 @@
+[uBlock Origin]
+! Title: WavyGecko’s filters – Cookies
+! Description: Blocks privacy notices (cookies, GDPR, etc.)
+! Expires: 2 days
+! Homepage: https://github.com/wavygecko/ubo-filters
+! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
+
+
+! Specific
+
+! 2022-08-25 https://www.theguardian.com
+theguardian.com###sp_message_container_690155
+
+! 2022-09-07 https://www.healthline.com
+healthline.com##^#consent-modal

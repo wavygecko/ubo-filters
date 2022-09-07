@@ -65,7 +65,6 @@ damninteresting.com##.plea
 bleacherreport.com##.newsletterSubsModule.flyIn
 
 ! 2022-08-25 https://www.theguardian.com
-theguardian.com###sp_message_container_690155
 ||contributions.guardianapis.com/banner$xhr,domain=theguardian.com
 
 ! 2022-08-25 https://www.pbs.org
@@ -222,6 +221,3 @@ rejuvenation.com###quiqWebChat
 
 ! 2022-08-29 https://www.windowscentral.com
 windowscentral.com###slice-container-exitIntent
-
-! 2022-09-07 https://www.healthline.com
-healthline.com##^#consent-modal
