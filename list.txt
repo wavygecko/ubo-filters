@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: WavyGecko’s filters
-! Description: Blocks paywalls, popups, and other annoyances. Complements Fanboy’s Annoyance and uBlock Annoyances lists.
+! Description: Circumvents paywalls and prevents annoyances. Complements Fanboy’s Annoyance and uBlock Annoyances lists.
 ! Expires: 2 days
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
