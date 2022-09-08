@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: WavyGecko’s filters – Paywalls
-! Description: Blocks paywalls
+! Description: Blocks paywalls.
 ! Expires: 2 days
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
