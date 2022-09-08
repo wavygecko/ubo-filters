@@ -1,84 +1,125 @@
 [uBlock Origin]
 ! Title: WavyGecko’s filters – Annoyances
-! Description: Blocks annoying stuff
+! Description: Blocks popups and other annoyances
 ! Expires: 2 days
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
 
 
+! Generic
+
+! 2022-08-28 Weebly (e.g., https://www.valeriewai.com)
+! popups
+||cdn-promote.weebly.com/js/dist/lead-form.js$script
+
+
 ! Specific
 
+! 2022-08-24 https://www.bookforum.com
+! popups
+bookforum.com##^af-dont-go
+
+! 2022-08-24 https://www.theatlantic.com
+! popups
+theatlantic.com###nonMeteredNudge
+theatlantic.com###sponsoredNonMeteredNudge
+theatlantic.com##.c-non-metered-nudge
+
 ! 2022-08-24 Condé Nast (e.g., https://www.vogue.com)
+! annoyances
 ad-italia.it,ad-magazin.de,admagazine.com,admagazine.fr,admagazine.ru,allure.com,architecturaldigest.com,architecturaldigest.in,bonappetit.com,cntraveler.com,cntraveller.com,cntraveller.in,glamour.com,glamour.de,glamour.es,glamour.mx,glamour.ru,glamourmagazine.co.uk,gq-magazin.de,gq-magazine.co.uk,gq.com,gq.com.mx,gq.com.tw,gq.ru,gqindia.com,gqitalia.it,gqjapan.jp,gqmagazine.fr,houseandgarden.co.uk,lacucinaitaliana.it,newyorker.com,pitchfork.com,revistaad.es,revistagq.com,revistavanityfair.es,self.com,tatler.com,tatler.ru,teenvogue.com,them.us,traveler.es,vanityfair.com,vanityfair.fr,vanityfair.it,vogue.co.jp,vogue.co.uk,vogue.com,vogue.com.tw,vogue.de,vogue.es,vogue.fr,vogue.in,vogue.it,vogue.mx,vogue.ru,voguebusiness.com,wired.co.uk,wired.com,wired.it,wired.jp##.ticker-view
 
-! 2022-08-24 https://newrepublic.com
-newrepublic.com##.ad-container-house
-
-! 2022-08-24 https://www.scientificamerican.com
-scientificamerican.com##.home-banner
-scientificamerican.com###promo-header
+! 2022-08-25 https://www.damninteresting.com
+! popups
+damninteresting.com##.plea
 
 ! 2022-08-25 https://www.theguardian.com
+! cookies
+theguardian.com###sp_message_container_690155
+! popups
+||contributions.guardianapis.com/banner$xhr,domain=theguardian.com
+! annoyances
 ||assets.guim.co.uk/assets/TopRightAdSlot-importable.*.js$script,domain=theguardian.com
 
-! 2022-08-25 https://www.reuters.com
-reuters.com##[class*="registration-prompt__container__"]
-
-! 2022-08-25 https://www.vox.com
-vox.com##.contribute-banner
-
 ! 2022-08-25 http://smarterplaylists.playlistmachinery.com
+! annoyances
 smarterplaylists.playlistmachinery.com##th:has-text(Created)
 smarterplaylists.playlistmachinery.com##th:has-text(# Components)
 
-! 2022-08-25 https://www.telegraph.co.uk
-telegraph.co.uk##.subscribe-banner
-
 ! 2022-08-25 https://old.reddit.com
-old.reddit.com##.premium-banner-outer
+! popups
+old.reddit.com##.read-next
+! annoyances
 old.reddit.com##.listingsignupbar
 old.reddit.com##.commentsignupbar
 
 ! 2022-08-25 https://www.cjr.org
-cjr.org##^#chartbeat-flicker-control-style
+! popups
+||cjr.org/wp-content/themes/cjr2017/*interstitial_full_sail*$1p
+
+! 2022-08-25 https://www.fandom.com
+! popups
+fandom.com##.notifications-placeholder
+fandom.com###WikiaBar:has(> #WikiaBarWrapper > .wikia-bar-anon)
 
 ! 2022-08-25 https://www.twitch.tv
+! popups
+twitch.tv###twilight-sticky-footer-root
+! annoyances
 twitch.tv##.prime-offers__pill
 twitch.tv##.extensions-dock__layout
 twitch.tv##button[data-a-target="player-clip-button"]
 
+! 2022-08-25 https://vimeo.com
+! popups
+vimeo.com##+js(set, vimeo.clip_page_config.google_app_id, '')
+vimeo.com##+js(set, vimeo.clip_page_config.banner, {})
+
+! 2022-08-25 https://www.mcsweeneys.net
+! popups
+mcsweeneys.net###floating-footer-container
+
+! 2022-08-25 https://www.behance.net
+! popups
+behance.net##.Popup-popup-Hub
+behance.net##[class*="PrimaryNav-loggedOutOptions-"] [class*="PrimaryNav-tooltipWrapper-"]
+
+! 2022-08-25 https://e360.yale.edu
+! popups
+e360.yale.edu##+js(nostif, Swal.fire, 15000)
+
+! 2022-08-25 Gannett (e.g., https://www.heraldnews.com)
+! popups
+aberdeennews.com,alamogordonews.com,amarillo.com,amestrib.com,app.com,argusleader.com,augustachronicle.com,azcentral.com,battlecreekenquirer.com,beaconjournal.com,blueridgenow.com,buckscountycouriertimes.com,bucyrustelegraphforum.com,burlingtoncountytimes.com,burlingtonfreepress.com,caller.com,cantondailyledger.com,cantonrep.com,capecodtimes.com,cheboygannews.com,chieftain.com,chillicothegazette.com,cincinnati.com,citizen-times.com,cjonline.com,clarionledger.com,coloradoan.com,columbiadailyherald.com,columbiatribune.com,commercialappeal.com,coshoctontribune.com,courier-journal.com,courier-tribune.com,courierpostonline.com,courierpress.com,currentargus.com,daily-jeff.com,daily-times.com,dailyamerican.com,dailycomet.com,dailycommercial.com,dailyrecord.com,dailyworld.com,delawareonline.com,delmarvanow.com,demingheadlight.com,democratandchronicle.com,desertsun.com,desmoinesregister.com,devilslakejournal.com,dispatch.com,dnj.com,ellwoodcityledger.com,elpasotimes.com,enterprisenews.com,eveningsun.com,eveningtribune.com,examiner-enterprise.com,fayobserver.com,fdlreporter.com,floridatoday.com,fosters.com,freep.com,gadsdentimes.com,gainesville.com,galesburg.com,gastongazette.com,goerie.com,gosanangelo.com,goupstate.com,greatfallstribune.com,greenbaypressgazette.com,greenvilleonline.com,hattiesburgamerican.com,heraldmailmedia.com,heraldnews.com,heraldtribune.com,hillsdale.net,hollandsentinel.com,hoosiertimes.com,houmatoday.com,htrnews.com,hutchnews.com,indeonline.com,independentmail.com,indystar.com,ithacajournal.com,jacksonsun.com,jacksonville.com,jconline.com,jdnews.com,journalstandard.com,jsonline.com,kinston.com,kitsapsun.com,knoxnews.com,lancastereaglegazette.com,lansingstatejournal.com,lcsun-news.com,ldnews.com,lenconnect.com,lincolncourier.com,livingstondaily.com,lohud.com,lubbockonline.com,mansfieldnewsjournal.com,marionstar.com,marshfieldnewsherald.com,mcdonoughvoice.com,metrowestdailynews.com,milforddailynews.com,monroenews.com,montgomeryadvertiser.com,mpnnow.com,mycentraljersey.com,naplesnews.com,newarkadvocate.com,newbernsj.com,newportri.com,news-journalonline.com,news-leader.com,news-press.com,newschief.com,newsherald.com,newsleader.com,njherald.com,northjersey.com,norwichbulletin.com,nwfdailynews.com,oakridger.com,ocala.com,oklahoman.com,onlineathens.com,pal-item.com,palmbeachdailynews.com,palmbeachpost.com,patriotledger.com,pekintimes.com,petoskeynews.com,pjstar.com,pnj.com,poconorecord.com,pontiacdailyleader.com,portclintonnewsherald.com,postcrescent.com,poughkeepsiejournal.com,press-citizen.com,pressconnects.com,progress-index.com,providencejournal.com,publicopiniononline.com,record-courier.com,recordnet.com,recordonline.com,redding.com,registerguard.com,reporter-times.com,reporternews.com,rgj.com,rrstar.com,ruidosonews.com,salina.com,savannahnow.com,scsun-news.com,sctimes.com,seacoastonline.com,sheboyganpress.com,shelbystar.com,shreveporttimes.com,sj-r.com,sooeveningnews.com,southbendtribune.com,southcoasttoday.com,starcourier.com,stargazette.com,starnewsonline.com,statesman.com,statesmanjournal.com,staugustine.com,stevenspointjournal.com,sturgisjournal.com,swtimes.com,tallahassee.com,tauntongazette.com,tcpalm.com,telegram.com,tennessean.com,the-daily-record.com,the-dispatch.com,the-leader.com,the-review.com,theadvertiser.com,thecalifornian.com,thedailyjournal.com,thedailyreporter.com,thegardnernews.com,thegleaner.com,thehawkeye.com,theintell.com,theleafchronicle.com,theledger.com,thenews-messenger.com,thenewsstar.com,thenorthwestern.com,thepublicopinion.com,therecordherald.com,thespectrum.com,thestarpress.com,thetimesherald.com,thetimesnews.com,thetowntalk.com,times-gazette.com,timesonline.com,timesrecordnews.com,timesreporter.com,timestelegram.com,tmnews.com,tricountyindependent.com,tuscaloosanews.com,usatoday.com,uticaod.com,vcstar.com,visaliatimesdelta.com,vvdailypress.com,wausaudailyherald.com,wisconsinrapidstribune.com,ydr.com,zanesvilletimesrecorder.com##+js(nostif, gnt_mol_oy)
+
 ! 2022-08-25 https://bostonreview.net
+! annoyances
 bostonreview.net##.elementor-element-1b2cb65
 bostonreview.net##.elementor-element-16134f5
 
-! 2022-08-25 https://deadline.com
-deadline.com##.pmc-breaking-news
-
-! 2022-08-25 https://www.mcsweeneys.net
-mcsweeneys.net##.breaking-news-container
-
-! 2022-08-25 https://www.behance.net
-behance.net##[class*="ImageElement-blockPointerEvents-"]:style(pointer-events: auto !important;)
-behance.net##[class*="Module-blockGridPointerEvents-"] .grid__item-image:style(pointer-events: auto !important;)
-behance.net###lightbox-wrap img:style(pointer-events: auto !important;)
-
-! 2022-08-25 https://www.csmonitor.com
-csmonitor.com###csm-promotions-banner
-
 ! 2022-08-25 https://www.currentaffairs.org
+! annoyances
 currentaffairs.org##.wp-block-image:has(> a[href$="/subscribe"])
 currentaffairs.org##.wp-block-image:has(> a[href$="/donate"])
 
 ! 2022-08-25 https://emergencemagazine.org
+! annoyances
 emergencemagazine.org##.c-audio-bar:not(.has-played)
 
 ! 2022-08-25 https://aeon.co
+! popups
+||aeon.co/_next/static/chunks/NewsletterPopup.*.js$script,1p
+! annoyances
 ||aeon.co/_next/static/chunks/SupportBannerHeader.*.js$script,1p
 
 ! 2022-08-25 https://psyche.co
+! popups
+||psyche.co/_next/static/chunks/PopupManager.*.js$script,1p
+! annoyances
 ||psyche.co/_next/static/chunks/SupportBannerHeader.*.js$script,1p
 
 ! 2022-08-25 https://www.albumoftheyear.org
+! annoyances
 albumoftheyear.org##div:has(> .adHeading)
 albumoftheyear.org##.linkfireContainer
 albumoftheyear.org##.donorBanner
@@ -87,30 +128,69 @@ albumoftheyear.org##.signInComments
 albumoftheyear.org##.buyAmazon
 albumoftheyear.org##.commentFooter
 
-! 2022-08-25 https://www.youtube.com
+! 2022-08-25 https://cdpn.io
+! popups
+cdpn.io##.referer-warning
+
+! 2022-08-25 https://www.youtube-nocookie.com, https://www.youtube.com
+! popups
+youtube-nocookie.com,youtube.com##.ytp-pause-overlay
+youtube.com##.ytp-cards-button
+youtube.com##.ytp-cards-teaser
+youtube.com##.iv-branding
+! annoyances
 youtube.com###big-yoodle
 youtube.com##.ytd-rich-section-renderer
 
+! 2022-08-25 https://currentlyhq.com
+! popups
+currentlyhq.com##+js(aopr, elementorProFrontend.modules.popup.popupPopped)
+
 ! 2022-08-25 https://scroll.in
-scroll.in##.scrollstrap-container
+! popups
+scroll.in##.floating-contribute-block
+
+! 2022-08-25 https://www.thenewatlantis.com
+! popups
+||thenewatlantis.com/wp-content/themes/thenewatlantis/js/donate.js$script,1p
 
 ! 2022-08-25 https://archive.vanityfair.com
+! popups
+archive.vanityfair.com##^body.page_shared #bnd_subscribe_modaal
+archive.vanityfair.com##.shared_footer_cta_basic
+archive.vanityfair.com##.shared_footer_cta_primary
+! annoyances
 archive.vanityfair.com##.shared_substory_cta
 
+! 2022-08-25 https://www.e-flux.com
+! popups
+e-flux.com##.landing-subscribe
+
 ! 2022-08-25 https://www.motherjones.com
-motherjones.com###ticker-newsletter-container
+! popups
+motherjones.com##.mj-adblock-widget
 
-! 2022-08-26 https://developer.mozilla.org
-developer.mozilla.org##.mdn-cta-container
+! 2022-08-27 https://www.icij.org
+! popups
+icij.org##^modal-popup[track="WEB-POPUP-ARTICLE"]
 
-! 2022-08-28 https://tinyview.com
-tinyview.com##.open-app-container
+! 2022-08-27 https://open.spotify.com
+! popups
+open.spotify.com##[data-testid="signup-bar"]
 
-! 2022-08-28 https://www.tumblr.com
-tumblr.com##div:has(> [style="background: rgb(255, 138, 0) none repeat scroll 0% 0%; color: rgb(255, 255, 255);"])
+! 2022-08-28 Williams-Sonoma (e.g., https://www.potterybarn.com, https://www.rejuvenation.com)
+! popups
+markandgraham.com,pbteen.com,potterybarn.com,potterybarnkids.com,rejuvenation.com,westelm.com,williams-sonoma.com##+js(set, WSI.contentPersonalization.hideEmailCaptureOverlay, true)
+pbteen.com,potterybarn.com,potterybarnkids.com,westelm.com,williams-sonoma.com###quiqChatLaunch
+rejuvenation.com###quiqWebChat
 
 ! 2022-09-06 https://www.nytimes.com
+! annoyances
 nytimes.com##.pz-header-sales > .show-messaging
 nytimes.com##.pz-header-sales:style(height: 53px !important;)
 nytimes.com##.pz-header-sales > .nav-messaging.pz-nav:style(top: 0 !important;)
 nytimes.com##.pz-header-sales > .nav-messaging.pz-nav-drawer:style(top: 52px !important;)
+
+! 2022-09-07 https://www.healthline.com
+! cookies
+healthline.com##^#consent-modal

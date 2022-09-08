@@ -9,6 +9,4 @@
 ! Sublists
 
 !#include sublists/paywalls.txt
-!#include sublists/popups.txt
 !#include sublists/annoyances.txt
-!#include sublists/cookies.txt
