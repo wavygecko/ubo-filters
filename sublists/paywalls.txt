@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: WavyGecko’s filters – Paywalls
-! Description: Blocks paywalls and sign-in gates
+! Description: Blocks paywalls
 ! Expires: 2 days
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
@@ -122,9 +122,6 @@ baltimoresun.com,capitalgazette.com,chicagotribune.com,courant.com,dailypress.co
 ! 2022-08-25 McClatchy (e.g., https://www.theolympian.com)
 bellinghamherald.com,bnd.com,bradenton.com,centredaily.com,charlotteobserver.com,elnuevoherald.com,flkeysnews.com,fresnobee.com,heraldonline.com,heraldsun.com,idahostatesman.com,islandpacket.com,kansas.com,kansascity.com,kentucky.com,ledger-enquirer.com,macon.com,mcclatchydc.com,mercedsunstar.com,miamiherald.com,modbee.com,myrtlebeachonline.com,newsobserver.com,sacbee.com,sanluisobispo.com,star-telegram.com,sunherald.com,thenewstribune.com,theolympian.com,thestate.com,tri-cityherald.com##+js(cookie-remover, sessionz)
 
-! 2022-08-25 https://www.behance.net
-behance.net##[class*="Search-contentBlocker-"]
-
 ! 2022-08-25 https://www.csmonitor.com
 csmonitor.com##+js(set, csmJs.util.isSubscriber, trueFunc)
 csmonitor.com###sticky-messenger
@@ -155,6 +152,3 @@ thenewatlantis.com##.gate-gradient
 ! 2022-08-27 https://www.enotes.com
 enotes.com##+js(cookie-remover, ENOTESID)
 enotes.com##.c-cta-section
-
-! 2022-09-06 https://www.theguardian.com
-||assets.guim.co.uk/assets/SignInGateSelector-importable.*.js$script,domain=theguardian.com
