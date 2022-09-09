@@ -91,10 +91,6 @@ archive.vanityfair.com##.shared_footer_cta_primary
 ! annoyances
 archive.vanityfair.com##.shared_substory_cta
 
-! 2022-08-28 Williams-Sonoma (e.g., https://www.potterybarn.com, https://www.rejuvenation.com)
-! popups
-markandgraham.com,pbteen.com,potterybarn.com,potterybarnkids.com,rejuvenation.com,westelm.com,williams-sonoma.com##+js(set, WSI.contentPersonalization.hideEmailCaptureOverlay, true)
-
 ! 2022-09-06 https://www.nytimes.com
 ! annoyances
 nytimes.com##.pz-header-sales > .show-messaging
@@ -105,3 +101,14 @@ nytimes.com##.pz-header-sales > .nav-messaging.pz-nav-drawer:style(top: 52px !im
 ! 2022-09-07 https://www.healthline.com
 ! cookies
 healthline.com##^#consent-modal
+
+! 2022-09-09 Williams-Sonoma (e.g., https://www.potterybarn.com, https://www.rejuvenation.com)
+! popups
+pbteen.com,potterybarn.com,potterybarnkids.com,westelm.com,williams-sonoma.com##+js(set, WSI.contentPersonalization.hideEmailCaptureOverlay, true)
+markandgraham.com##body:style(overflow: auto !important;)
+markandgraham.com###join-email-campaign
+rejuvenation.com###email-signup-flyin
+rejuvenation.com###email-signup-flyin-backdrop
+! popups
+pbteen.com,potterybarn.com,potterybarnkids.com,westelm.com,williams-sonoma.com###quiqChatLaunch
+rejuvenation.com###quiqWebChat
