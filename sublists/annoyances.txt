@@ -22,8 +22,6 @@ ad-italia.it,ad-magazin.de,admagazine.com,admagazine.fr,admagazine.ru,allure.com
 ! 2022-08-25 https://www.theguardian.com
 ! cookies
 theguardian.com###sp_message_container_690155
-! popups
-||contributions.guardianapis.com/banner$xhr,domain=theguardian.com
 ! annoyances
 ||assets.guim.co.uk/assets/TopRightAdSlot-importable.*.js$script,domain=theguardian.com
 
@@ -36,13 +34,11 @@ smarterplaylists.playlistmachinery.com##th:has-text(# Components)
 ! popups
 old.reddit.com##.read-next
 ! annoyances
-old.reddit.com##.listingsignupbar
 old.reddit.com##.commentsignupbar
 
-! 2022-08-25 https://www.fandom.com
+! 2022-08-25 https://crimereads.com, https://lithub.com
 ! popups
-fandom.com##.notifications-placeholder
-fandom.com###WikiaBar:has(> #WikiaBarWrapper > .wikia-bar-anon)
+crimereads.com,lithub.com###post_more_wrapper
 
 ! 2022-08-25 https://www.twitch.tv
 ! annoyances
@@ -50,10 +46,9 @@ twitch.tv##.prime-offers__pill
 twitch.tv##.extensions-dock__layout
 twitch.tv##button[data-a-target="player-clip-button"]
 
-! 2022-08-25 https://www.currentaffairs.org
-! annoyances
-currentaffairs.org##.wp-block-image:has(> a[href$="/subscribe"])
-currentaffairs.org##.wp-block-image:has(> a[href$="/donate"])
+! 2022-08-25 https://discussions.apple.com
+! popups
+discussions.apple.com##.persist-question
 
 ! 2022-08-25 https://emergencemagazine.org
 ! popups
@@ -64,45 +59,11 @@ emergencemagazine.org##.c-audio-bar:not(.has-played)
 ! 2022-08-25 https://www.albumoftheyear.org
 ! annoyances
 albumoftheyear.org##div:has(> .adHeading)
-albumoftheyear.org##.linkfireContainer
 albumoftheyear.org##.donorBanner
-albumoftheyear.org##.signInReview
-albumoftheyear.org##.signInComments
-albumoftheyear.org##.buyAmazon
-albumoftheyear.org##.commentFooter
 
 ! 2022-08-25 https://cdpn.io
 ! popups
 cdpn.io##.referer-warning
-
-! 2022-08-25 https://www.youtube-nocookie.com, https://www.youtube.com
-! popups
-youtube-nocookie.com,youtube.com##.ytp-pause-overlay
-youtube.com##.ytp-cards-button
-youtube.com##.ytp-cards-teaser
-youtube.com##.iv-branding
-! annoyances
-youtube.com###big-yoodle
-youtube.com##.ytd-rich-section-renderer
-
-! 2022-08-25 https://archive.vanityfair.com
-! popups
-archive.vanityfair.com##^body.page_shared #bnd_subscribe_modaal
-archive.vanityfair.com##.shared_footer_cta_basic
-archive.vanityfair.com##.shared_footer_cta_primary
-! annoyances
-archive.vanityfair.com##.shared_substory_cta
-
-! 2022-09-06 https://www.nytimes.com
-! annoyances
-nytimes.com##.pz-header-sales > .show-messaging
-nytimes.com##.pz-header-sales:style(height: 53px !important;)
-nytimes.com##.pz-header-sales > .nav-messaging.pz-nav:style(top: 0 !important;)
-nytimes.com##.pz-header-sales > .nav-messaging.pz-nav-drawer:style(top: 52px !important;)
-
-! 2022-09-07 https://www.healthline.com
-! cookies
-healthline.com##^#consent-modal
 
 ! 2022-09-09 Williams-Sonoma (e.g., https://www.potterybarn.com, https://www.rejuvenation.com)
 ! popups
@@ -114,12 +75,6 @@ rejuvenation.com###email-signup-flyin-backdrop
 ! popups
 pbteen.com,potterybarn.com,potterybarnkids.com,westelm.com,williams-sonoma.com###quiqChatLaunch
 rejuvenation.com###quiqWebChat
-
-! 2022-09-11 https://www.theatlantic.com
-! popups
-theatlantic.com###nonMeteredNudge
-theatlantic.com###sponsoredNonMeteredNudge
-theatlantic.com##.c-non-metered-nudge
 
 ! 2022-09-11 https://www.thespruceeats.com
 ! unbreak
@@ -133,9 +88,7 @@ wegmans.com###AstuteBotToggleChatContainer
 
 ! 2022-09-11 https://www.cjr.org
 ! popups
-cjr.org##html:style(overflow: auto !important;)
-cjr.org###interContainer
-cjr.org###interVeil
+||cjr.org/wp-content/themes/cjr2017/*interstitial_full_sail*$1p
 
 ! 2022-09-11 https://currentlyhq.com
 ! popups
@@ -147,3 +100,8 @@ mcsweeneys.net###floating-footer-container
 ! annoyances
 mcsweeneys.net##.newsletter
 mcsweeneys.net##.house-ad-right
+
+! 2022-09-11 https://www.forbes.com
+! annoyances
+forbes.com##.main-content--body:style(padding-top: 0 !important;)
+
