@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: WavyGecko’s filters
-! Description: Circumvents paywalls and thwarts annoyances. Complements AdGuard and uBlock Annoyances lists.
+! Description: Circumvents paywalls and thwarts annoyances. Complements AdGuard and uBlock annoyances lists.
 ! Expires: 2 days
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
