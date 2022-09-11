@@ -26,7 +26,7 @@ gadget.pico.tools##+js(json-prune, locked)
 ! Specific
 
 ! 2022-08-24 Condé Nast (e.g., https://www.vogue.com)
-||journey.*/build-*.js$script,domain=allure.com|architecturaldigest.com|bonappetit.com|cntraveler.com|gq.com|newyorker.com|pitchfork.com|vanityfair.com|vogue.co.uk|vogue.com|voguebusiness.com|wired.com
+||journey.*/build-*.js$script,domain=allure.com|architecturaldigest.com|bonappetit.com|cntraveler.com|epicurious.com|gq.com|newyorker.com|pitchfork.com|vanityfair.com|vogue.co.uk|vogue.com|voguebusiness.com|wired.com
 
 ! 2022-08-24 https://www.bloomberg.com
 bloomberg.com##+js(aopw, localStorage)
