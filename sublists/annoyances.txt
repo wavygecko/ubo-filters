@@ -121,3 +121,30 @@ theatlantic.com###nonMeteredNudge
 theatlantic.com###sponsoredNonMeteredNudge
 theatlantic.com##.c-non-metered-nudge
 
+! 2022-09-11 https://www.thespruceeats.com
+! unbreak
+thespruceeats.com#@#[data-ad-width]
+! annoyances
+thespruceeats.com##.mntl-leaderboard-spacer
+
+! 2022-09-11 https://www.wegmans.com
+! popups
+wegmans.com###AstuteBotToggleChatContainer
+
+! 2022-09-11 https://www.cjr.org
+! popups
+cjr.org##html:style(overflow: auto !important;)
+cjr.org###interContainer
+cjr.org###interVeil
+
+! 2022-09-11 https://currentlyhq.com
+! popups
+currentlyhq.com##+js(aopr, elementorProFrontend.modules.popup.popupPopped)
+
+! 2022-09-11 https://www.mcsweeneys.net
+! popups
+mcsweeneys.net###floating-footer-container
+! annoyances
+mcsweeneys.net##.newsletter
+mcsweeneys.net##.house-ad-right
+
