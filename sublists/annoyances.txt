@@ -56,6 +56,8 @@ currentaffairs.org##.wp-block-image:has(> a[href$="/subscribe"])
 currentaffairs.org##.wp-block-image:has(> a[href$="/donate"])
 
 ! 2022-08-25 https://emergencemagazine.org
+! popups
+emergencemagazine.org##.c-social-dropin
 ! annoyances
 emergencemagazine.org##.c-audio-bar:not(.has-played)
 
@@ -112,3 +114,10 @@ rejuvenation.com###email-signup-flyin-backdrop
 ! popups
 pbteen.com,potterybarn.com,potterybarnkids.com,westelm.com,williams-sonoma.com###quiqChatLaunch
 rejuvenation.com###quiqWebChat
+
+! 2022-09-11 https://www.theatlantic.com
+! popups
+theatlantic.com###nonMeteredNudge
+theatlantic.com###sponsoredNonMeteredNudge
+theatlantic.com##.c-non-metered-nudge
+
