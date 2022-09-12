@@ -5,7 +5,6 @@
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
 
-
 ! 2022-08-23 Pico (e.g., https://defector.com)
 ||api.pico.tools/popup/null/*$xhr
 ||api.pico.tools/client/query/*$xhr
@@ -147,4 +146,3 @@ enotes.com##.c-cta-section
 
 ! 2022-09-02 Axate (e.g., https://www.musicomh.com)
 ||wallet.axate.io/cashBustedBundle.*.js$script
-
