@@ -6,7 +6,6 @@
 ! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
 
 
-! Sublists
-
 !#include sublists/paywalls.txt
 !#include sublists/annoyances.txt
+
