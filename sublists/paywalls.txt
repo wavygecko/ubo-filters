@@ -6,24 +6,10 @@
 ! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
 
 
-! Generic
-
 ! 2022-08-23 Pico (e.g., https://defector.com)
 ||api.pico.tools/popup/null/*$xhr
 ||api.pico.tools/client/query/*$xhr
 gadget.pico.tools##+js(json-prune, locked)
-
-! 2022-08-24 Piano (e.g., https://theintercept.com)
-/api/tinypass.min.js$script
-
-! 2022-08-24 Pelcro (e.g., https://www.frieze.com)
-||js.pelcro.com/sdk/main.min.js$script
-
-! 2022-09-02 Axate (e.g., https://www.musicomh.com)
-||wallet.axate.io/cashBustedBundle.*.js$script
-
-
-! Specific
 
 ! 2022-08-24 Condé Nast (e.g., https://www.vogue.com)
 ||journey.*/build-*.js$script,domain=allure.com|architecturaldigest.com|bonappetit.com|cntraveler.com|epicurious.com|gq.com|newyorker.com|pitchfork.com|vanityfair.com|vogue.co.uk|vogue.com|voguebusiness.com|wired.com
@@ -32,6 +18,9 @@ gadget.pico.tools##+js(json-prune, locked)
 bloomberg.com##+js(aopw, localStorage)
 bloomberg.com###fortress-preblocked-container-root
 ||assets.bwbx.io/s3/javelin/public/javelin/js/foundation/transporter/foundation_transporter-*.js$script,domain=bloomberg.com
+
+! 2022-08-24 Piano (e.g., https://theintercept.com)
+/api/tinypass.min.js$script
 
 ! 2022-08-24 https://newrepublic.com
 ||blink.net/json/public_data.newrepublic.com.json$xhr,domain=newrepublic.com
@@ -68,6 +57,9 @@ nybooks.com##+js(rc, paywall-article, , stay)
 
 ! 2022-08-24 https://www.scientificamerican.com
 scientificamerican.com##+js(cookie-remover, spw_l)
+
+! 2022-08-24 Pelcro (e.g., https://www.frieze.com)
+||js.pelcro.com/sdk/main.min.js$script
 
 ! 2022-08-25 https://www.thedriftmag.com
 ||thedriftmag.com/wp-content/plugins/drift-paywall-plugin/public/js/drift-paywall-plugin-public.js$script,1p
@@ -152,3 +144,7 @@ thenewatlantis.com##.gate-gradient
 ! 2022-08-27 https://www.enotes.com
 enotes.com##+js(cookie-remover, ENOTESID)
 enotes.com##.c-cta-section
+
+! 2022-09-02 Axate (e.g., https://www.musicomh.com)
+||wallet.axate.io/cashBustedBundle.*.js$script
+
