@@ -6,15 +6,6 @@
 ! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
 
 
-! Generic
-
-! 2022-08-28 Weebly (e.g., https://www.valeriewai.com)
-! popups
-||cdn-promote.weebly.com/js/dist/lead-form.js$script
-
-
-! Specific
-
 ! 2022-08-25 https://www.theguardian.com
 ! cookies
 theguardian.com###sp_message_container_690155
