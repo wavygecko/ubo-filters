@@ -5,7 +5,6 @@
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
 
-
 ! 2022-08-25 https://www.theguardian.com
 ! cookies
 theguardian.com###sp_message_container_690155
@@ -85,4 +84,3 @@ mcsweeneys.net##.house-ad-right
 ! 2022-09-11 https://www.forbes.com
 ! annoyances
 forbes.com##.main-content--body:style(padding-top: 0 !important;)
-
