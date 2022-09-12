@@ -5,7 +5,5 @@
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
 
-
 !#include sublists/paywalls.txt
 !#include sublists/annoyances.txt
-
