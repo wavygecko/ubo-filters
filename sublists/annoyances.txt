@@ -5,22 +5,10 @@
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
 
-! 2022-08-25 https://www.theguardian.com
-! cookies
-theguardian.com###sp_message_container_690155
-! annoyances
-||assets.guim.co.uk/assets/TopRightAdSlot-importable.*.js$script,domain=theguardian.com
-
 ! 2022-08-25 http://smarterplaylists.playlistmachinery.com
 ! annoyances
 smarterplaylists.playlistmachinery.com##th:has-text(Created)
 smarterplaylists.playlistmachinery.com##th:has-text(# Components)
-
-! 2022-08-25 https://old.reddit.com
-! popups
-old.reddit.com##.read-next
-! annoyances
-old.reddit.com##.commentsignupbar
 
 ! 2022-08-25 https://crimereads.com, https://lithub.com
 ! popups
@@ -43,24 +31,14 @@ emergencemagazine.org##.c-social-dropin
 emergencemagazine.org##.c-audio-bar:not(.has-played)
 
 ! 2022-08-25 https://www.albumoftheyear.org
-! annoyances
+! ads
 albumoftheyear.org##div:has(> .adHeading)
+! annoyances
 albumoftheyear.org##.donorBanner
 
 ! 2022-08-25 https://cdpn.io
 ! popups
 cdpn.io##.referer-warning
-
-! 2022-09-09 Williams-Sonoma (e.g., https://www.potterybarn.com)
-! popups
-pbteen.com,potterybarn.com,potterybarnkids.com,westelm.com,williams-sonoma.com###quiqChatLaunch
-rejuvenation.com###quiqWebChat
-
-! 2022-09-11 https://www.thespruceeats.com
-! unbreak
-thespruceeats.com#@#[data-ad-width]
-! annoyances
-thespruceeats.com##.mntl-leaderboard-spacer
 
 ! 2022-09-11 https://www.wegmans.com
 ! popups
@@ -74,13 +52,25 @@ wegmans.com###AstuteBotToggleChatContainer
 ! popups
 currentlyhq.com##+js(aopr, elementorProFrontend.modules.popup.popupPopped)
 
-! 2022-09-11 https://www.mcsweeneys.net
-! popups
-mcsweeneys.net###floating-footer-container
-! annoyances
-mcsweeneys.net##.newsletter
-mcsweeneys.net##.house-ad-right
-
 ! 2022-09-11 https://www.forbes.com
+! ads
+! https://github.com/AdguardTeam/AdguardFilters/commit/e418a83d8e83b02b2b4c95d69a6ee3be388145ac
+forbes.com##.main-content--body:style(padding-top: unset !important;)
+
+! 2022-09-13 https://www.theguardian.com
+! cookies
+theguardian.com###sp_message_container_690155
 ! annoyances
-forbes.com##.main-content--body:style(padding-top: 0 !important;)
+||assets.guim.co.uk/assets/TopRightAdSlot-importable.*.js$script,domain=theguardian.com
+
+! 2022-09-14 https://www.roblox.com
+! annoyances
+roblox.com##.home-container, .page-content:style(float: unset !important; margin-left: auto !important; margin-right: auto !important;)
+
+! 2022-09-16 https://old.reddit.com
+! popups
+old.reddit.com##.read-next
+! annoyances
+old.reddit.com##.commentsignupbar
+old.reddit.com##.login-form-side
+
