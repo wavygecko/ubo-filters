@@ -100,3 +100,10 @@ developer.mozilla.org##.mdn-cta-container
 ! 2022-09-22 https://www.currentaffairs.org
 currentaffairs.org##.wp-block-image:has(> a[href$="/subscribe"])
 currentaffairs.org##.wp-block-image:has(> a[href$="/donate"])
+
+! 2022-09-22 https://www.pbs.org
+pbs.org##.popup
+
+! 2022-09-22 https://www.texastribune.org
+texastribune.org##.db-frame-pinned
+texastribune.org##.db-height-tracker
