@@ -149,3 +149,6 @@ enotes.com##.c-cta-section
 
 ! 2022-09-21 https://www.behance.net
 behance.net##[class*="Search-contentBlocker-"]
+
+! 2022-09-21 https://www.theguardian.com
+||assets.guim.co.uk/assets/SignInGateSelector-importable.*.js$script,domain=theguardian.com
