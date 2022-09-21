@@ -5,18 +5,17 @@
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
 
-! 2022-08-25 http://smarterplaylists.playlistmachinery.com
-smarterplaylists.playlistmachinery.com##th:has-text(Created)
-smarterplaylists.playlistmachinery.com##th:has-text(# Components)
+! 2022-08-24 Condé Nast (e.g., https://www.vogue.com)
+ad-italia.it,ad-magazin.de,admagazine.com,admagazine.fr,admagazine.ru,allure.com,architecturaldigest.com,architecturaldigest.in,bonappetit.com,cntraveler.com,cntraveller.com,cntraveller.in,glamour.com,glamour.de,glamour.es,glamour.mx,glamour.ru,glamourmagazine.co.uk,gq-magazin.de,gq-magazine.co.uk,gq.com,gq.com.mx,gq.com.tw,gq.ru,gqindia.com,gqitalia.it,gqjapan.jp,gqmagazine.fr,houseandgarden.co.uk,lacucinaitaliana.it,newyorker.com,pitchfork.com,revistaad.es,revistagq.com,revistavanityfair.es,self.com,tatler.com,tatler.ru,teenvogue.com,them.us,traveler.es,vanityfair.com,vanityfair.fr,vanityfair.it,vogue.co.jp,vogue.co.uk,vogue.com,vogue.com.tw,vogue.de,vogue.es,vogue.fr,vogue.in,vogue.it,vogue.mx,vogue.ru,voguebusiness.com,wired.co.uk,wired.com,wired.it,wired.jp##.ticker-view
 
 ! 2022-08-25 https://www.twitch.tv
 twitch.tv##.prime-offers__pill
 twitch.tv##.extensions-dock__layout
 twitch.tv##button[data-a-target="player-clip-button"]
 
-! 2022-08-25 https://www.albumoftheyear.org
-albumoftheyear.org##div:has(> .adHeading)
-albumoftheyear.org##.donorBanner
+! 2022-08-25 http://smarterplaylists.playlistmachinery.com
+smarterplaylists.playlistmachinery.com##th:has-text(Created)
+smarterplaylists.playlistmachinery.com##th:has-text(# Components)
 
 ! 2022-08-25 https://cdpn.io
 cdpn.io##.referer-warning
@@ -24,34 +23,26 @@ cdpn.io##.referer-warning
 ! 2022-09-07 https://www.healthline.com
 healthline.com##^#consent-modal
 
-! 2022-09-11 https://www.wegmans.com
-wegmans.com###AstuteBotToggleChatContainer
-
-! 2022-09-11 https://www.forbes.com
-forbes.com##.main-content--body:style(padding-top: unset !important;)
-
 ! 2022-09-13 https://www.theguardian.com
 theguardian.com###sp_message_container_690155
-||assets.guim.co.uk/assets/TopRightAdSlot-importable.*.js$script,domain=theguardian.com
 
 ! 2022-09-14 https://www.roblox.com
-roblox.com##.home-container, .page-content:style(float: unset !important; margin-left: auto !important; margin-right: auto !important;)
 roblox.com###desktop-app-banner
+roblox.com##.home-container, .page-content:style(float: unset !important; margin-left: auto !important; margin-right: auto !important;)
 
-! 2022-09-16 https://old.reddit.com
-old.reddit.com##.happening-now-wrap
+! 2022-09-21 https://old.reddit.com
 old.reddit.com##.listingsignupbar
 old.reddit.com##.commentsignupbar
 old.reddit.com##.login-form-side
 old.reddit.com##.premium-banner-outer
-old.reddit.com##.read-next
-
-! 2022-09-20 AT Media (e.g., https://www.apartmenttherapy.com)
-apartmenttherapy.com,cubbyathome.com,thekitchn.com##div:has(> .Ad:only-child)
+old.reddit.com##.read-next-container
 
 ! 2022-09-21 https://discussions.apple.com
 discussions.apple.com##.notification.site-wide
 discussions.apple.com##.persist-question
+
+! 2022-09-21 https://www.vox.com
+vox.com##.contribute-banner
 
 ! 2022-09-21 https://aeon.co
 ||aeon.co/_next/static/chunks/BannerPopupManager.*.js$script,1p
@@ -60,82 +51,36 @@ discussions.apple.com##.persist-question
 ||psyche.co/_next/static/chunks/SupportBannerHeader.*.js$script,1p
 ||psyche.co/_next/static/chunks/PopupManager.*.js$script,1p
 
-! 2022-09-21 Condé Nast (e.g., https://www.vanityfair.com)
-ad-italia.it,ad-magazin.de,admagazine.com,admagazine.fr,admagazine.ru,allure.com,architecturaldigest.com,architecturaldigest.in,bonappetit.com,cntraveler.com,cntraveller.com,cntraveller.in,glamour.com,glamour.de,glamour.es,glamour.mx,glamour.ru,glamourmagazine.co.uk,gq-magazin.de,gq-magazine.co.uk,gq.com,gq.com.mx,gq.com.tw,gq.ru,gqindia.com,gqitalia.it,gqjapan.jp,gqmagazine.fr,houseandgarden.co.uk,lacucinaitaliana.it,newyorker.com,pitchfork.com,revistaad.es,revistagq.com,revistavanityfair.es,self.com,tatler.com,tatler.ru,teenvogue.com,them.us,traveler.es,vanityfair.com,vanityfair.fr,vanityfair.it,vogue.co.jp,vogue.co.uk,vogue.com,vogue.com.tw,vogue.de,vogue.es,vogue.fr,vogue.in,vogue.it,vogue.mx,vogue.ru,voguebusiness.com,wired.co.uk,wired.com,wired.it,wired.jp##.ticker-view
-
-! 2022-09-21 https://www.csmonitor.com
-csmonitor.com##iframe[title^="Nwltr"]
-
-! 2022-09-21 https://www.nature.com
-nature.com##.c-site-messages--nature-briefing
-
-! 2022-09-21 https://www.behance.net
-behance.net##.Popup-popup-Hub
-behance.net##[class*="ImageElement-blockPointerEvents-"]:style(pointer-events: auto !important;)
-behance.net##[class*="Module-blockGridPointerEvents-"] .grid__item-image:style(pointer-events: auto !important;)
-behance.net###lightbox-wrap img:style(pointer-events: auto !important;)
-
-! 2022-09-21 https://www.eater.com
-eater.com###toaster
-
 ! 2022-09-21 https://www.theatlantic.com
 theatlantic.com###nonMeteredNudge
 theatlantic.com###sponsoredNonMeteredNudge
 theatlantic.com##.c-non-metered-nudge
 
-! 2022-09-21 https://nautil.us
-nautil.us##.subscibe-bar
-
-! 2022-09-21 https://www.polygon.com
-polygon.com###toaster
-
-! 2022-09-21 https://www.scientificamerican.com
-scientificamerican.com###promo-header
-scientificamerican.com##.spw
-scientificamerican.com##.house__home_ad
-
-! 2022-09-21 https://www.damninteresting.com
-damninteresting.com##.plea
-
-! 2022-09-21 https://www.currentaffairs.org
-currentaffairs.org##.wp-block-image:has(> a[href$="/subscribe"])
-currentaffairs.org##.wp-block-image:has(> a[href$="/donate"])
-
-! 2022-09-21 https://www.themarshallproject.org
-themarshallproject.org##.toast-notifications-container
-
-! 2022-09-21 https://developer.mozilla.org
-developer.mozilla.org##.mdn-cta-container
-
 ! 2022-09-21 https://bostonreview.net
 bostonreview.net##.elementor-element-1b2cb65
 bostonreview.net##.elementor-element-16134f5
 
-! 2022-09-21 https://deadline.com
-deadline.com##.toaster
-deadline.com##iframe[title^="Deadline Muti Box"]
+! 2022-09-21 https://www.e-flux.com
+e-flux.com##.landing-subscribe
 
 ! 2022-09-21 https://vimeo.com
 vimeo.com##+js(set, vimeo.clip_page_config.google_app_id, '')
 vimeo.com##+js(set, vimeo.clip_page_config.banner, {})
 
-! 2022-09-21 https://bleacherreport.com
-bleacherreport.com##.atom.installApp
-bleacherreport.com##.newsletterSubsModule.flyIn
+! 2022-09-21 https://www.nature.com
+nature.com##.c-site-messages--nature-briefing
 
-! 2022-09-21 https://www.mcsweeneys.net
-mcsweeneys.net##.breaking-news-container
-mcsweeneys.net##.house-ad-right
+! 2022-09-21 Vox Media (e.g., https://www.polygon.com)
+eater.com,polygon.com###toaster
 
-! 2022-09-21 https://www.e-flux.com
-e-flux.com##.landing-subscribe
+! 2022-09-21 https://nautil.us
+nautil.us##.subscibe-bar
 
-! 2022-09-21 Williams-Sonoma (e.g., https://www.potterybarn.com)
-pbteen.com,potterybarn.com,potterybarnkids.com,westelm.com,williams-sonoma.com###quiqChatLaunch
-rejuvenation.com###quiqWebChat
+! 2022-09-21 https://www.themarshallproject.org
+themarshallproject.org##.toast-notifications-container
 
-! 2022-09-21 https://www.vox.com
-vox.com##.contribute-banner
+! 2022-09-21 https://longreads.trust.org
+longreads.trust.org##.pa-footer
 
 ! 2022-09-21 https://archive.vanityfair.com
 archive.vanityfair.com##.shared_footer_cta_basic
@@ -143,13 +88,15 @@ archive.vanityfair.com##.shared_footer_cta_primary
 archive.vanityfair.com##.shared_substory_cta
 archive.vanityfair.com##^body.page_shared #bnd_subscribe_modaal
 
-! 2022-09-21 https://emergencemagazine.org
-emergencemagazine.org##.c-audio-bar:not(.has-played)
-emergencemagazine.org##.c-social-dropin
-emergencemagazine.org##.newsletter-dropin
+! 2022-09-22 https://www.behance.net
+behance.net##.Popup-popup-Hub
+behance.net##[class*="ImageElement-blockPointerEvents-"]:style(pointer-events: auto !important;)
+behance.net##[class*="Module-blockGridPointerEvents-"] .grid__item-image:style(pointer-events: auto !important;)
+behance.net###lightbox-wrap img:style(pointer-events: auto !important;)
 
-! 2022-09-21 https://longreads.trust.org
-longreads.trust.org###pa-footer-id
+! 2022-09-22 https://developer.mozilla.org
+developer.mozilla.org##.mdn-cta-container
 
-! 2022-09-21 https://www.statnews.com
-statnews.com##.recirculation-bar
+! 2022-09-22 https://www.currentaffairs.org
+currentaffairs.org##.wp-block-image:has(> a[href$="/subscribe"])
+currentaffairs.org##.wp-block-image:has(> a[href$="/donate"])
