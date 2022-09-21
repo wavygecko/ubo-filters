@@ -147,12 +147,9 @@ archive.vanityfair.com##^body.page_shared #bnd_subscribe_modaal
 emergencemagazine.org##.c-audio-bar:not(.has-played)
 emergencemagazine.org##.c-social-dropin
 emergencemagazine.org##.newsletter-dropin
-emergencemagazine.org##.newsletter-popup
-emergencemagazine.org##.newsletter-overlay
 
 ! 2022-09-21 https://longreads.trust.org
 longreads.trust.org###pa-footer-id
 
 ! 2022-09-21 https://www.statnews.com
 statnews.com##.recirculation-bar
-
