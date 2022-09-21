@@ -1,7 +1,7 @@
 [uBlock Origin]
 ! Title: WavyGecko’s filters – Annoyances
 ! Description: Thwarts sticky banners, widgets, and other annoyances.
-! Expires: 2 days
+! Expires: 3 days
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
 
