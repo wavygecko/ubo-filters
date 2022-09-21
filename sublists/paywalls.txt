@@ -146,3 +146,6 @@ enotes.com##.c-cta-section
 
 ! 2022-09-02 Axate (e.g., https://www.musicomh.com)
 ||wallet.axate.io/cashBustedBundle.*.js$script
+
+! 2022-09-21 https://www.behance.net
+behance.net##[class*="Search-contentBlocker-"]
