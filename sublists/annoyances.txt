@@ -107,3 +107,6 @@ pbs.org##.popup
 ! 2022-09-22 https://www.texastribune.org
 texastribune.org##.db-frame-pinned
 texastribune.org##.db-height-tracker
+
+! 2022-09-22 Literary Hub (e.g., https://lithub.com)
+crimereads.com,lithub.com###post_more_wrapper
