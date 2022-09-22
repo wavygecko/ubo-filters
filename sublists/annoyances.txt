@@ -17,14 +17,23 @@ twitch.tv##button[data-a-target="player-clip-button"]
 smarterplaylists.playlistmachinery.com##th:has-text(Created)
 smarterplaylists.playlistmachinery.com##th:has-text(# Components)
 
+! 2022-08-25 https://www.albumoftheyear.org
+albumoftheyear.org##div:has(> .adHeading)
+albumoftheyear.org##.donorBanner
+
 ! 2022-08-25 https://cdpn.io
 cdpn.io##.referer-warning
+
+! 2022-08-25 https://www.fandom.com
+fandom.com###WikiaBar:has(> #WikiaBarWrapper > .wikia-bar-anon)
+fandom.com##.notifications-placeholder
 
 ! 2022-09-07 https://www.healthline.com
 healthline.com##^#consent-modal
 
 ! 2022-09-13 https://www.theguardian.com
 theguardian.com###sp_message_container_690155
+||assets.guim.co.uk/assets/TopRightAdSlot-importable.*.js$script,domain=theguardian.com
 
 ! 2022-09-14 https://www.roblox.com
 roblox.com###desktop-app-banner
@@ -90,8 +99,8 @@ archive.vanityfair.com##^body.page_shared #bnd_subscribe_modaal
 
 ! 2022-09-22 https://www.behance.net
 behance.net##.Popup-popup-Hub
-behance.net##[class*="ImageElement-blockPointerEvents-"]:style(pointer-events: auto !important;)
-behance.net##[class*="Module-blockGridPointerEvents-"] .grid__item-image:style(pointer-events: auto !important;)
+behance.net##img[class*="ImageElement-blockPointerEvents-"]:style(pointer-events: auto !important;)
+behance.net##div[class*="Module-blockGridPointerEvents-"] .grid__item-image:style(pointer-events: auto !important;)
 behance.net###lightbox-wrap img:style(pointer-events: auto !important;)
 
 ! 2022-09-22 https://developer.mozilla.org
@@ -110,3 +119,12 @@ texastribune.org##.db-height-tracker
 
 ! 2022-09-22 Literary Hub (e.g., https://lithub.com)
 crimereads.com,lithub.com###post_more_wrapper
+
+! 2022-09-22 https://www.motherjones.com
+motherjones.com##.mj-adblock-widget
+
+! 2022-09-22 https://www.propublica.org
+propublica.org##div[data-pp-location="promo-bar"]
+
+! 2022-09-22 https://www.forbes.com
+forbes.com##.main-content--body:style(padding-top: 0 !important;)
