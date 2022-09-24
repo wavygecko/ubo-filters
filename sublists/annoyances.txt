@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: WavyGecko’s filters – Annoyances
-! Description: Thwarts sticky banners, widgets, and other annoyances.
+! Description: Thwarts sticky banners and other annoyances.
 ! Expires: 3 days
 ! Homepage: https://github.com/wavygecko/ubo-filters
 ! License: https://github.com/wavygecko/ubo-filters/blob/main/LICENSE
@@ -33,7 +33,7 @@ healthline.com##^#consent-modal
 
 ! 2022-09-13 https://www.theguardian.com
 theguardian.com###sp_message_container_690155
-||assets.guim.co.uk/assets/TopRightAdSlot-importable.*.js$script,domain=theguardian.com
+theguardian.com##gu-island[name="TopRightAdSlot"]
 
 ! 2022-09-14 https://www.roblox.com
 roblox.com###desktop-app-banner
@@ -85,9 +85,6 @@ eater.com,polygon.com###toaster
 ! 2022-09-21 https://nautil.us
 nautil.us##.subscibe-bar
 
-! 2022-09-21 https://www.themarshallproject.org
-themarshallproject.org##.toast-notifications-container
-
 ! 2022-09-21 https://longreads.trust.org
 longreads.trust.org##.pa-footer
 
@@ -128,3 +125,34 @@ propublica.org##div[data-pp-location="promo-bar"]
 
 ! 2022-09-22 https://www.forbes.com
 forbes.com##.main-content--body:style(padding-top: 0 !important;)
+
+! 2022-09-22 https://www.youtube.com
+youtube.com##ytd-rich-section-renderer
+youtube.com##yt-mealbar-promo-renderer
+youtube-nocookie.com,youtube.com##.ytp-pause-overlay-container
+youtube.com##.ytp-cards-teaser
+youtube.com##.iv-branding
+
+! 2022-09-22 https://en.wikipedia.org
+wikipedia.org###siteNotice
+
+! 2022-09-23 https://www.paypal.com
+paypal.com##.cw_tile-promo-widget
+
+! 2022-09-23 https://duckduckgo.com
+duckduckgo.com##.badge-link
+
+! 2022-09-23 https://www.wikihow.com
+wikihow.com###article_courses_banner
+
+! 2022-09-24 https://www.noemamag.com
+noemamag.com###eosHomeBanner
+noemamag.com##+js(rc, have-banner, .eos-header)
+
+! 2022-09-24 https://www.themarshallproject.org
+themarshallproject.org##.welcome-mat
+themarshallproject.org##.toast-notifications-container
+
+! 2022-09-24 https://eyeondesign.aiga.org
+eyeondesign.aiga.org##+js(rc, with-promo-bar, body)
+
