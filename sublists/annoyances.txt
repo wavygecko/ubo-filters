@@ -39,13 +39,6 @@ theguardian.com##gu-island[name="TopRightAdSlot"]
 roblox.com###desktop-app-banner
 roblox.com##.home-container, .page-content:style(float: unset !important; margin-left: auto !important; margin-right: auto !important;)
 
-! 2022-09-21 https://old.reddit.com
-old.reddit.com##.listingsignupbar
-old.reddit.com##.commentsignupbar
-old.reddit.com##.login-form-side
-old.reddit.com##.premium-banner-outer
-old.reddit.com##.read-next-container
-
 ! 2022-09-21 https://discussions.apple.com
 discussions.apple.com##.notification.site-wide
 discussions.apple.com##.persist-question
@@ -155,4 +148,15 @@ themarshallproject.org##.toast-notifications-container
 
 ! 2022-09-24 https://eyeondesign.aiga.org
 eyeondesign.aiga.org##+js(rc, with-promo-bar, body)
+
+! 2022-09-27 https://apple.stackexchange.com
+askubuntu.com,mathoverflow.net,serverfault.com,stackapps.com,stackexchange.com,superuser.com##.js-dismissable-hero
+
+! 2022-09-27 https://old.reddit.com
+old.reddit.com##.listingsignupbar
+old.reddit.com##.commentsignupbar
+old.reddit.com##.login-form-side
+old.reddit.com##.premium-banner-outer
+old.reddit.com##.read-next-container
+old.reddit.com##.subscribe-button
 
