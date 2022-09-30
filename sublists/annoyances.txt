@@ -160,3 +160,5 @@ old.reddit.com##.premium-banner-outer
 old.reddit.com##.read-next-container
 old.reddit.com##.subscribe-button
 
+! 2022-09-30 https://www.artstation.com
+artstation.com##support-artstation
