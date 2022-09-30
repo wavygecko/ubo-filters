@@ -149,8 +149,10 @@ themarshallproject.org##.toast-notifications-container
 ! 2022-09-24 https://eyeondesign.aiga.org
 eyeondesign.aiga.org##+js(rc, with-promo-bar, body)
 
-! 2022-09-27 https://apple.stackexchange.com
+! 2022-09-27 Stack Overflow (e.g., https://superuser.com)
 askubuntu.com,mathoverflow.net,serverfault.com,stackapps.com,stackexchange.com,superuser.com##.js-dismissable-hero
+askubuntu.com,serverfault.com,stackapps.com,stackexchange.com,superuser.com##.js-freemium-cta
+stackexchange.com##.hero-box
 
 ! 2022-09-27 https://old.reddit.com
 old.reddit.com##.listingsignupbar
