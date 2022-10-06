@@ -154,13 +154,21 @@ askubuntu.com,mathoverflow.net,serverfault.com,stackapps.com,stackexchange.com,s
 askubuntu.com,serverfault.com,stackapps.com,stackexchange.com,superuser.com##.js-freemium-cta
 stackexchange.com##.hero-box
 
-! 2022-09-27 https://old.reddit.com
+! 2022-09-30 https://www.artstation.com
+artstation.com##support-artstation
+
+! 2022-10-04 https://store.steampowered.com
+store.steampowered.com##.broadcast_embed_top_ctn_trgt
+store.steampowered.com##.saleEventBannerLink
+store.steampowered.com##.AppDetailsSpotlightContainer
+store.steampowered.com###game_highlights .rightcol:not(.es_expanded):style(height: 432px !important; overflow-y: auto !important;)
+
+! 2022-10-06 https://old.reddit.com
+||thumbs.redditmedia.com/*.css$stylesheet,domain=old.reddit.com
+old.reddit.com###header-img:style(width: 120px !important; height: 40px !important; object-fit: contain !important;)
 old.reddit.com##.listingsignupbar
 old.reddit.com##.commentsignupbar
 old.reddit.com##.login-form-side
 old.reddit.com##.premium-banner-outer
 old.reddit.com##.read-next-container
 old.reddit.com##.subscribe-button
-
-! 2022-09-30 https://www.artstation.com
-artstation.com##support-artstation
