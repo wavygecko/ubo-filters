@@ -172,3 +172,6 @@ old.reddit.com##.login-form-side
 old.reddit.com##.premium-banner-outer
 old.reddit.com##.read-next-container
 old.reddit.com##.subscribe-button
+
+! 2022-10-07 https://www.nytimes.com
+nytimes.com##.magnoliaDock
