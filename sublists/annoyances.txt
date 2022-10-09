@@ -151,7 +151,7 @@ eyeondesign.aiga.org##+js(rc, with-promo-bar, body)
 
 ! 2022-09-27 Stack Overflow (e.g., https://superuser.com)
 askubuntu.com,mathoverflow.net,serverfault.com,stackapps.com,stackexchange.com,superuser.com##.js-dismissable-hero
-askubuntu.com,serverfault.com,stackapps.com,stackexchange.com,superuser.com##.js-freemium-cta
+askubuntu.com,serverfault.com,stackapps.com,stackoverflow.com,stackexchange.com,superuser.com##.js-freemium-cta
 stackexchange.com##.hero-box
 
 ! 2022-09-30 https://www.artstation.com
