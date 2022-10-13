@@ -175,3 +175,6 @@ old.reddit.com##.subscribe-button
 
 ! 2022-10-07 https://www.nytimes.com
 nytimes.com##.magnoliaDock
+
+! 2022-10-13 https://www.amazon.com
+amazon.com###percolate-ui-ilm_div
