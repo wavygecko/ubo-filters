@@ -91,9 +91,6 @@ americanbanker.com##+js(set, contentGating.ungate, true)
 ! 2022-08-25 https://thepointmag.com
 thepointmag.com##+js(nostif, DisplayInfo, 3000)
 
-! 2022-08-25 https://www.washingtonpost.com
-||washingtonpost.com/tetro/evaluate$xhr,1p
-
 ! 2022-08-25 https://www.hcn.org
 hcn.org##+js(ra, content, meta[name="UID"])
 
@@ -153,3 +150,7 @@ behance.net##div[class*="Search-contentBlocker-"]
 ||meter-svc.nytimes.com/meter.js$xhr,1p
 ||mwcm.nytimes.com/capi/metered_assets/*$xhr,1p
 nytimes.com##div[data-testid="inline-message"][aria-live="polite"]
+
+! 2022-10-25 https://www.washingtonpost.com
+||washingtonpost.com/tetro/evaluate$xhr,1p
+washingtonpost.com##.softwall-overlay
