@@ -154,3 +154,15 @@ nytimes.com##div[data-testid="inline-message"][aria-live="polite"]
 ! 2022-10-25 https://www.washingtonpost.com
 ||washingtonpost.com/tetro/evaluate$xhr,1p
 washingtonpost.com##.softwall-overlay
+
+! 2022-11-02 https://cooking.nytimes.com
+cooking.nytimes.com##div[class*="modal_modal-window-container__"]
+cooking.nytimes.com##div[class*="floatingsavebutton_floatingSaveContainer__"]
+cooking.nytimes.com##button[class*="headernav_headerNavLink__"]:has(span[class*="headernav_yourGroceryListLink__"])
+cooking.nytimes.com##button[class*="headernav_loginLink__2mYe0"]
+cooking.nytimes.com##li:has(> div > button[class*="saveorganize_unsavedButton__"])
+cooking.nytimes.com##button[class*="grocerylist_groceryListBtn__1ZUkf"]
+cooking.nytimes.com##div[class*="ratingssection_subsection__1B5ar"]:has(div[class*="ratingssection_userRatingsHeader__"])
+cooking.nytimes.com##div[class*="ratingssection_subsection__1B5ar"]:has(button[class*="markcookedbutton_markCookedButton__"])
+cooking.nytimes.com##div[class*="noteactions_noteActions__"]
+cooking.nytimes.com##div[class*="atoms_saveBlock__"]
