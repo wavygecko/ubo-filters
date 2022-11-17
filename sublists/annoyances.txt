@@ -171,9 +171,6 @@ old.reddit.com##.subscribe-button
 ! 2022-10-07 https://www.nytimes.com
 nytimes.com##.magnoliaDock
 
-! 2022-10-13 https://www.amazon.com
-amazon.com###percolate-ui-ilm_div
-
 ! 2022-11-01 https://www.twitch.tv
 twitch.tv##.prime-offers__pill
 twitch.tv##.extensions-video-overlay-size-container
@@ -192,3 +189,7 @@ cooking.nytimes.com##div[class*="ratingssection_subsection__1B5ar"]:has(div[clas
 cooking.nytimes.com##div[class*="ratingssection_subsection__1B5ar"]:has(button[class*="markcookedbutton_markCookedButton__"])
 cooking.nytimes.com##div[class*="noteactions_noteActions__"]
 cooking.nytimes.com##div[class*="atoms_saveBlock__"]
+
+! 2022-11-17 https://www.amazon.com
+amazon.com###percolate-ui-ilm_div
+amazon.com###hqpWrapper
