@@ -158,16 +158,6 @@ store.steampowered.com##.saleEventBannerLink
 store.steampowered.com##.AppDetailsSpotlightContainer
 store.steampowered.com###game_highlights .rightcol:not(.es_expanded):style(height: 432px !important; overflow-y: auto !important;)
 
-! 2022-10-06 https://old.reddit.com
-||thumbs.redditmedia.com/*.css$stylesheet,domain=old.reddit.com
-old.reddit.com###header-img:style(width: 120px !important; height: 40px !important; object-fit: contain !important;)
-old.reddit.com##.listingsignupbar
-old.reddit.com##.commentsignupbar
-old.reddit.com##.login-form-side
-old.reddit.com##.premium-banner-outer
-old.reddit.com##.read-next-container
-old.reddit.com##.subscribe-button
-
 ! 2022-10-07 https://www.nytimes.com
 nytimes.com##.magnoliaDock
 
@@ -193,3 +183,14 @@ cooking.nytimes.com##div[class*="atoms_saveBlock__"]
 ! 2022-11-17 https://www.amazon.com
 amazon.com###percolate-ui-ilm_div
 amazon.com###hqpWrapper
+
+! 2022-11-18 https://old.reddit.com
+||thumbs.redditmedia.com/*.css$stylesheet,domain=old.reddit.com
+old.reddit.com###header-img:style(width: 120px !important; height: 40px !important; object-fit: contain !important;)
+old.reddit.com##.happening-now-wrap
+old.reddit.com##.listingsignupbar
+old.reddit.com##.commentsignupbar
+old.reddit.com##.login-form-side
+old.reddit.com##.premium-banner-outer
+old.reddit.com##.read-next-container
+old.reddit.com##.subscribe-button
