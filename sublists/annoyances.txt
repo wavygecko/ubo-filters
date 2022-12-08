@@ -198,3 +198,4 @@ old.reddit.com##.subscribe-button
 ! 2022-12-08 https://shop.wegmans.com
 shop.wegmans.com###w_tooltip_covid_desktop
 shop.wegmans.com##.searchBannerContainer
+shop.wegmans.com##.onecartbanner
