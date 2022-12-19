@@ -168,18 +168,6 @@ twitch.tv##.extensions-dock__layout
 twitch.tv##.extensions-notifications
 twitch.tv##button[data-a-target="player-clip-button"]
 
-! 2022-11-02 https://cooking.nytimes.com
-cooking.nytimes.com##div[class*="modal_modal-window-container__"]
-cooking.nytimes.com##div[class*="floatingsavebutton_floatingSaveContainer__"]
-cooking.nytimes.com##button[class*="headernav_headerNavLink__"]:has(span[class*="headernav_yourGroceryListLink__"])
-cooking.nytimes.com##button[class*="headernav_loginLink__2mYe0"]
-cooking.nytimes.com##li:has(> div > button[class*="saveorganize_unsavedButton__"])
-cooking.nytimes.com##button[class*="grocerylist_groceryListBtn__1ZUkf"]
-cooking.nytimes.com##div[class*="ratingssection_subsection__1B5ar"]:has(div[class*="ratingssection_userRatingsHeader__"])
-cooking.nytimes.com##div[class*="ratingssection_subsection__1B5ar"]:has(button[class*="markcookedbutton_markCookedButton__"])
-cooking.nytimes.com##div[class*="noteactions_noteActions__"]
-cooking.nytimes.com##div[class*="atoms_saveBlock__"]
-
 ! 2022-11-17 https://www.amazon.com
 amazon.com###percolate-ui-ilm_div
 amazon.com###hqpWrapper
@@ -195,7 +183,28 @@ old.reddit.com##.premium-banner-outer
 old.reddit.com##.read-next-container
 old.reddit.com##.subscribe-button
 
-! 2022-12-08 https://shop.wegmans.com
+! 2022-12-17 https://www.figma.com
+figma.com##div[class*="footer_banner--googleBanner--"]
+
+! 2022-12-19 https://cooking.nytimes.com
+cooking.nytimes.com##.desktop-ad
+cooking.nytimes.com##div[class*="adunit_ad-unit__"]
+cooking.nytimes.com##div[class*="modal_modal-window-container__"]
+cooking.nytimes.com##div[class*="floatingsavebutton_floatingSaveContainer__"]
+cooking.nytimes.com##button[class*="headernav_headerNavLink__"]:has(span[class*="headernav_yourGroceryListLink__"])
+cooking.nytimes.com##button[class*="headernav_loginLink__"]
+cooking.nytimes.com##li:has(> div > button[class*="saveorganize_unsavedButton__"])
+cooking.nytimes.com##button[class*="grocerylist_groceryListBtn__"]
+cooking.nytimes.com##div[class*="ratingssection_ratingsInfo__"]:style(margin-bottom: 0 !important; border-bottom: 0 !important;)
+cooking.nytimes.com##div[class*="ratingssection_subsection__"]:has(div[class*="ratingssection_userRatingsHeader__"])
+cooking.nytimes.com##div[class*="ratingssection_subsection__"]:has(button[class*="markcookedbutton_markCookedButton__"])
+cooking.nytimes.com##div[class*="noteactions_noteActions__"]
+cooking.nytimes.com##div[class*="atoms_saveBlock__"]
+||myaccount.nytimes.com/unified_lire/js/standalone-client.bundle.js$script,domain=cooking.nytimes.com
+||a1.nyt.com/abra-config/current/cooking-web-prd.json$xhr,domain=cooking.nytimes.com
+
+! 2022-12-19 https://shop.wegmans.com
+shop.wegmans.com###AstuteBotToggleChatContainer
 shop.wegmans.com###w_tooltip_covid_desktop
 shop.wegmans.com##.searchBannerContainer
 shop.wegmans.com##.onecartbanner
