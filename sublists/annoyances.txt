@@ -85,6 +85,7 @@ archive.vanityfair.com##^body.page_shared #bnd_subscribe_modaal
 ! 2022-09-22 https://www.behance.net
 behance.net##.Popup-popup-Hub
 behance.net##img[class*="ImageElement-blockPointerEvents-"]:style(pointer-events: auto !important;)
+behance.net##img[class*="Image-blockPointerEvents-"]:style(pointer-events: auto !important;)
 behance.net##div[class*="Module-blockGridPointerEvents-"] .grid__item-image:style(pointer-events: auto !important;)
 behance.net###lightbox-wrap img:style(pointer-events: auto !important;)
 
@@ -208,3 +209,7 @@ shop.wegmans.com###AstuteBotToggleChatContainer
 shop.wegmans.com###w_tooltip_covid_desktop
 shop.wegmans.com##.searchBannerContainer
 shop.wegmans.com##.onecartbanner
+
+! 2022-12-21 https://en.wikipedia.org
+wikipedia.org###frb-inline
+
